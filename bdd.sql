@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  lun. 04 déc. 2017 à 21:25
+-- Généré le :  lun. 04 déc. 2017 à 22:19
 -- Version du serveur :  10.1.28-MariaDB
 -- Version de PHP :  7.1.10
 
@@ -213,30 +213,32 @@ CREATE TABLE `players_matchs` (
 
 CREATE TABLE `positions` (
   `PositionID` smallint(2) UNSIGNED NOT NULL,
-  `PositionName` char(50) DEFAULT NULL
+  `PositionName` char(50) DEFAULT NULL,
+  `cote` char(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `positions`
 --
 
-INSERT INTO `positions` (`PositionID`, `PositionName`) VALUES
-(1, 'Gardien'),
-(2, 'Défenseur Droit'),
-(3, 'Défenseur Gauche'),
-(4, 'Défenseur Central'),
-(5, 'Milieu Défensif Gauche'),
-(6, 'Milieu Défensif Droit'),
-(7, 'Milieu Défensif Central'),
-(8, 'Milieu Gauche'),
-(9, 'Milieu Droit'),
-(10, 'Milieu Central'),
-(11, 'Milieu Offensif Gauche'),
-(12, 'Milieu Offensif Droit'),
-(13, 'Milieu Offensif Axial'),
-(14, 'Attaquant Gauche'),
-(15, 'Attaquant Droit'),
-(16, 'Attaquant Axial');
+INSERT INTO `positions` (`PositionID`, `PositionName`, `cote`) VALUES
+(1, 'Gardien', ''),
+(2, 'Avant Droit', ''),
+(3, 'Avant Gauche', ''),
+(4, 'Avant Centre', ''),
+(5, 'Milieu Offensif', ''),
+(6, 'Milieu Central', 'Gauche'),
+(7, 'Milieu Central', 'Droite'),
+(8, 'Milieu Gauche', ''),
+(9, 'Milieu Droite', ''),
+(10, 'Milieu Défensif', ''),
+(11, 'Milieu Défensif', 'Gauche'),
+(12, 'Milieu Défensif', 'Droite'),
+(13, 'Arrière Gauche', ''),
+(14, 'Arrière Droit', ''),
+(15, 'Défenseur Gauche', ''),
+(16, 'Défenseur Droit', ''),
+(17, 'Défenseur Central', '');
 
 -- --------------------------------------------------------
 
@@ -382,7 +384,7 @@ ALTER TABLE `contracts`
 -- AUTO_INCREMENT pour la table `formations`
 --
 ALTER TABLE `formations`
-  MODIFY `FormationID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `FormationID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT pour la table `matchs`
@@ -406,7 +408,7 @@ ALTER TABLE `players`
 -- AUTO_INCREMENT pour la table `positions`
 --
 ALTER TABLE `positions`
-  MODIFY `PositionID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `PositionID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT pour la table `tournaments`

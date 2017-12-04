@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  lun. 04 déc. 2017 à 22:19
+-- Généré le :  lun. 04 déc. 2017 à 22:48
 -- Version du serveur :  10.1.28-MariaDB
 -- Version de PHP :  7.1.10
 
@@ -116,7 +116,7 @@ CREATE TABLE `contracts` (
 
 CREATE TABLE `formations` (
   `FormationID` smallint(2) UNSIGNED NOT NULL,
-  `FormationName` char(10) DEFAULT NULL,
+  `FormationName` char(15) DEFAULT NULL,
   `Position1` smallint(2) UNSIGNED DEFAULT NULL,
   `Position2` smallint(2) UNSIGNED DEFAULT NULL,
   `Position3` smallint(2) UNSIGNED DEFAULT NULL,
@@ -129,6 +129,19 @@ CREATE TABLE `formations` (
   `Position10` smallint(2) UNSIGNED DEFAULT NULL,
   `Position11` smallint(2) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `formations`
+--
+
+INSERT INTO `formations` (`FormationID`, `FormationName`, `Position1`, `Position2`, `Position3`, `Position4`, `Position5`, `Position6`, `Position7`, `Position8`, `Position9`, `Position10`, `Position11`) VALUES
+(4, '4-4-2 losange', 1, 3, 2, 8, 7, 5, 6, 11, 12, 15, 16),
+(5, '4-4-2 carré', 1, 3, 2, 10, 9, 8, 7, 12, 11, 16, 15),
+(6, '4-3-3', 1, 4, 2, 3, 8, 7, 20, 12, 11, 16, 15),
+(7, '4-5-1', 1, 4, 9, 10, 7, 8, 5, 12, 11, 16, 15),
+(8, '5-3-2', 1, 3, 2, 8, 7, 20, 12, 11, 13, 16, 15),
+(9, '3-5-2', 1, 3, 2, 10, 9, 8, 7, 6, 13, 15, 16),
+(10, '5-4-1', 1, 4, 8, 7, 9, 10, 12, 11, 13, 16, 15);
 
 -- --------------------------------------------------------
 
@@ -213,32 +226,30 @@ CREATE TABLE `players_matchs` (
 
 CREATE TABLE `positions` (
   `PositionID` smallint(2) UNSIGNED NOT NULL,
-  `PositionName` char(50) DEFAULT NULL,
-  `cote` char(10) NOT NULL
+  `PositionName` char(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `positions`
 --
 
-INSERT INTO `positions` (`PositionID`, `PositionName`, `cote`) VALUES
-(1, 'Gardien', ''),
-(2, 'Avant Droit', ''),
-(3, 'Avant Gauche', ''),
-(4, 'Avant Centre', ''),
-(5, 'Milieu Offensif', ''),
-(6, 'Milieu Central', 'Gauche'),
-(7, 'Milieu Central', 'Droite'),
-(8, 'Milieu Gauche', ''),
-(9, 'Milieu Droite', ''),
-(10, 'Milieu Défensif', ''),
-(11, 'Milieu Défensif', 'Gauche'),
-(12, 'Milieu Défensif', 'Droite'),
-(13, 'Arrière Gauche', ''),
-(14, 'Arrière Droit', ''),
-(15, 'Défenseur Gauche', ''),
-(16, 'Défenseur Droit', ''),
-(17, 'Défenseur Central', '');
+INSERT INTO `positions` (`PositionID`, `PositionName`) VALUES
+(1, 'Gardien'),
+(2, 'Avant Gauche'),
+(3, 'Avant Droit'),
+(4, 'Avant Centre'),
+(5, 'Milieu Offensif'),
+(6, 'Milieu Défensif'),
+(7, 'Milieu Gauche'),
+(8, 'Milieu Droit'),
+(9, 'Ailier Gauche'),
+(10, 'Ailier Droit'),
+(11, 'Arrière Gauche'),
+(12, 'Arrière Droit'),
+(13, 'Défenseur Central'),
+(15, 'Défenseur Gauche'),
+(16, 'Défenseur Droit'),
+(20, 'Milieu Central');
 
 -- --------------------------------------------------------
 
@@ -384,7 +395,7 @@ ALTER TABLE `contracts`
 -- AUTO_INCREMENT pour la table `formations`
 --
 ALTER TABLE `formations`
-  MODIFY `FormationID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `FormationID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT pour la table `matchs`
@@ -408,7 +419,7 @@ ALTER TABLE `players`
 -- AUTO_INCREMENT pour la table `positions`
 --
 ALTER TABLE `positions`
-  MODIFY `PositionID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `PositionID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT pour la table `tournaments`

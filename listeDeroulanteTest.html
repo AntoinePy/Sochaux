@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <title>Title</title>
+</head>
+<body>
+
+<select name="nation" id="nation">
+    <option value="5"></option>
+    <option value="1">France</option>
+    <option value="2">Italie</option>
+    <option value="3">Espagne</option>
+    <option value="4">Angleterre</option>
+</select>
+
+<select name ="champ" disabled="disabled" id="champ">
+    <option value="5"></option>
+    <option value="a">Ligue1</option>
+    <option value="b">Ligue2</option>
+    <option value="c">Nat1</option>
+    <option value="d">Nat2</option>
+</select>
+
+<select name ="club" disabled="disabled" id="club">
+    <option value="5"></option>
+    <option value="a">PSG</option>
+    <option value="b">OM</option>
+    <option value="c">OL</option>
+    <option value="d">FCSM</option>
+</select>
+
+<script>
+
+    $('#nation').on('change',function(){
+
+        $('#champ').attr('disabled',false);
+    });
+
+    $('#champ').on('change',function(){
+
+        $('#club').attr('disabled',false);
+    });
+
+</script>
+
+</body>
+</html>

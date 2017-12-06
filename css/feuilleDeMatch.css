@@ -1,0 +1,41 @@
+html , body {
+    margin: 0;
+    height: 100%;
+    background-color: #05061F;
+}
+
+.navigation {
+    background-color: #31314C;
+    height: 100%;
+}
+
+.barreTitre {
+    border-bottom-style: solid;
+    border-bottom-color: #31314C;
+    border-bottom-width: 1px;
+}
+
+h1, h2{
+    color: white;
+}
+
+.feuilleDeMatch {
+    height: 100%;
+}
+
+.colone {
+    background-color: #0D0E29;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 20px
+}
+
+.equipe1 {
+    border-right-style: solid;
+    border-right-color: #31314C;
+    border-right-width: 1px;
+}
+
+.equipe2 {
+
+}

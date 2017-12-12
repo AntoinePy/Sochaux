@@ -29,26 +29,36 @@
                         <div class="liste1">
 
                             <h3>Nations</h3>
-
                             <?php include '../bd_connect.php';
-                               // $bd = bd_connection();
-                            $bd = new PDO('mysql:host=localhost;dbname=baselucas;charset=utf8', 'root', '');
+                                $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
                                 $rep = $bd->query('SELECT NationName FROM nations');
+                                echo "<SELECT id =\"nation\" Name=\"Nation\">";
                                 while ($donnee = $rep->fetch()){
-                                    echo $donnee['NationName'] . '<br>';
+                                    echo "<OPTION Value=\"".$donnee['NationName']."\">".$donnee['NationName']."</OPTION>";
                                 }
-                                //$req = "SELECT NationName FROM nations";
-                               // $R = mysqli_query($bd,$req);
-                               // while($data = $R -> fetch()){
-                                //    echo $data['NationName'];
-                                //}
+                                echo "</SELECT>";
                             ?>
-                            <option value='<?php echo $R[0];?>'><?php echo $R[0];?></option>\n";
+                            <h3>Championnats</h3>
+                            <?php
+                            $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
+                            $rep = $bd->query('SELECT ChampionshipName FROM championships');
+                            echo "<SELECT id =\"championnat\" Name=\"Championship\" onchange='activListChampionnat()'>";
+                            while ($donnees = $rep->fetch()){
 
-                            </select>
-
-                            </form>
-
+                                echo "<OPTION Value=\"".$donnees['ChampionshipName']."\">".$donnees['ChampionshipName']."</OPTION>";
+                            }
+                            echo "</SELECT>";
+                            ?>
+                            <h3>Clubs</h3>
+                            <?php
+                            $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
+                            $rep = $bd->query('SELECT ClubName FROM clubs');
+                            echo "<SELECT id =\"club\" Name=\"Club\" onchange='activListClub()'>";
+                            while ($donnees = $rep->fetch()){
+                                echo "<OPTION Value=\"".$donnees['ClubName']."\">".$donnees['ClubName']."</OPTION>";
+                            }
+                            echo "</SELECT>";
+                            ?>
 
                         </div>
 
@@ -135,5 +145,6 @@
         </div>
 
     </body>
+    <script type="text/javascript" src="ListeDéroulante.js"></script>
 
 </html>

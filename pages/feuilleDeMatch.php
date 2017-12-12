@@ -31,12 +31,17 @@
                             <h3>Nations</h3>
 
                             <?php include '../bd_connect.php';
-                                $bd = bd_connection();
-                                $req = "SELECT NationName FROM nations";
-                                $R = mysqli_query($bd,$req);
-                                while($data = $R -> fetch()){
-                                    echo $data['NationName'];
+                               // $bd = bd_connection();
+                            $bd = new PDO('mysql:host=localhost;dbname=baselucas;charset=utf8', 'root', '');
+                                $rep = $bd->query('SELECT NationName FROM nations');
+                                while ($donnee = $rep->fetch()){
+                                    echo $donnee['NationName'] . '<br>';
                                 }
+                                //$req = "SELECT NationName FROM nations";
+                               // $R = mysqli_query($bd,$req);
+                               // while($data = $R -> fetch()){
+                                //    echo $data['NationName'];
+                                //}
                             ?>
                             <option value='<?php echo $R[0];?>'><?php echo $R[0];?></option>\n";
 

@@ -26,9 +26,31 @@
 
                     <div class="colone col-sm-5">
 
+                        <div class="liste1">
+
+                            <h3>Nations</h3>
+
+                            <?php include '../bd_connect.php';
+                                $bd = bd_connection();
+                                $req = "SELECT NationName FROM nations";
+                                $R = mysqli_query($bd,$req);
+                                while($data = $R -> fetch()){
+                                    echo $data['NationName'];
+                                }
+                            ?>
+                            <option value='<?php echo $R[0];?>'><?php echo $R[0];?></option>\n";
+
+                            </select>
+
+                            </form>
+
+
+                        </div>
+
                         <div class="effectif">
 
                             <h2>Effectifs</h2>
+
 
                             <div class="equipe1 col-sm-6">
 

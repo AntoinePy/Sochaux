@@ -26,39 +26,52 @@
 
                     <div class="colone col-sm-5">
 
-                        <div class="liste1">
+                        <div class="liste1" style="margin-bottom: 100px">
 
-                            <h3>Nations</h3>
-                            <?php include '../bd_connect.php';
-                                $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
-                                $rep = $bd->query('SELECT NationName FROM nations');
-                                echo "<SELECT id =\"nation\" Name=\"Nation\">";
-                                while ($donnee = $rep->fetch()){
-                                    echo "<OPTION Value=\"".$donnee['NationName']."\">".$donnee['NationName']."</OPTION>";
-                                }
-                                echo "</SELECT>";
-                            ?>
-                            <h3>Championnats</h3>
-                            <?php
-                            $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
-                            $rep = $bd->query('SELECT ChampionshipName FROM championships');
-                            echo "<SELECT id =\"championnat\" Name=\"Championship\" onchange='activListChampionnat()'>";
-                            while ($donnees = $rep->fetch()){
+                            <div class="col-sm-4">
 
-                                echo "<OPTION Value=\"".$donnees['ChampionshipName']."\">".$donnees['ChampionshipName']."</OPTION>";
-                            }
-                            echo "</SELECT>";
-                            ?>
-                            <h3>Clubs</h3>
-                            <?php
-                            $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
-                            $rep = $bd->query('SELECT ClubName FROM clubs');
-                            echo "<SELECT id =\"club\" Name=\"Club\" onchange='activListClub()'>";
-                            while ($donnees = $rep->fetch()){
-                                echo "<OPTION Value=\"".$donnees['ClubName']."\">".$donnees['ClubName']."</OPTION>";
-                            }
-                            echo "</SELECT>";
-                            ?>
+                                <h4>Nations</h4>
+                                <?php include '../bd_connect.php';
+                                    $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
+                                    $rep = $bd->query('SELECT NationName FROM nations');
+                                    echo "<SELECT id =\"nation\" Name=\"Nation\" class=\"form-control\">";
+                                    while ($donnee = $rep->fetch()){
+                                        echo "<OPTION Value=\"".$donnee['NationName']."\">".$donnee['NationName']."</OPTION>";
+                                    }
+                                    echo "</SELECT>";
+                                ?>
+
+                            </div>
+
+                            <div class="col-sm-4">
+
+                                <h4>Championnats</h4>
+                                <?php
+                                    $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
+                                    $rep = $bd->query('SELECT ChampionshipName FROM championships');
+                                    echo "<SELECT id =\"championnat\" Name=\"Championship\"  class=\"form-control\" onchange='activListChampionnat()'>";
+                                    while ($donnees = $rep->fetch()){
+                                        echo "<OPTION Value=\"".$donnees['ChampionshipName']."\">".$donnees['ChampionshipName']."</OPTION>";
+                                    }
+                                    echo "</SELECT>";
+                                ?>
+
+                            </div>
+
+                            <div class="col-sm-4">
+
+                                <h4>Clubs</h4>
+                                <?php
+                                    $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
+                                    $rep = $bd->query('SELECT ClubName FROM clubs');
+                                    echo "<SELECT id =\"club\" Name=\"Club\"  class=\"form-control\" onchange='activListClub()'>";
+                                    while ($donnees = $rep->fetch()){
+                                        echo "<OPTION Value=\"".$donnees['ClubName']."\">".$donnees['ClubName']."</OPTION>";
+                                    }
+                                    echo "</SELECT>";
+                                ?>
+
+                            </div>
 
                         </div>
 
@@ -135,7 +148,77 @@
                     </div>
 
                     <div class="colone col-sm-5">
-                        <h2>Feuille de match</h2>
+
+                        <div class="feuilleDeMatch">
+
+                            <h2>Feuille de match</h2>
+
+                            <div class="listeFormation">
+
+                                <div class="col-sm-6">
+                                    <h4>Domicile</h4>
+                                    <?php
+                                    $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
+                                    $rep = $bd->query('SELECT FormationName FROM formations');
+                                    echo "<SELECT id =\"formation\" Name=\"Formation\"  class=\"form-control\">";
+                                    while ($donnees = $rep->fetch()){
+                                        echo "<OPTION Value=\"".$donnees['FormationName']."\">".$donnees['FormationName']."</OPTION>";
+                                    }
+                                    echo "</SELECT>";
+                                    ?>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <h4>Extérieur</h4>
+                                    <?php
+                                    $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
+                                    $rep = $bd->query('SELECT FormationName FROM formations');
+                                    echo "<SELECT id =\"formation\" Name=\"Formation\"  class=\"form-control\">";
+                                    while ($donnees = $rep->fetch()){
+                                        echo "<OPTION Value=\"".$donnees['FormationName']."\">".$donnees['FormationName']."</OPTION>";
+                                    }
+                                    echo "</SELECT>";
+                                    ?>
+                                </div>
+
+                            </div>
+
+                            <div class="terrainDeFoot">
+                                <img src="../images/terrain.jpg" style=" width: 80%; margin: 20px 10%;"/>
+                            </div>
+
+                        </div>
+
+                        <div class="faitDeMatch">
+
+                            <h2>Faits de match</h2>
+
+                            <div class="col-sm-6 equipe1">
+
+                                <div class="but">
+
+                                </div>
+
+                                <div class="carton">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-6 equipe2">
+
+                                <div class="but">
+
+                                </div>
+
+                                <div class="carton">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -145,6 +228,7 @@
         </div>
 
     </body>
-    <script type="text/javascript" src="ListeDéroulante.js"></script>
+
+    <script src="../js/listeDeroulante.js" type="text/javascript" charset="utf-8"></script>
 
 </html>

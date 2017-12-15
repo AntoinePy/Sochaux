@@ -15,7 +15,6 @@ if (isset ($_POST['valider']))
         mysqli_select_db($db,"tpsochaux") or die("Echec de sélection de la base.");;
 
         // Insertion dans la bdd
-
         $query = "insert into championships (ChampionshipID,ChampionshipName,NationID) values(NULL,'$champ',NULL)";
 
         if (mysqli_query($db,$query))

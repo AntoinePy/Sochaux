@@ -39,6 +39,7 @@ $bd = new PDO('mysql:host=localhost;dbname=tpsochaux;charset=utf8', 'root', '');
                     <div class="col-sm-4">
 
                         <h4>Nations</h4>
+
                         <?php
                         $nations = $bd->query('SELECT NationName FROM nations');
 
@@ -50,7 +51,6 @@ $bd = new PDO('mysql:host=localhost;dbname=tpsochaux;charset=utf8', 'root', '');
                         ?>
                         </br>
                         </br>
-
                         <?php
                         $nations2 = $bd->query('SELECT NationName FROM nations');
 
@@ -81,7 +81,6 @@ $bd = new PDO('mysql:host=localhost;dbname=tpsochaux;charset=utf8', 'root', '');
                                 <label>Add champ</label> : <input type="text" name="championnat" />
                                 <input name="valider" type="submit" value="Ajouter" />
                             </form>
-
                         </div>
 
 

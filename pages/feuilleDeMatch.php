@@ -10,16 +10,11 @@
 
     <body>
 
-        <?php
-            $bd = new PDO('mysql:host=localhost;dbname=fcsochaux;charset=utf8', 'root', 'dgfn85**');
-            //$bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
-        ?>
-
-        <div class="navigation col-lg-3">
+        <div class="navigation col-sm-3">
             <?php include 'navigation.html' ?>
         </div>
 
-        <div class="feuilleDeMatch col-lg-9">
+        <div class="feuilleDeMatch col-sm-9">
 
             <div class="barreTitre">
                 <h1>Feuille de match</h1>
@@ -31,86 +26,15 @@
 
                     <div class="colone col-sm-5">
 
-                        <div class="liste1" style="margin-bottom: 100px">
+                        <div class="liste1">
 
-                            <div class="col-sm-4">
+                            <h3>Nations</h3>
 
-                                <h4>Nations</h4>
-                                <?php
-                                 $nations = $bd->query('SELECT NationName FROM nations');
+                            <select name ="liste1">
 
-                                    echo "<SELECT id =\"nation1\" Name=\"Nation1\" class=\"form-control\">";
-                                    while ($nation = $nations->fetch()){
-                                        echo "<OPTION Value=\"".$nation['NationName']."\">".$nation['NationName']."</OPTION>";
-                                    }
-                                    echo "</SELECT>";
-                                ?>
-                                </br>
-                                <?php
-                                    $nations2 = $bd->query('SELECT NationName FROM nations');
-
-                                    echo "<SELECT id =\"nation2\" Name=\"Nation2\" class=\"form-control\">";
-                                    while ($nation = $nations2->fetch()){
-                                        echo "<OPTION Value=\"".$nation['NationName']."\">".$nation['NationName']."</OPTION>";
-                                    }
-                                    echo "</SELECT>";
-                                ?>
-
-                            </div>
-
-                            <div class="col-sm-4">
-
-                                <h4>Championnats</h4>
-                                <?php
-                                    $championschips = $bd->query('SELECT ChampionshipName FROM championships');
-
-                                    echo "<SELECT id =\"championnat1\" Name=\"Championship1\"  class=\"form-control\" onchange='activListChampionnat()'>";
-                                    while ($championschip = $championschips->fetch()){
-                                        echo "<OPTION Value=\"".$championschip['ChampionshipName']."\">".$championschip['ChampionshipName']."</OPTION>";
-                                    }
-                                    echo "</SELECT>";
-                                ?>
-                                </br>
-                                <?php
-                                    $championschips2 = $bd->query('SELECT ChampionshipName FROM championships');
-
-                                    echo "<SELECT id =\"championnat2\" Name=\"Championship2\"  class=\"form-control\" onchange='activListChampionnat()'>";
-                                    while ($championschip = $championschips2->fetch()){
-                                        echo "<OPTION Value=\"".$championschip['ChampionshipName']."\">".$championschip['ChampionshipName']."</OPTION>";
-                                    }
-                                    echo "</SELECT>";
-                                ?>
-
-                            </div>
-
-                            <div class="col-sm-4">
-
-                                <h4>Clubs</h4>
-                                <?php
-                                    $clubs = $bd->query('SELECT ClubName FROM clubs');
-
-                                    echo "<SELECT id =\"club1\" Name=\"Club1\"  class=\"form-control\" onchange='activListClub()'>";
-                                    while ($club = $clubs->fetch()){
-                                        echo "<OPTION Value=\"".$club['ClubName']."\">".$club['ClubName']."</OPTION>";
-                                    }
-                                    echo "</SELECT>";
-                                ?>
-                                </br>
-                                <?php
-                                    $clubs2 = $bd->query('SELECT ClubName FROM clubs');
-
-                                    echo "<SELECT id =\"club2\" Name=\"Club2\"  class=\"form-control\" onchange='activListClub()'>";
-                                    while ($club = $clubs2->fetch()){
-                                        echo "<OPTION Value=\"".$club['ClubName']."\">".$club['ClubName']."</OPTION>";
-                                    }
-                                    echo "</SELECT>";
-                                ?>
-
-                            </div>
+                            </select>
 
                         </div>
-
-                        </br>
 
                         <div class="effectif">
 
@@ -185,75 +109,7 @@
                     </div>
 
                     <div class="colone col-sm-5">
-
-                        <div class="feuilleDeMatch">
-
-                            <h2>Feuille de match</h2>
-
-                            <div class="listeFormation">
-
-                                <div class="col-sm-6">
-                                    <h4>Domicile</h4>
-                                    <?php
-                                    $rep = $bd->query('SELECT FormationName FROM formations');
-                                    echo "<SELECT id =\"formation\" Name=\"Formation\"  class=\"form-control\">";
-                                    while ($donnees = $rep->fetch()){
-                                        echo "<OPTION Value=\"".$donnees['FormationName']."\">".$donnees['FormationName']."</OPTION>";
-                                    }
-                                    echo "</SELECT>";
-                                    ?>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <h4>Extérieur</h4>
-                                    <?php
-                                    $rep = $bd->query('SELECT FormationName FROM formations');
-                                    echo "<SELECT id =\"formation\" Name=\"Formation\"  class=\"form-control\">";
-                                    while ($donnees = $rep->fetch()){
-                                        echo "<OPTION Value=\"".$donnees['FormationName']."\">".$donnees['FormationName']."</OPTION>";
-                                    }
-                                    echo "</SELECT>";
-                                    ?>
-                                </div>
-
-                            </div>
-
-                            <div class="terrainDeFoot">
-                                <img src="../images/terrain.jpg" style=" width: 80%; margin: 20px 10%;"/>
-                            </div>
-
-                        </div>
-
-                        <div class="faitDeMatch">
-
-                            <h2>Faits de match</h2>
-
-                            <div class="col-sm-6 equipe1">
-
-                                <div class="but">
-
-                                </div>
-
-                                <div class="carton">
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-sm-6 equipe2">
-
-                                <div class="but">
-
-                                </div>
-
-                                <div class="carton">
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
+                        <h2>Feuille de match</h2>
                     </div>
 
                 </div>
@@ -263,7 +119,5 @@
         </div>
 
     </body>
-
-    <script src="../js/listeDeroulante.js" type="text/javascript" charset="utf-8"></script>
 
 </html>

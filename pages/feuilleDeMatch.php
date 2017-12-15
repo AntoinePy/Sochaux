@@ -43,7 +43,7 @@ $bd = new PDO('mysql:host=localhost;dbname=tpsochaux;charset=utf8', 'root', '');
                         <?php
                         $nations = $bd->query('SELECT NationName FROM nations');
 
-                        echo "<SELECT id =\"nation1\" Name=\"Nation1\" class=\"form-control\">";
+                        echo "<SELECT id =\"nation1\" Name=\"Nation1\" class=\"form-control\" onchange='activListChampionnat()'>";
                         while ($nation = $nations->fetch()){
                             echo "<OPTION Value=\"".$nation['NationName']."\">".$nation['NationName']."</OPTION>";
                         }
@@ -69,7 +69,7 @@ $bd = new PDO('mysql:host=localhost;dbname=tpsochaux;charset=utf8', 'root', '');
                         <?php
                         $championschips = $bd->query('SELECT ChampionshipName FROM championships');
 
-                        echo "<SELECT id =\"championnat1\" Name=\"Championship1\"  class=\"form-control\" onchange='activListChampionnat()'>";
+                        echo "<SELECT id =\"championnat1\" Name=\"Championship1\"  class=\"form-control\" onchange='activListClub()' disabled>";
                         while ($championschip = $championschips->fetch()){
                             echo "<OPTION Value=\"".$championschip['ChampionshipName']."\">".$championschip['ChampionshipName']."</OPTION>";
                         }
@@ -102,7 +102,7 @@ $bd = new PDO('mysql:host=localhost;dbname=tpsochaux;charset=utf8', 'root', '');
                         <?php
                         $clubs = $bd->query('SELECT ClubName FROM clubs');
 
-                        echo "<SELECT id =\"club1\" Name=\"Club1\"  class=\"form-control\" onchange='activListClub()'>";
+                        echo "<SELECT id =\"club1\" Name=\"Club1\"  class=\"form-control\" disabled>";
                         while ($club = $clubs->fetch()){
                             echo "<OPTION Value=\"".$club['ClubName']."\">".$club['ClubName']."</OPTION>";
                         }

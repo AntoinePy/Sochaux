@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2107d85-da32-40a5-92a5-731c99d7faf6" name="Default" comment="">
+    <list default="true" id="a2107d85-da32-40a5-92a5-731c99d7faf6" name="Default" comment="Début feuille de match + menu de navigation + rangement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/bdd.sql" afterPath="$PROJECT_DIR$/bdd.sql" />
+      <change beforePath="$PROJECT_DIR$/pages/feuilleDeMatch.php" afterPath="$PROJECT_DIR$/pages/feuilleDeMatch.php" />
     </list>
     <ignored path="Sochaux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,12 +20,16 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Sochaux" />
@@ -33,17 +39,92 @@
       <file leaf-file-name="feuilleDeMatch.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/feuilleDeMatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1581">
-              <caret line="93" column="56" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="-280">
+              <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+              <folding>
+                <marker date="1513347308925" expanded="true" signature="1068:1098" ph="SELECT Natio... nations" />
+                <marker date="1513347308925" expanded="true" signature="1579:1609" ph="SELECT Natio... nations" />
+                <marker date="1513347308925" expanded="true" signature="2186:2228" ph="SELECT Champ... championships" />
+                <marker date="1513347308925" expanded="true" signature="2802:2844" ph="SELECT Champ... championships" />
+                <marker date="1513347308925" expanded="true" signature="3491:3517" ph="SELECT ClubN... clubs" />
+                <marker date="1513347308925" expanded="true" signature="4008:4034" ph="SELECT ClubN... clubs" />
+                <marker date="1513347308925" expanded="true" signature="7282:7318" ph="SELECT Forma... formations" />
+                <marker date="1513347308925" expanded="true" signature="7931:7967" ph="SELECT Forma... formations" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feuilleDeMatch.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bdd.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bdd.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+              <folding>
+                <marker date="1513347774236" expanded="true" signature="313:377" ph="/*!40101 SET... " />
+                <marker date="1513347774236" expanded="true" signature="379:445" ph="/*!40101 SET... " />
+                <marker date="1513347774236" expanded="true" signature="447:511" ph="/*!40101 SET... " />
+                <marker date="1513347774236" expanded="true" signature="513:542" ph="/*!40101 SET... " />
+                <marker date="1513347774236" expanded="true" signature="694:904" ph="CREATE TABLE... championships" />
+                <marker date="1513347774236" expanded="true" signature="970:1214" ph="INSERT INTO `championships`... " />
+                <marker date="1513347774236" expanded="true" signature="1319:1587" ph="CREATE TABLE... clubs" />
+                <marker date="1513347774236" expanded="true" signature="1645:1879" ph="INSERT INTO `clubs`... " />
+                <marker date="1513347774236" expanded="true" signature="1990:2252" ph="CREATE TABLE... clubs_matchs" />
+                <marker date="1513347774236" expanded="true" signature="2359:2599" ph="CREATE TABLE... comments" />
+                <marker date="1513347774236" expanded="true" signature="2707:3075" ph="CREATE TABLE... contracts" />
+                <marker date="1513347774236" expanded="true" signature="3184:3878" ph="CREATE TABLE... formations" />
+                <marker date="1513347774236" expanded="true" signature="3941:4528" ph="INSERT INTO `formations`... " />
+                <marker date="1513347774236" expanded="true" signature="4633:5072" ph="CREATE TABLE... matchs" />
+                <marker date="1513347774236" expanded="true" signature="5178:5322" ph="CREATE TABLE... nations" />
+                <marker date="1513347774236" expanded="true" signature="5382:5500" ph="INSERT INTO `nations`... " />
+                <marker date="1513347774236" expanded="true" signature="5606:6268" ph="CREATE TABLE... players" />
+                <marker date="1513347774236" expanded="true" signature="6381:6694" ph="CREATE TABLE... players_matchs" />
+                <marker date="1513347774236" expanded="true" signature="6802:6952" ph="CREATE TABLE... positions" />
+                <marker date="1513347774236" expanded="true" signature="7014:7436" ph="INSERT INTO `positions`... " />
+                <marker date="1513347774236" expanded="true" signature="7546:7702" ph="CREATE TABLE... tournaments" />
+                <marker date="1513347774236" expanded="true" signature="7793:7892" ph="ALTER TABLE `championships`... " />
+                <marker date="1513347774236" expanded="true" signature="7932:8027" ph="ALTER TABLE `clubs`... " />
+                <marker date="1513347774236" expanded="true" signature="8074:8172" ph="ALTER TABLE `clubs_matchs`... " />
+                <marker date="1513347774236" expanded="true" signature="8215:8302" ph="ALTER TABLE `comments`... " />
+                <marker date="1513347774236" expanded="true" signature="8346:8468" ph="ALTER TABLE `contracts`... " />
+                <marker date="1513347774236" expanded="true" signature="8513:8982" ph="ALTER TABLE `formations`... " />
+                <marker date="1513347774236" expanded="true" signature="9023:9182" ph="ALTER TABLE `matchs`... " />
+                <marker date="1513347774236" expanded="true" signature="9224:9276" ph="ALTER TABLE `nations`... " />
+                <marker date="1513347774236" expanded="true" signature="9318:9524" ph="ALTER TABLE `players`... " />
+                <marker date="1513347774236" expanded="true" signature="9573:9675" ph="ALTER TABLE `players_matchs`... " />
+                <marker date="1513347774236" expanded="true" signature="9719:9775" ph="ALTER TABLE `positions`... " />
+                <marker date="1513347774236" expanded="true" signature="9821:9881" ph="ALTER TABLE `tournaments`... " />
+                <marker date="1513347774236" expanded="true" signature="9990:10106" ph="ALTER TABLE `championships`... " />
+                <marker date="1513347774236" expanded="true" signature="10155:10255" ph="ALTER TABLE `clubs`... " />
+                <marker date="1513347774236" expanded="true" signature="10307:10391" ph="ALTER TABLE `comments`... " />
+                <marker date="1513347774236" expanded="true" signature="10444:10529" ph="ALTER TABLE `contracts`... " />
+                <marker date="1513347774236" expanded="true" signature="10583:10694" ph="ALTER TABLE `formations`... " />
+                <marker date="1513347774236" expanded="true" signature="10744:10824" ph="ALTER TABLE `matchs`... " />
+                <marker date="1513347774236" expanded="true" signature="10875:10980" ph="ALTER TABLE `nations`... " />
+                <marker date="1513347774236" expanded="true" signature="11031:11113" ph="ALTER TABLE `players`... " />
+                <marker date="1513347774236" expanded="true" signature="11166:11275" ph="ALTER TABLE `positions`... " />
+                <marker date="1513347774236" expanded="true" signature="11330:11424" ph="ALTER TABLE `tournaments`... " />
+                <marker date="1513347774236" expanded="true" signature="11527:11653" ph="ALTER TABLE `championships`... " />
+                <marker date="1513347774236" expanded="true" signature="11699:11827" ph="ALTER TABLE `clubs`... " />
+                <marker date="1513347774236" expanded="true" signature="11880:12094" ph="ALTER TABLE `clubs_matchs`... " />
+                <marker date="1513347774236" expanded="true" signature="12143:12256" ph="ALTER TABLE `comments`... " />
+                <marker date="1513347774236" expanded="true" signature="12306:12514" ph="ALTER TABLE `contracts`... " />
+                <marker date="1513347774236" expanded="true" signature="12565:13714" ph="ALTER TABLE `formations`... " />
+                <marker date="1513347774236" expanded="true" signature="13761:14061" ph="ALTER TABLE `matchs`... " />
+                <marker date="1513347774236" expanded="true" signature="14109:14520" ph="ALTER TABLE `players`... " />
+                <marker date="1513347774236" expanded="true" signature="14575:14801" ph="ALTER TABLE `players_matchs`... " />
+                <marker date="1513347774236" expanded="true" signature="14812:14874" ph="/*!40101 SET... " />
+                <marker date="1513347774236" expanded="true" signature="14876:14940" ph="/*!40101 SET... " />
+                <marker date="1513347774236" expanded="true" signature="14942:15004" ph="/*!40101 SET... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feuilleDeMatch.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/feuilleDeMatch.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="460">
               <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding />
             </state>
@@ -78,8 +159,9 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/feuilleDeMatch.html" />
         <option value="$PROJECT_DIR$/pages/navigation.html" />
-        <option value="$PROJECT_DIR$/pages/feuilleDeMatch.php" />
         <option value="$PROJECT_DIR$/css/feuilleDeMatch.css" />
+        <option value="$PROJECT_DIR$/pages/feuilleDeMatch.php" />
+        <option value="$PROJECT_DIR$/bdd.sql" />
       </list>
     </option>
   </component>
@@ -91,9 +173,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="697" />
-    <option name="width" value="676" />
-    <option name="height" value="744" />
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1041" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -111,6 +193,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,28 +204,12 @@
             <path>
               <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="fonts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,6 +304,7 @@
       <workItem from="1512580524186" duration="9163000" />
       <workItem from="1512631038608" duration="182000" />
       <workItem from="1513152572738" duration="21000" />
+      <workItem from="1513346759945" duration="1100000" />
     </task>
     <task id="LOCAL-00001" summary="Debut test">
       <created>1512564431133</created>
@@ -280,28 +348,36 @@
       <option name="project" value="LOCAL" />
       <updated>1512590256655</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Début feuille de match + menu de navigation + rangement">
+      <created>1513342514140</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1513342514140</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12626000" />
+    <option name="totallyTimeSpent" value="13909000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1051" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17019667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17239527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.50527906" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.49472097" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -312,6 +388,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -337,9 +423,68 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pages/feuilleDeMatch.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1513347308925" expanded="true" signature="1068:1098" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="1579:1609" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="2186:2228" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="2802:2844" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="3491:3517" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="4008:4034" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="7282:7318" ph="SELECT Forma... formations" />
+            <marker date="1513347308925" expanded="true" signature="7931:7967" ph="SELECT Forma... formations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/feuilleDeMatch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/feuilleDeMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="93" column="37" lean-forward="true" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+          <folding>
+            <marker date="1513347308925" expanded="true" signature="1068:1098" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="1579:1609" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="2186:2228" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="2802:2844" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="3491:3517" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="4008:4034" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="7282:7318" ph="SELECT Forma... formations" />
+            <marker date="1513347308925" expanded="true" signature="7931:7967" ph="SELECT Forma... formations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/feuilleDeMatch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/feuilleDeMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
           <caret line="93" column="56" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
-          <folding />
+          <folding>
+            <marker date="1513347308925" expanded="true" signature="1068:1098" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="1579:1609" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="2186:2228" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="2802:2844" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="3491:3517" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="4008:4034" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="7282:7318" ph="SELECT Forma... formations" />
+            <marker date="1513347308925" expanded="true" signature="7931:7967" ph="SELECT Forma... formations" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -355,7 +500,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1581">
           <caret line="93" column="56" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
-          <folding />
+          <folding>
+            <marker date="1513347308925" expanded="true" signature="1068:1098" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="1579:1609" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="2186:2228" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="2802:2844" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="3491:3517" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="4008:4034" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="7282:7318" ph="SELECT Forma... formations" />
+            <marker date="1513347308925" expanded="true" signature="7931:7967" ph="SELECT Forma... formations" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -402,27 +556,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/laragon/www/tutoLaravel/resources/views/default.blade.php">
+    <entry file="file://C:/laragon/www/tutoLaravel/resources/views/default.blade.php" />
+    <entry file="file://C:/Taquin-MACABREY-Sylvain/Taquin3x3.html" />
+    <entry file="file://C:/Taquin-MACABREY-Sylvain/affichage.php" />
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="68" selection-end-column="8" />
+        <state relative-caret-position="194">
+          <caret line="4" column="24255" lean-forward="false" selection-start-line="4" selection-start-column="24255" selection-end-line="4" selection-end-column="24255" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Taquin-MACABREY-Sylvain/Taquin3x3.html">
+    <entry file="file://$PROJECT_DIR$/pages/navigation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="67" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="67" />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Taquin-MACABREY-Sylvain/affichage.php">
+    <entry file="file://$PROJECT_DIR$/images/VPFCSM.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="10" />
+        <state relative-caret-position="204">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/feuilleDeMatch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/feuilleDeMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding>
+            <marker date="1513347308925" expanded="true" signature="1068:1098" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="1579:1609" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="2186:2228" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="2802:2844" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="3491:3517" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="4008:4034" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="7282:7318" ph="SELECT Forma... formations" />
+            <marker date="1513347308925" expanded="true" signature="7931:7967" ph="SELECT Forma... formations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/feuilleDeMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="56" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
+          <folding>
+            <marker date="1513347308925" expanded="true" signature="1068:1098" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="1579:1609" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="2186:2228" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="2802:2844" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="3491:3517" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="4008:4034" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="7282:7318" ph="SELECT Forma... formations" />
+            <marker date="1513347308925" expanded="true" signature="7931:7967" ph="SELECT Forma... formations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/feuilleDeMatch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/feuilleDeMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="56" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
+          <folding>
+            <marker date="1513347308925" expanded="true" signature="1068:1098" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="1579:1609" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="2186:2228" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="2802:2844" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="3491:3517" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="4008:4034" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="7282:7318" ph="SELECT Forma... formations" />
+            <marker date="1513347308925" expanded="true" signature="7931:7967" ph="SELECT Forma... formations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/feuilleDeMatch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdd.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listeDeroulanteTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/laragon/www/tutoLaravel/resources/views/default.blade.php" />
+    <entry file="file://C:/Taquin-MACABREY-Sylvain/Taquin3x3.html" />
+    <entry file="file://C:/Taquin-MACABREY-Sylvain/affichage.php" />
     <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -451,9 +724,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/feuilleDeMatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="93" column="56" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="-280">
+          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding>
+            <marker date="1513347308925" expanded="true" signature="1068:1098" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="1579:1609" ph="SELECT Natio... nations" />
+            <marker date="1513347308925" expanded="true" signature="2186:2228" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="2802:2844" ph="SELECT Champ... championships" />
+            <marker date="1513347308925" expanded="true" signature="3491:3517" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="4008:4034" ph="SELECT ClubN... clubs" />
+            <marker date="1513347308925" expanded="true" signature="7282:7318" ph="SELECT Forma... formations" />
+            <marker date="1513347308925" expanded="true" signature="7931:7967" ph="SELECT Forma... formations" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -464,9 +746,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/feuilleDeMatch.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
+        <state relative-caret-position="460">
           <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdd.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+          <folding>
+            <marker date="1513347774236" expanded="true" signature="313:377" ph="/*!40101 SET... " />
+            <marker date="1513347774236" expanded="true" signature="379:445" ph="/*!40101 SET... " />
+            <marker date="1513347774236" expanded="true" signature="447:511" ph="/*!40101 SET... " />
+            <marker date="1513347774236" expanded="true" signature="513:542" ph="/*!40101 SET... " />
+            <marker date="1513347774236" expanded="true" signature="694:904" ph="CREATE TABLE... championships" />
+            <marker date="1513347774236" expanded="true" signature="970:1214" ph="INSERT INTO `championships`... " />
+            <marker date="1513347774236" expanded="true" signature="1319:1587" ph="CREATE TABLE... clubs" />
+            <marker date="1513347774236" expanded="true" signature="1645:1879" ph="INSERT INTO `clubs`... " />
+            <marker date="1513347774236" expanded="true" signature="1990:2252" ph="CREATE TABLE... clubs_matchs" />
+            <marker date="1513347774236" expanded="true" signature="2359:2599" ph="CREATE TABLE... comments" />
+            <marker date="1513347774236" expanded="true" signature="2707:3075" ph="CREATE TABLE... contracts" />
+            <marker date="1513347774236" expanded="true" signature="3184:3878" ph="CREATE TABLE... formations" />
+            <marker date="1513347774236" expanded="true" signature="3941:4528" ph="INSERT INTO `formations`... " />
+            <marker date="1513347774236" expanded="true" signature="4633:5072" ph="CREATE TABLE... matchs" />
+            <marker date="1513347774236" expanded="true" signature="5178:5322" ph="CREATE TABLE... nations" />
+            <marker date="1513347774236" expanded="true" signature="5382:5500" ph="INSERT INTO `nations`... " />
+            <marker date="1513347774236" expanded="true" signature="5606:6268" ph="CREATE TABLE... players" />
+            <marker date="1513347774236" expanded="true" signature="6381:6694" ph="CREATE TABLE... players_matchs" />
+            <marker date="1513347774236" expanded="true" signature="6802:6952" ph="CREATE TABLE... positions" />
+            <marker date="1513347774236" expanded="true" signature="7014:7436" ph="INSERT INTO `positions`... " />
+            <marker date="1513347774236" expanded="true" signature="7546:7702" ph="CREATE TABLE... tournaments" />
+            <marker date="1513347774236" expanded="true" signature="7793:7892" ph="ALTER TABLE `championships`... " />
+            <marker date="1513347774236" expanded="true" signature="7932:8027" ph="ALTER TABLE `clubs`... " />
+            <marker date="1513347774236" expanded="true" signature="8074:8172" ph="ALTER TABLE `clubs_matchs`... " />
+            <marker date="1513347774236" expanded="true" signature="8215:8302" ph="ALTER TABLE `comments`... " />
+            <marker date="1513347774236" expanded="true" signature="8346:8468" ph="ALTER TABLE `contracts`... " />
+            <marker date="1513347774236" expanded="true" signature="8513:8982" ph="ALTER TABLE `formations`... " />
+            <marker date="1513347774236" expanded="true" signature="9023:9182" ph="ALTER TABLE `matchs`... " />
+            <marker date="1513347774236" expanded="true" signature="9224:9276" ph="ALTER TABLE `nations`... " />
+            <marker date="1513347774236" expanded="true" signature="9318:9524" ph="ALTER TABLE `players`... " />
+            <marker date="1513347774236" expanded="true" signature="9573:9675" ph="ALTER TABLE `players_matchs`... " />
+            <marker date="1513347774236" expanded="true" signature="9719:9775" ph="ALTER TABLE `positions`... " />
+            <marker date="1513347774236" expanded="true" signature="9821:9881" ph="ALTER TABLE `tournaments`... " />
+            <marker date="1513347774236" expanded="true" signature="9990:10106" ph="ALTER TABLE `championships`... " />
+            <marker date="1513347774236" expanded="true" signature="10155:10255" ph="ALTER TABLE `clubs`... " />
+            <marker date="1513347774236" expanded="true" signature="10307:10391" ph="ALTER TABLE `comments`... " />
+            <marker date="1513347774236" expanded="true" signature="10444:10529" ph="ALTER TABLE `contracts`... " />
+            <marker date="1513347774236" expanded="true" signature="10583:10694" ph="ALTER TABLE `formations`... " />
+            <marker date="1513347774236" expanded="true" signature="10744:10824" ph="ALTER TABLE `matchs`... " />
+            <marker date="1513347774236" expanded="true" signature="10875:10980" ph="ALTER TABLE `nations`... " />
+            <marker date="1513347774236" expanded="true" signature="11031:11113" ph="ALTER TABLE `players`... " />
+            <marker date="1513347774236" expanded="true" signature="11166:11275" ph="ALTER TABLE `positions`... " />
+            <marker date="1513347774236" expanded="true" signature="11330:11424" ph="ALTER TABLE `tournaments`... " />
+            <marker date="1513347774236" expanded="true" signature="11527:11653" ph="ALTER TABLE `championships`... " />
+            <marker date="1513347774236" expanded="true" signature="11699:11827" ph="ALTER TABLE `clubs`... " />
+            <marker date="1513347774236" expanded="true" signature="11880:12094" ph="ALTER TABLE `clubs_matchs`... " />
+            <marker date="1513347774236" expanded="true" signature="12143:12256" ph="ALTER TABLE `comments`... " />
+            <marker date="1513347774236" expanded="true" signature="12306:12514" ph="ALTER TABLE `contracts`... " />
+            <marker date="1513347774236" expanded="true" signature="12565:13714" ph="ALTER TABLE `formations`... " />
+            <marker date="1513347774236" expanded="true" signature="13761:14061" ph="ALTER TABLE `matchs`... " />
+            <marker date="1513347774236" expanded="true" signature="14109:14520" ph="ALTER TABLE `players`... " />
+            <marker date="1513347774236" expanded="true" signature="14575:14801" ph="ALTER TABLE `players_matchs`... " />
+            <marker date="1513347774236" expanded="true" signature="14812:14874" ph="/*!40101 SET... " />
+            <marker date="1513347774236" expanded="true" signature="14876:14940" ph="/*!40101 SET... " />
+            <marker date="1513347774236" expanded="true" signature="14942:15004" ph="/*!40101 SET... " />
+          </folding>
         </state>
       </provider>
     </entry>

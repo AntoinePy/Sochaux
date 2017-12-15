@@ -11,8 +11,9 @@
 <body>
 
 <?php
-$bd = new PDO('mysql:host=localhost;dbname=fcsochaux;charset=utf8', 'root', 'dgfn85**');
+//$bd = new PDO('mysql:host=localhost;dbname=fcsochaux;charset=utf8', 'root', 'dgfn85**');
 //$bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
+$bd = new PDO('mysql:host=localhost;dbname=baselucas;charset=utf8', 'root', '');
 ?>
 
 <div class="navigation col-lg-3">

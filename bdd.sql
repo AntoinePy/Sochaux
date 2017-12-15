@@ -40,7 +40,14 @@ CREATE TABLE `championships` (
 
 INSERT INTO `championships` (`ChampionshipID`, `ChampionshipName`, `NationID`) VALUES
 (2, 'Ligue 1', 6),
-(3, 'Ligue 2', 6);
+(3, 'Ligue 2', 6),
+(4, 'LaLiga', 7),
+(5, 'LaLiga 2', 7),
+(6, 'Bundesliga', 9),
+(7, 'Bundesliga 2', 9),
+(7, 'Serie A', 8),
+(7, 'Serie B', 8);
+
 
 -- --------------------------------------------------------
 

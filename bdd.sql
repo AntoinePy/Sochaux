@@ -45,8 +45,8 @@ INSERT INTO `championships` (`ChampionshipID`, `ChampionshipName`, `NationID`) V
 (5, 'LaLiga 2', 7),
 (6, 'Bundesliga', 9),
 (7, 'Bundesliga 2', 9),
-(7, 'Serie A', 8),
-(7, 'Serie B', 8);
+(8, 'Serie A', 8),
+(9, 'Serie B', 8);
 
 
 -- --------------------------------------------------------
@@ -71,7 +71,17 @@ INSERT INTO `clubs` (`ClubID`, `ClubName`, `ClubVille`, `ClubAdress`, `Champions
 (1, 'FCSM', 'Sochaux', NULL, 3),
 (2, 'OM', 'marseille', NULL, 2),
 (3, 'PSG', 'paris saint germain', NULL, 2),
-(4, 'DFCO', 'Dijon', NULL, 2);
+(4, 'DFCO', 'Dijon', NULL, 2),
+(5, 'Barcelone', NULL, NULL, 4),
+(6, 'Real Madrid', NULL, NULL, 4),
+(7, 'Osasuna', NULL, NULL, 5),
+(8, 'Cadix', NULL, NULL, 5),
+(9, 'Bayern Munich', NULL, NULL, 6),
+(10, 'Dortmund', NULL, NULL, 6),
+(11, 'Juventus turin', NULL, NULL, 8),
+(12, 'Inter Milan', NULL, NULL, 8),
+(13, 'Palerme', NULL, NULL, 9),
+(14, 'Parme', NULL, NULL, 9);
 
 -- --------------------------------------------------------
 

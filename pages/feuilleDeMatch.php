@@ -6,6 +6,8 @@
     <title>Feuille de match</title>
     <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <link href="../css/feuilleDeMatch.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="../js/listeDeroulante.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
@@ -13,7 +15,7 @@
 <?php
 //$bd = new PDO('mysql:host=localhost;dbname=fcsochaux;charset=utf8', 'root', 'dgfn85**');
 //$bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
-$bd = new PDO('mysql:host=localhost;dbname=baselucas;charset=utf8', 'root', '');
+$bd = new PDO('mysql:host=localhost;dbname=tpsochaux;charset=utf8', 'root', '');
 ?>
 
 <div class="navigation col-lg-3">
@@ -30,7 +32,7 @@ $bd = new PDO('mysql:host=localhost;dbname=baselucas;charset=utf8', 'root', '');
 
         <div class="row">
 
-            <div class="colone col-sm-5">
+            <div class="colone col-sm-6">
 
                 <div class="liste1" style="margin-bottom: 100px">
 
@@ -47,6 +49,8 @@ $bd = new PDO('mysql:host=localhost;dbname=baselucas;charset=utf8', 'root', '');
                         echo "</SELECT>";
                         ?>
                         </br>
+                        </br>
+
                         <?php
                         $nations2 = $bd->query('SELECT NationName FROM nations');
 
@@ -72,14 +76,23 @@ $bd = new PDO('mysql:host=localhost;dbname=baselucas;charset=utf8', 'root', '');
                         echo "</SELECT>";
                         ?>
                         </br>
+                        <div class="addChamp">
+                            <form action="../traitementPHP/ajout_fdm.php" method="post">
+                                <label>Add champ</label> : <input type="text" name="championnat" />
+                                <input name="valider" type="submit" value="Ajouter" />
+                            </form>
+
+                        </div>
+
+
                         <?php
-                        $championschips2 = $bd->query('SELECT ChampionshipName FROM championships');
+                       /* $championschips2 = $bd->query('SELECT ChampionshipName FROM championships');
 
                         echo "<SELECT id =\"championnat2\" Name=\"Championship2\"  class=\"form-control\" onchange='activListChampionnat()'>";
                         while ($championschip = $championschips2->fetch()){
                             echo "<OPTION Value=\"".$championschip['ChampionshipName']."\">".$championschip['ChampionshipName']."</OPTION>";
                         }
-                        echo "</SELECT>";
+                        echo "</SELECT>";*/
                         ?>
 
                     </div>
@@ -96,6 +109,7 @@ $bd = new PDO('mysql:host=localhost;dbname=baselucas;charset=utf8', 'root', '');
                         }
                         echo "</SELECT>";
                         ?>
+                        </br>
                         </br>
                         <?php
                         $clubs2 = $bd->query('SELECT ClubName FROM clubs');
@@ -114,7 +128,9 @@ $bd = new PDO('mysql:host=localhost;dbname=baselucas;charset=utf8', 'root', '');
                 </br>
 
                 <div class="effectif">
-
+                    </br>
+                    </br>
+                    </br>
                     <h2>Effectifs</h2>
 
 
@@ -264,7 +280,4 @@ $bd = new PDO('mysql:host=localhost;dbname=baselucas;charset=utf8', 'root', '');
 </div>
 
 </body>
-
-<script src="../js/listeDeroulante.js" type="text/javascript" charset="utf-8"></script>
-
 </html>

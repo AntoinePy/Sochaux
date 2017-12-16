@@ -12,7 +12,7 @@ if (isset ($_POST['valider']))
     {
         // Connexion à la bdd
         $db = mysqli_connect("localhost", "root","") or die("Echec de connexion au serveur.");;
-        mysqli_select_db($db,"tpsochaux") or die("Echec de sélection de la base.");;
+        mysqli_select_db($db,"apy6") or die("Echec de sélection de la base.");;
 
         // Insertion dans la bdd
         $query = "insert into championships (ChampionshipID,ChampionshipName,NationID) values(NULL,'$champ',NULL)";

@@ -15,7 +15,7 @@
 <?php
 //$bd = new PDO('mysql:host=localhost;dbname=fcsochaux;charset=utf8', 'root', 'dgfn85**');
 //$bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
-$bd = new PDO('mysql:host=localhost;dbname=tpsochaux;charset=utf8', 'root', '');
+$bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
 ?>
 
 <div class="navigation col-lg-3">
@@ -42,13 +42,13 @@ $bd = new PDO('mysql:host=localhost;dbname=tpsochaux;charset=utf8', 'root', '');
 
                         <?php
                         $nations = $bd->query('SELECT NationName FROM nations');
-
                         echo "<SELECT id =\"nation1\" Name=\"Nation1\" class=\"form-control\" onchange='activListChampionnat()'>";
                         while ($nation = $nations->fetch()){
                             echo "<OPTION Value=\"".$nation['NationName']."\">".$nation['NationName']."</OPTION>";
                         }
                         echo "</SELECT>";
                         ?>
+
                         </br>
                         </br>
                         <?php

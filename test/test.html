@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+</head>
+<body>
+<form method="post">
+
+    <label for="pays">Pays :</label><select name="pays" id="pays" required></select>
+
+    <label for="championnat">Championnat :</label><select name="championnat" id="championnat" required></select>
+
+    <input type="submit" value="Envoyer" />
+
+</form>
+<script>
+
+    $(function () {
+
+        // dès le chargement de la page, on remplit la liste des pays
+        remplirPays();
+
+        $("#pays").change(function (event) {
+
+            remplirChampionnats();
+
+        });
+
+    });
+
+
+
+    function remplirPays() {
+
+        var jqxhr = $.ajax({
+
+            type: 'get', // on n'a pas de paramètres à envoyer alors GET est sécuritaire
+
+            url: 'generer-options-nations.php',
+
+            dataType: "html", // le fichier php fait un echo de code HTML
+
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+
+            data: ""
+
+        })
+                .done(function (response, textStatus, jqXHR) {
+                    // Appel réussi : on affiche le code HTML généré par le code serveur
+                    if ("REQUETE" == response) {
+                        $("#pays").html("<option value=''>Un problème technique nous empêche de retrouver les pays (code R).</option>");
+                    }
+                    else if ("AUCUNEDONNEE" == response) {
+                        $("#pays").html("<option value=''>Il n'y a actuellement aucun pays dans le système.</option>");
+                    }
+                    else if ("NONDETERMINE" == response) {
+                        $("#pays").html("<option value=''>Un problème technique nous empêche de retrouver les pays (code I).</option>");
+                    }
+                    else if (response.indexOf('<option') != 0) {
+                        // la chaîne ne débute pas par <option donc c'est probablement un message d'erreur PHP retourné par AJAX
+                        $("#pays").html("<option value=''>Un problème technique nous empêche de retrouver les pays (code E).</option>");
+                    }
+                    else {
+                        $("#pays").html("<option value=''>Veuillez choisir...</option>" + response);
+                    }
+                })
+                .fail(function (jqXHR, textStatus, errorThrown) {
+                    // Réagit si le code serveur n'a pas pu être appelé par AJAX, s'il a planté ou s'il n'a pas retourné le bon type de données
+                    $("#pays").html("<option value=''>Un problème technique nous empêche de retrouver les pays (code A).</option>");
+                });
+    }
+    function remplirChampionnats() {
+
+        var pays = $('#pays').val();
+
+        var dataString = 'pays=' + pays;
+
+
+
+        var jqxhr = $.ajax({
+
+            type: 'post',
+
+            url: 'generer-options-championnats.php',
+
+            dataType: "html", // le fichier php fait un echo de code HTML
+
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+
+            data: dataString
+
+        })
+
+                .done(function (response, textStatus, jqXHR) {
+
+                    // Appel réussi : on affiche le code HTML généré par le code serveur
+
+                    if ("PARAMETRE" == response) {
+                        $("#championnat").html("<option value=''>Le pays sélectionné n'est pas valide.</option>");
+                    }
+                    else if ("REQUETE" == response) {
+                        $("#championnat").html("<option value=''>Un problème technique nous empêche de retrouver les championnats (code R).</option>");
+                    }
+                    else if ("AUCUNEDONNEE" == response) {
+                        $("#championnat").html("<option value=''>Il n'y a actuellement aucun championnat dans le système.</option>");
+                    }
+                    else if ("NONDETERMINE" == response) {
+                        $("#championnat").html("<option value=''>Un problème technique nous empêche de retrouver les championnats (code I).</option>");
+                    }
+                    else if (response.indexOf('<option') != 0) {
+                        // la chaîne ne débute pas par <option donc c'est probablement un message d'erreur PHP retourné par AJAX
+                        $("#championnat").html("<option value=''>Un problème technique nous empêche de retrouver les championnats (code E).</option>");
+                    }
+                    else {
+                        $("#championnat").html("<option value=''>Veuillez choisir...</option>" + response);
+                    }
+                })
+                .fail(function (jqXHR, textStatus, errorThrown) {
+
+                    // Réagit si le code serveur n'a pas pu être appelé par AJAX, s'il a planté ou s'il n'a pas retourné le bon type de données
+
+                    $("#championnat").html("<option value=''>Un problème technique nous empêche de retrouver les championnats (code A).</option>");
+                });
+    }
+</script>
+
+</body>
+</html>

@@ -13,9 +13,7 @@
 <body>
 
 <?php
-//$bd = new PDO('mysql:host=localhost;dbname=fcsochaux;charset=utf8', 'root', 'dgfn85**');
-//$bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
-$bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
+    include_once('../traitementPHP/connection.php'); // connection base de données
 ?>
 
 <div class="navigation col-lg-3">
@@ -41,25 +39,22 @@ $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
                         <h4>Nations</h4>
 
                         <?php
-                        $nations = $bd->query('SELECT NationName FROM nations');
-                        echo "<SELECT id =\"nation1\" Name=\"Nation1\" class=\"form-control\" onchange='activListChampionnat()'>";
-                        while ($nation = $nations->fetch()){
-                            echo "<OPTION Value=\"".$nation['NationName']."\">".$nation['NationName']."</OPTION>";
-                        }
-                        echo "</SELECT>";
-                        ?>
+                        $nations = $bd->query('SELECT * FROM nations'); ?>
+                        <SELECT id ="nation1" Name="Nation1" class="form-control" onchange='activListChampionnat(1, this.value)'>
+                        <?php while ($nation = $nations->fetch()){ ?>
+                            <OPTION value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
+                        <?php } ?>
+                        </SELECT>
 
                         </br>
-                        </br>
+
                         <?php
-                        $nations2 = $bd->query('SELECT NationName FROM nations');
-
-                        echo "<SELECT id =\"nation2\" Name=\"Nation2\" class=\"form-control\">";
-                        while ($nation = $nations2->fetch()){
-                            echo "<OPTION Value=\"".$nation['NationName']."\">".$nation['NationName']."</OPTION>";
-                        }
-                        echo "</SELECT>";
-                        ?>
+                        $nations2 = $bd->query('SELECT * FROM nations'); ?>
+                        <SELECT id ="nation2" Name="Nation2" class="form-control" onchange='activListChampionnat(2, this.value)'>
+                            <?php while ($nation = $nations2->fetch()){ ?>
+                                <OPTION value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
+                            <?php } ?>
+                        </SELECT>
 
                     </div>
 
@@ -67,14 +62,14 @@ $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
 
                         <h4>Championnats</h4>
                         <?php
-                        $championschips = $bd->query('SELECT ChampionshipName FROM championships');
+                        //$championschips = $bd->query('SELECT ChampionshipName FROM championships'); ?>
 
-                        echo "<SELECT id =\"championnat1\" Name=\"Championship1\"  class=\"form-control\" onchange='activListClub()' disabled>";
-                        while ($championschip = $championschips->fetch()){
-                            echo "<OPTION Value=\"".$championschip['ChampionshipName']."\">".$championschip['ChampionshipName']."</OPTION>";
-                        }
-                        echo "</SELECT>";
-                        ?>
+                        <SELECT id ="championnat1" Name="Championship1"  class="form-control" onchange='activListClub(1, this.value)' disabled>"</SELECT>
+
+                        </br>
+
+                        <SELECT id ="championnat2" Name="Championship2"  class="form-control" onchange='activListClub(2, this.value)' disabled>"</SELECT>
+
                         </br>
                         <div class="addChamp">
                             <form action="../traitementPHP/ajout_fdm.php" method="post">
@@ -99,26 +94,12 @@ $bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
                     <div class="col-sm-4">
 
                         <h4>Clubs</h4>
-                        <?php
-                        $clubs = $bd->query('SELECT ClubName FROM clubs');
 
-                        echo "<SELECT id =\"club1\" Name=\"Club1\"  class=\"form-control\" disabled>";
-                        while ($club = $clubs->fetch()){
-                            echo "<OPTION Value=\"".$club['ClubName']."\">".$club['ClubName']."</OPTION>";
-                        }
-                        echo "</SELECT>";
-                        ?>
-                        </br>
-                        </br>
-                        <?php
-                        $clubs2 = $bd->query('SELECT ClubName FROM clubs');
+                        <SELECT id ="club1" Name="Club1"  class="form-control"  disabled>"</SELECT>
 
-                        echo "<SELECT id =\"club2\" Name=\"Club2\"  class=\"form-control\" onchange='activListClub()'>";
-                        while ($club = $clubs2->fetch()){
-                            echo "<OPTION Value=\"".$club['ClubName']."\">".$club['ClubName']."</OPTION>";
-                        }
-                        echo "</SELECT>";
-                        ?>
+                        </br>
+
+                        <SELECT id ="club2" Name="Club2"  class="form-control"  disabled>"</SELECT>
 
                     </div>
 

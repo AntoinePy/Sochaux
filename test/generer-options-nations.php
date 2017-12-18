@@ -11,7 +11,7 @@ $requete = "SELECT NationName FROM nations";
 $resultat = $bd->query($requete);
 if($resultat){
         while ($enreg = $resultat->fetch()) {
-            $retour .= "<option value='$enreg[0]'>$enreg[1]</option>";
+            $retour = "<option value='$enreg[0]'>$enreg[1]</option>";
         }
 }else{
     $retour = "REQUETE";

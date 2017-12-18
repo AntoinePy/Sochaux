@@ -61,8 +61,6 @@
                     <div class="col-sm-4">
 
                         <h4>Championnats</h4>
-                        <?php
-                        //$championschips = $bd->query('SELECT ChampionshipName FROM championships'); ?>
 
                         <SELECT id ="championnat1" Name="Championship1"  class="form-control" onchange='activListClub(1, this.value)' disabled>"</SELECT>
 
@@ -77,17 +75,6 @@
                                 <input name="valider" type="submit" value="Ajouter" />
                             </form>
                         </div>
-
-
-                        <?php
-                       /* $championschips2 = $bd->query('SELECT ChampionshipName FROM championships');
-
-                        echo "<SELECT id =\"championnat2\" Name=\"Championship2\"  class=\"form-control\" onchange='activListChampionnat()'>";
-                        while ($championschip = $championschips2->fetch()){
-                            echo "<OPTION Value=\"".$championschip['ChampionshipName']."\">".$championschip['ChampionshipName']."</OPTION>";
-                        }
-                        echo "</SELECT>";*/
-                        ?>
 
                     </div>
 

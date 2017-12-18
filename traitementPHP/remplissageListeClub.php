@@ -6,15 +6,15 @@
  * Time: 20:01
  */
 
-include_once "connection.php";
+    include_once "connection.php";
 
-$idChampionnat = $_GET['idChampionnat'];
+    $idChampionnat = $_GET['idChampionnat'];
 
-$sql = "SELECT * FROM clubs WHERE ChampionshipID =" .$idChampionnat. " ORDER BY ClubName";
+    $sql = "SELECT * FROM clubs WHERE ChampionshipID =" .$idChampionnat. " ORDER BY ClubName";
 
-$clubs = $bd->query($sql);
-$clubs->setFetchMode(PDO::FETCH_ASSOC);
+    $clubs = $bd->query($sql);
+    $clubs->setFetchMode(PDO::FETCH_ASSOC);
 
-while ($club = $clubs->fetch()) { ?>
-    <OPTION value= <? $club['ClubID'] ?> > <? $club['ClubName'] ?></OPTION>;
-<? }
+    while ($club = $clubs->fetch()) { ?>
+        <OPTION value= <?php echo $club['ClubID']; ?> > <?php echo $club['ClubName']; ?></OPTION>;
+    <?php }

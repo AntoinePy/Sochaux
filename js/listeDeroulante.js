@@ -1,5 +1,5 @@
 /**
- * Created by ANTOINE on 12/12/2017.
+ * Created by Sylvain on 12/12/2017.
  */
 
 
@@ -29,7 +29,6 @@ function activListChampionnat(numeroListe, idNation){
 }
 
 function activListClub(numeroListe, idChampionnat){
-    alert(idChampionnat);
     switch (numeroListe) {
         case 1:
             document.getElementById("club1").disabled = document.getElementById("championnat1").value === "";

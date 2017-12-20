@@ -1,10 +1,11 @@
-
 <?php
+
 $info = '';
 
 if (isset ($_POST['valider']))
 {
     $champ = $_POST['championnat'];
+    echo $champ;
 
     if (empty ($champ))
         $info = 'Veuillez renseigner ce champs';
@@ -12,7 +13,7 @@ if (isset ($_POST['valider']))
     {
         // Connexion à la bdd
         $db = mysqli_connect("localhost", "root","") or die("Echec de connexion au serveur.");;
-        mysqli_select_db($db,"apy6") or die("Echec de sélection de la base.");;
+        mysqli_select_db($db,"tpsochaux") or die("Echec de sélection de la base.");
 
         // Insertion dans la bdd
         $query = "insert into championships (ChampionshipID,ChampionshipName,NationID) values(NULL,'$champ',NULL)";

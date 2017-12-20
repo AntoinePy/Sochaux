@@ -16,11 +16,11 @@
     include_once('../traitementPHP/connection.php'); // connection base de données
 ?>
 
-<div class="navigation col-lg-2">
+<div class="navigation col-lg-3">
     <?php include 'navigation.html' ?>
 </div>
 
-<div class="feuilleDeMatch col-lg-10">
+<div class="feuilleDeMatch col-lg-9">
 
     <div class="barreTitre">
         <h1>Feuille de match</h1>
@@ -41,7 +41,6 @@
                         <?php
                         $nations = $bd->query('SELECT * FROM nations'); ?>
                         <SELECT id ="nation1" Name="Nation1" class="form-control" onchange='activListChampionnat(1, this.value)'>
-                            <option value=""></option>
                         <?php while ($nation = $nations->fetch()){ ?>
                             <OPTION value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
                         <?php } ?>
@@ -56,6 +55,13 @@
                                 <OPTION value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
                             <?php } ?>
                         </SELECT>
+                        </br>
+                        <div class="addChamp">
+                            <form action="../traitementPHP/ajout_fdm.php" method="post">
+                                <label>Ajout Nation</label> : <input type="text" name="nation" />
+                                <input name="validerNation" type="submit" value="Ajouter" />
+                            </form>
+                        </div>
 
                     </div>
 
@@ -72,8 +78,9 @@
                         </br>
                         <div class="addChamp">
                             <form action="../traitementPHP/ajout_fdm.php" method="post">
-                                <label>Add champ</label> : <input type="text" name="championnat" />
-                                <input name="valider" type="submit" value="Ajouter" />
+                                <label>Ajout Championnat</label> : <input type="text" name="championnat" />
+                                <input type="hidden" name="idnation" value="" id="hiddennation">
+                                <input name="validerChampionnat" type="submit" value="Ajouter" />
                             </form>
                         </div>
 
@@ -88,6 +95,14 @@
                         </br>
 
                         <SELECT id ="club2" Name="Club2"  class="form-control"  disabled>"</SELECT>
+                        </br>
+                        <div class="addChamp">
+                            <form action="../traitementPHP/ajout_fdm.php" method="post">
+                                <label>Ajout Club</label> : <input type="text" name="club" />
+                                <input type="hidden" name="idchamp" value="" id="hiddenchamp">
+                                <input name="validerClub" type="submit" value="Ajouter" />
+                            </form>
+                        </div>
 
                     </div>
 

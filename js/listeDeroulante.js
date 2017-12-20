@@ -1,5 +1,5 @@
 /**
- * Created by Sylvain on 12/12/2017.
+ * Created by ANTOINE on 12/12/2017.
  */
 
 
@@ -7,6 +7,7 @@ function activListChampionnat(numeroListe, idNation){
     switch (numeroListe) {
         case 1:
             document.getElementById("championnat1").disabled = document.getElementById("nation1").value === "";
+            document.getElementById("hiddennation").value=document.getElementById("nation1").value;
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -29,9 +30,11 @@ function activListChampionnat(numeroListe, idNation){
 }
 
 function activListClub(numeroListe, idChampionnat){
+    alert(idChampionnat);
     switch (numeroListe) {
         case 1:
             document.getElementById("club1").disabled = document.getElementById("championnat1").value === "";
+            document.getElementById("hiddenchamp").value=document.getElementById("championnat1").value;
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {

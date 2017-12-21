@@ -16,11 +16,11 @@
     include_once('../traitementPHP/connection.php'); // connection base de données
 ?>
 
-<div class="navigation col-lg-3">
+<div class="navigation col-lg-2">
     <?php include 'navigation.html' ?>
 </div>
 
-<div class="feuilleDeMatch col-lg-9">
+<div class="feuilleDeMatch col-lg-10">
 
     <div class="barreTitre">
         <h1>Feuille de match</h1>
@@ -41,6 +41,7 @@
                         <?php
                         $nations = $bd->query('SELECT * FROM nations'); ?>
                         <SELECT id ="nation1" Name="Nation1" class="form-control" onchange='activListChampionnat(1, this.value)'>
+                            <option> </option>
                         <?php while ($nation = $nations->fetch()){ ?>
                             <OPTION value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
                         <?php } ?>
@@ -51,6 +52,7 @@
                         <?php
                         $nations2 = $bd->query('SELECT * FROM nations'); ?>
                         <SELECT id ="nation2" Name="Nation2" class="form-control" onchange='activListChampionnat(2, this.value)'>
+                            <option> </option>
                             <?php while ($nation = $nations2->fetch()){ ?>
                                 <OPTION value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
                             <?php } ?>
@@ -219,7 +221,7 @@
                     </div>
 
                     <div class="terrainDeFoot">
-                        <img src="../images/terrain.jpg" style=" width: 80%; margin: 20px 10%;"/>
+                        <img src="../images/terrain-foot.png" style=" width: 80%; margin: 20px 10%;"/>
                     </div>
 
                 </div>

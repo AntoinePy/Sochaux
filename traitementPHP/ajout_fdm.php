@@ -75,4 +75,5 @@ if (isset ($_POST['validerClub']))
         //mysqli_close();
     }
 }
+echo $info;
 ?>

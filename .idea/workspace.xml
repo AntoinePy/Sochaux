@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a2107d85-da32-40a5-92a5-731c99d7faf6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pages/feuilleDeMatch.php" afterPath="$PROJECT_DIR$/pages/feuilleDeMatch.php" />
-      <change beforePath="$PROJECT_DIR$/traitementPHP/ajout_fdm.php" afterPath="$PROJECT_DIR$/traitementPHP/ajout_fdm.php" />
-      <change beforePath="$PROJECT_DIR$/traitementPHP/remplissageListeChampionnat.php" afterPath="$PROJECT_DIR$/traitementPHP/remplissageListeChampionnat.php" />
-      <change beforePath="$PROJECT_DIR$/traitementPHP/remplissageListeClub.php" afterPath="$PROJECT_DIR$/traitementPHP/remplissageListeClub.php" />
     </list>
     <ignored path="Sochaux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -432,7 +428,7 @@
       <workItem from="1513610342935" duration="9000" />
       <workItem from="1513779276214" duration="3420000" />
       <workItem from="1513840455035" duration="12000" />
-      <workItem from="1513862305764" duration="3714000" />
+      <workItem from="1513862305764" duration="3749000" />
     </task>
     <task id="LOCAL-00001" summary="Debut test">
       <created>1512564431133</created>
@@ -525,11 +521,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513782325921</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Début feuille de match + menu de navigation + rangement">
+      <created>1513866062833</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1513866062833</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32548000" />
+    <option name="totallyTimeSpent" value="32583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1051" extended-state="6" />

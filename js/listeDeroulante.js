@@ -2,7 +2,6 @@
  * Created by ANTOINE on 12/12/2017.
  */
 
-
 function activListChampionnat(numeroListe, idNation){
     switch (numeroListe) {
         case 1:

@@ -22,7 +22,7 @@ if (isset ($_POST['validerChampionnat']))
         else
             $info = 'Erreur lors de la création du championnat';
 
-        //mysqli_close();
+
     }
 }
 
@@ -72,9 +72,7 @@ if (isset ($_POST['validerClub']))
             $info = 'Le championnat a été créé avec succès';
         else
             $info = 'Erreur lors de la création du championnat';
-
-        //mysqli_close();
     }
 }
-echo $info;
+header('Location: ../pages/feuilleDeMatch.php');
 ?>

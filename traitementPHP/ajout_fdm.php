@@ -39,8 +39,6 @@ if (isset ($_POST['validerNation']))
         $db = mysqli_connect("localhost", "root","") or die("Echec de connexion au serveur.");;
         mysqli_select_db($db,"fcsochaux") or die("Echec de sélection de la base.");;
 
-
-
         // Insertion dans la bdd
         $query = "insert into nations (NationID,NationName) values(NULL,'".$nat."')";
         $query2 = "select NationID from nations where NatioName == '".$nat."')";

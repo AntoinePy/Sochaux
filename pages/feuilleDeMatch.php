@@ -190,8 +190,6 @@
 
                 <div class="feuilleDeMatch">
 
-                    <h2>Feuille de match</h2>
-
                     <div class="listeFormation">
 
                         <div class="col-sm-6">

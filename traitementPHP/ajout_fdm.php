@@ -15,7 +15,7 @@ if (isset ($_POST['validerChampionnat']))
         mysqli_select_db($db,"fcsochaux") or die("Echec de sélection de la base.");;
 
         // Insertion dans la bdd
-        $query = "insert into championships (ChampionshipID,ChampionshipName,NationID) values(NULL,'".$champ."',".$nation.")";
+        $query = "insert if not exists into championships (ChampionshipID,ChampionshipName,NationID) values(NULL,'".$champ."',".$nation.")";
 
         if (mysqli_query($db,$query))
             $info = 'Le championnat a été créé avec succès';
@@ -66,7 +66,7 @@ if (isset ($_POST['validerClub']))
         mysqli_select_db($db,"fcsochaux") or die("Echec de sélection de la base.");;
 
         // Insertion dans la bdd
-        $query = "insert into clubs (ClubID,ClubName,ChampionshipID) values (NULL,'".$club."',".$champ.")";
+        $query = "insert if not exists into clubs (ClubID,ClubName,ChampionshipID) values (NULL,'".$club."',".$champ.")";
 
         if (mysqli_query($db,$query))
             $info = 'Le championnat a été créé avec succès';

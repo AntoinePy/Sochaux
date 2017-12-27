@@ -29,7 +29,7 @@ function activListChampionnat(numeroListe, idNation){
 }
 
 function activListClub(numeroListe, idChampionnat){
-    alert(idChampionnat);
+    //alert(idChampionnat);
     switch (numeroListe) {
         case 1:
             document.getElementById("club1").disabled = document.getElementById("championnat1").value === "";

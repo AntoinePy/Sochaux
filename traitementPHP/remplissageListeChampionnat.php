@@ -17,4 +17,6 @@
     ?> <option> </option> <?php
     while ($championschip = $championschips->fetch()) { ?>
         <OPTION value= <?php echo  $championschip['ChampionshipID']; ?> > <?php echo $championschip['ChampionshipName']; ?> </OPTION>
+
+
     <?php }

@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2107d85-da32-40a5-92a5-731c99d7faf6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bdd.sql" afterPath="$PROJECT_DIR$/bdd.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/listeDeroulante.js" afterPath="$PROJECT_DIR$/js/listeDeroulante.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/traitementPHP/ajout_fdm.php" afterPath="$PROJECT_DIR$/traitementPHP/ajout_fdm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/traitementPHP/remplissageListeChampionnat.php" afterPath="$PROJECT_DIR$/traitementPHP/remplissageListeChampionnat.php" />
     </list>
     <ignored path="Sochaux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,7 +39,7 @@
       <file leaf-file-name="feuilleDeMatch.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/feuilleDeMatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1241">
+            <state relative-caret-position="187">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <marker date="1514390093215" expanded="true" signature="1088:1109" ph="SELECT * FRO... nations" />
@@ -54,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bdd.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bdd.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bdd.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="526" column="0" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
+            <state relative-caret-position="245">
+              <caret line="508" column="2" selection-start-line="508" selection-start-column="2" selection-end-line="508" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -94,17 +91,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajout_fdm.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ajout_fdm.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/traitementPHP/ajout_fdm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="42" column="83" selection-start-line="42" selection-start-column="83" selection-end-line="42" selection-end-column="83" />
+            <state relative-caret-position="723">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
-                <marker date="1514393454585" expanded="true" signature="484:604" ph="insert into championships... " />
-                <marker date="1514393454585" expanded="true" signature="1214:1279" ph="insert into nations... " />
-                <marker date="1514393454585" expanded="true" signature="1214:1299" ph="insert into nations... " />
-                <marker date="1514393454585" expanded="true" signature="1301:1360" ph="select Natio... nations" />
-                <marker date="1514393454585" expanded="true" signature="2017:2118" ph="insert into clubs... " />
+                <marker date="1514395086487" expanded="true" signature="484:590" ph="insert into championships... " />
+                <marker date="1514395086487" expanded="true" signature="1200:1265" ph="insert into nations... " />
+                <marker date="1514395086487" expanded="true" signature="1200:1285" ph="insert into nations... " />
+                <marker date="1514395086487" expanded="true" signature="1287:1346" ph="select Natio... nations" />
+                <marker date="1514395086487" expanded="true" signature="2003:2090" ph="insert into clubs... " />
               </folding>
             </state>
           </provider>
@@ -176,8 +173,8 @@
         <option value="$PROJECT_DIR$/traitementPHP/remplissageListeClub.php" />
         <option value="$PROJECT_DIR$/js/listeDeroulante.js" />
         <option value="$PROJECT_DIR$/pages/feuilleDeMatch.php" />
-        <option value="$PROJECT_DIR$/traitementPHP/ajout_fdm.php" />
         <option value="$PROJECT_DIR$/bdd.sql" />
+        <option value="$PROJECT_DIR$/traitementPHP/ajout_fdm.php" />
       </list>
     </option>
   </component>
@@ -219,7 +216,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -268,14 +265,14 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SochauxTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -372,7 +369,8 @@
       <workItem from="1513840455035" duration="12000" />
       <workItem from="1513862305764" duration="5535000" />
       <workItem from="1513874206987" duration="3395000" />
-      <workItem from="1514390128888" duration="3507000" />
+      <workItem from="1514390128888" duration="4290000" />
+      <workItem from="1514394862995" duration="247000" />
     </task>
     <task id="LOCAL-00001" summary="Debut test">
       <created>1512564431133</created>
@@ -486,17 +484,24 @@
       <option name="project" value="LOCAL" />
       <updated>1513874378058</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="-Correction des doublons">
+      <created>1514393672921</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1514393672921</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41749000" />
+    <option name="totallyTimeSpent" value="42779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1604" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20401554" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20660622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.50527906" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -566,7 +571,8 @@
     <MESSAGE value="Debut test" />
     <MESSAGE value="Bootstrap" />
     <MESSAGE value="Début feuille de match + menu de navigation + rangement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Début feuille de match + menu de navigation + rangement" />
+    <MESSAGE value="-Correction des doublons" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Correction des doublons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -715,11 +721,11 @@
         <state relative-caret-position="-600">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <marker date="1514393454585" expanded="true" signature="484:604" ph="insert into championships... " />
-            <marker date="1514393454585" expanded="true" signature="1214:1279" ph="insert into nations... " />
-            <marker date="1514393454585" expanded="true" signature="1214:1299" ph="insert into nations... " />
-            <marker date="1514393454585" expanded="true" signature="1301:1360" ph="select Natio... nations" />
-            <marker date="1514393454585" expanded="true" signature="2017:2118" ph="insert into clubs... " />
+            <marker date="1514395086487" expanded="true" signature="484:590" ph="insert into championships... " />
+            <marker date="1514395086487" expanded="true" signature="1200:1265" ph="insert into nations... " />
+            <marker date="1514395086487" expanded="true" signature="1200:1285" ph="insert into nations... " />
+            <marker date="1514395086487" expanded="true" signature="1287:1346" ph="select Natio... nations" />
+            <marker date="1514395086487" expanded="true" signature="2003:2090" ph="insert into clubs... " />
           </folding>
         </state>
       </provider>
@@ -829,11 +835,11 @@
         <state relative-caret-position="472">
           <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
           <folding>
-            <marker date="1514393454585" expanded="true" signature="484:604" ph="insert into championships... " />
-            <marker date="1514393454585" expanded="true" signature="1214:1279" ph="insert into nations... " />
-            <marker date="1514393454585" expanded="true" signature="1214:1299" ph="insert into nations... " />
-            <marker date="1514393454585" expanded="true" signature="1301:1360" ph="select Natio... nations" />
-            <marker date="1514393454585" expanded="true" signature="2017:2118" ph="insert into clubs... " />
+            <marker date="1514395086487" expanded="true" signature="484:590" ph="insert into championships... " />
+            <marker date="1514395086487" expanded="true" signature="1200:1265" ph="insert into nations... " />
+            <marker date="1514395086487" expanded="true" signature="1200:1285" ph="insert into nations... " />
+            <marker date="1514395086487" expanded="true" signature="1287:1346" ph="select Natio... nations" />
+            <marker date="1514395086487" expanded="true" signature="2003:2090" ph="insert into clubs... " />
           </folding>
         </state>
       </provider>
@@ -902,7 +908,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/feuilleDeMatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1241">
+        <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <marker date="1514390093215" expanded="true" signature="1088:1109" ph="SELECT * FRO... nations" />
@@ -913,25 +919,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/traitementPHP/ajout_fdm.php">
+    <entry file="file://$PROJECT_DIR$/bdd.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="83" selection-start-line="42" selection-start-column="83" selection-end-line="42" selection-end-column="83" />
-          <folding>
-            <marker date="1514393454585" expanded="true" signature="484:604" ph="insert into championships... " />
-            <marker date="1514393454585" expanded="true" signature="1214:1279" ph="insert into nations... " />
-            <marker date="1514393454585" expanded="true" signature="1214:1299" ph="insert into nations... " />
-            <marker date="1514393454585" expanded="true" signature="1301:1360" ph="select Natio... nations" />
-            <marker date="1514393454585" expanded="true" signature="2017:2118" ph="insert into clubs... " />
-          </folding>
+        <state relative-caret-position="245">
+          <caret line="508" column="2" selection-start-line="508" selection-start-column="2" selection-end-line="508" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bdd.sql">
+    <entry file="file://$PROJECT_DIR$/traitementPHP/ajout_fdm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="526" column="0" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="723">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <marker date="1514395086487" expanded="true" signature="484:590" ph="insert into championships... " />
+            <marker date="1514395086487" expanded="true" signature="1200:1265" ph="insert into nations... " />
+            <marker date="1514395086487" expanded="true" signature="1200:1285" ph="insert into nations... " />
+            <marker date="1514395086487" expanded="true" signature="1287:1346" ph="select Natio... nations" />
+            <marker date="1514395086487" expanded="true" signature="2003:2090" ph="insert into clubs... " />
+          </folding>
         </state>
       </provider>
     </entry>

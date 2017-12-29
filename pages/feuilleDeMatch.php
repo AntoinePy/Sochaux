@@ -8,6 +8,7 @@
     <link href="../css/feuilleDeMatch.css" type="text/css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="../js/listeDeroulante.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/popup.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
@@ -76,7 +77,6 @@
                         </br>
 
                         <SELECT id ="championnat2" Name="Championship2"  class="form-control" onchange='activListClub(2, this.value)' disabled>"</SELECT>
-
                         </br>
                         <div class="addChamp">
                             <form action="../traitementPHP/ajout_fdm.php" method="post">
@@ -184,6 +184,57 @@
                     </p>
                 </div>
 
+            </div>
+
+
+            <div class="colone col-sm-5">
+
+                <div class="col-sm-4">
+                    <div class="addNation">
+                        <form action="../traitementPHP/ajout_fdm.php" method="post">
+                            <label>Ajout Nation</label> : <input size="14" type="text" name="nation" />
+                            <input name="validerNation" type="submit" value="Ajouter" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <label>Ajout championnat</label>
+                    <form action="../traitementPHP/ajout_fdm.php" method="post">
+                            <?php
+                            $nations = $bd->query('SELECT * FROM nations'); ?>
+                            <SELECT id ="nation1" Name="Nation" class="form-control">
+                                <option> </option>
+                                <?php while ($nation = $nations->fetch()){ ?>
+                                    <OPTION value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
+                                <?php } ?>
+                            </SELECT>
+                            <div class="addChamp">
+                                <input type="text" size="14" name="Championnat" />
+                                <input name="validerChampionnat" type="submit" value="Ajouter" />
+                            </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-4">
+                    <label>Ajout club</label>
+                    <form action="../traitementPHP/ajout_fdm.php" method="post">
+                        <?php
+                        $nations = $bd->query('SELECT * FROM nations'); ?>
+                        <SELECT id ="nation3" Name="Nation" class="form-control" onchange='activListChampionnat(3, this.value)'>
+                            <option> </option>
+                            <?php while ($nation = $nations->fetch()){ ?>
+                                <OPTION value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
+                            <?php } ?>
+                        </SELECT>
+                        <SELECT id ="championnat3" Name="Championship3"  class="form-control" disabled>"</SELECT>
+                        <div class="addChamp">
+                            <input type="text" size="14" name="Club" />
+                            <input type="hidden" name="idnation" value="" id="hiddennation">
+                            <input name="validerClub" type="submit" value="Ajouter" />
+                        </div>
+                    </form>
+                </div>
             </div>
 
             <div class="colone col-sm-5">

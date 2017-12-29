@@ -1,13 +1,17 @@
-
 <?php
 $info = '';
 
 if (isset ($_POST['validerChampionnat']))
 {
-    $champ = $_POST['championnat'];
-    $nation = $_POST['idnation'];
-    if (empty ($champ))
+    $champ = $_POST['Championnat'];
+    $nation = $_POST['Nation'];
+
+    echo $champ;
+    echo $nation;
+
+    if (empty ($champ)){
         $info = 'Veuillez renseigner ce champ';
+    }
     else
     {
         // Connexion à la bdd
@@ -21,16 +25,12 @@ if (isset ($_POST['validerChampionnat']))
             $info = 'Le championnat a été créé avec succès';
         else
             $info = 'Erreur lors de la création du championnat';
-
-
     }
 }
-
 
 if (isset ($_POST['validerNation']))
 {
     $nat = $_POST['nation'];
-
     if (empty ($nat))
         $info = 'Veuillez renseigner ce champ';
     else
@@ -41,22 +41,24 @@ if (isset ($_POST['validerNation']))
 
         // Insertion dans la bdd
         $query = "insert into nations (NationID,NationName) values(NULL,'".$nat."')";
-        $query2 = "select NationID from nations where NatioName == '".$nat."')";
 
         if (mysqli_query($db,$query))
             $info = 'La nation a été créé avec succès';
         else
             $info = 'Erreur lors de la création de la nation';
-
         //mysqli_close();
     }
 }
 
-
 if (isset ($_POST['validerClub']))
 {
-    $club = $_POST['club'];
-    $champ = $_POST['idchamp'];
+    $club = $_POST['Club'];
+    $champ = $_POST['Championnat'];
+
+
+    echo $club;
+    echo $champ;
+
     if (empty ($club))
         $info = 'Veuillez renseigner ce champ';
     else
@@ -75,5 +77,5 @@ if (isset ($_POST['validerClub']))
     }
 }
 echo $info;
-header('Location: ../pages/feuilleDeMatch.php');
+//header('Location: ../pages/feuilleDeMatch.php');
 ?>

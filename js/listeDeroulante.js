@@ -23,6 +23,15 @@ function activListChampionnat(numeroListe, idNation){
                 }
             };
         break;
+        case 3:
+            document.getElementById("championnat3").disabled = document.getElementById("nation3").value === "";
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("championnat3").innerHTML = xmlhttp.responseText;
+                }
+            };
+            break;
     }
     xmlhttp.open("GET", "../traitementPHP/remplissageListeChampionnat.php?idNation=" + idNation, true);
     xmlhttp.send();

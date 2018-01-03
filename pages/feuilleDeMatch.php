@@ -129,17 +129,94 @@
 
                         <div class="equipe">
                             <p>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="player1" Name="player1"  class="form-control"> <br/>
+                                <option> </option>
+                                <?php while ($player = $players->fetch()){ ?>
+                                    <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="player2" Name="player2"  class="form-control"> <br/>
+                                <option> </option>
+                                <?php while ($player = $players->fetch()){ ?>
+                                    <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="player3" Name="player3"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="player4" Name="player4"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="player5" Name="player5"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="player6" Name="player6"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="player7" Name="player7"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="player8" Name="player8"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="player9" Name="player9"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="player10" Name="player10"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="player11" Name="player11"  class="form-control">
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
                             </p>
                         </div>
 
@@ -155,17 +232,94 @@
 
                         <div class="equipe">
                             <p>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur <br/>
-                                n - joueur
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="joueur1" Name="joueur1"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="joueur2" Name="joueur2"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="joueur3" Name="joueur3"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="joueur4" Name="joueur4"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="joueur5" Name="joueur5"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="joueur6" Name="joueur6"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="joueur7" Name="joueur7"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="joueur8" Name="joueur8"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="joueur9" Name="joueur9"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="joueur10" Name="joueur10"  class="form-control"> <br/>
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
+                                <?php
+                                $players = $bd->query('SELECT * FROM players'); ?>
+                                <SELECT id ="joueur11" Name="joueur11"  class="form-control">
+                                    <option> </option>
+                                    <?php while ($player = $players->fetch()){ ?>
+                                        <OPTION value=<?php echo $player['PlayerID']; ?> > <?php echo $player['PlayerFamilyName']; ?> </OPTION>
+                                    <?php } ?>
+                                </SELECT>
                             </p>
                         </div>
 

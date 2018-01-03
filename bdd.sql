@@ -525,7 +525,7 @@ ALTER TABLE `nations` ADD UNIQUE(`NationName`);
 ALTER TABLE `championships` ADD UNIQUE(`ChampionshipName`);
 ALTER TABLE `clubs` ADD UNIQUE(`ClubName`);
 
-INSERT INTO `positions` (`PlayerID`, `PlayerFirstName`,`PlayerFamilyName`,`PlayerWeight`,`PlayerHeight`,`PlayerFoot`,`PlayerComment`,`PlayerVideoFilePath`,`PlayerNote`,`ClubID`,`PositionID1`) VALUES
+INSERT INTO `players` (`PlayerID`, `PlayerFirstName`,`PlayerFamilyName`,`PlayerWeight`,`PlayerHeight`,`PlayerFoot`,`PlayerComment`,`PlayerVideoFilePath`,`PlayerNote`,`ClubID`,`PositionID1`) VALUES
 (1,'Zinedine','Zidane',80,180,'Droit','Tres bon','#',10,1,20),
 (2,'Léo','Messi',70,170,'Gauche','Tres bon','#',10,1,2),
 (3,'Cristiano','Ronaldo',80,180,'Droit','Tres bon','#',10,1,3),

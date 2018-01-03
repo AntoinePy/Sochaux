@@ -525,6 +525,18 @@ ALTER TABLE `nations` ADD UNIQUE(`NationName`);
 ALTER TABLE `championships` ADD UNIQUE(`ChampionshipName`);
 ALTER TABLE `clubs` ADD UNIQUE(`ClubName`);
 
+INSERT INTO `positions` (`PlayerID`, `PlayerFirstName`,`PlayerFamilyName`,`PlayerWeight`,`PlayerHeight`,`PlayerFoot`,`PlayerComment`,`PlayerVideoFilePath`,`PlayerNote`,`ClubID`,`PositionID1`) VALUES
+(1,'Zinedine','Zidane',80,180,'Droit','Tres bon','#',10,1,20),
+(2,'Léo','Messi',70,170,'Gauche','Tres bon','#',10,1,2),
+(3,'Cristiano','Ronaldo',80,180,'Droit','Tres bon','#',10,1,3),
+(4,'Gianluigi','Buffon',80,180,'Droit','Tres bon','#',10,1,1),
+(5,'Dani','Alves',80,180,'Droit','Tres bon','#',10,1,4),
+(6,'Gerard','Piqué',80,180,'Droit','Tres bon','#',10,1,5),
+(7,'Sergio','Ramos',80,180,'Droit','Tres bon','#',10,1,6),
+(8,'Layvin','Kurzawa',80,180,'Droit','Tres bon','#',10,1,7),
+(9,'Ngolo','Kanté',80,180,'Droit','Tres bon','#',10,1,8),
+(10,'Kevin','De Bruyne',80,180,'Droit','Tres bon','#',10,1,9),
+(11,'Luka','Modric',80,180,'Droit','Tres bon','#',10,1,10);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

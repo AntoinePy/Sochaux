@@ -536,7 +536,7 @@ INSERT INTO `players` (`PlayerID`, `PlayerFirstName`,`PlayerFamilyName`,`PlayerW
 (8,'Layvin','Kurzawa',80,180,'Droit','Tres bon','#',10,1,7),
 (9,'Ngolo','Kanté',80,180,'Droit','Tres bon','#',10,1,8),
 (10,'Kevin','De Bruyne',80,180,'Droit','Tres bon','#',10,1,9),
-(11,'Luka','Modric',80,180,'Droit','Tres bon','#',10,1,10);
+(11,'Luka','Modric',80,180,'Droit','Tres bon','#',10,1,10),
 (12,'Samuel','Umtiti',80,180,'Droit','Tres bon','#',10,2,20),
 (13,'Ousmane','Dembele',70,170,'Gauche','Tres bon','#',10,2,2),
 (14,'Andres','Iniesta',80,180,'Droit','Tres bon','#',10,2,3),

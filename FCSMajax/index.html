@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test AJAX</title>
+
+</head>
+
+<body>
+
+ici les nations
+<input list="nationsDataList" type="text" id="inputNations" oninput="updateNations()" onkeypress="return addNation(event)">
+<datalist id="nationsDataList">
+</datalist>
+<br>
+
+ici les championnats
+<input list="championnatsDataList" type="text" id="inputChampionnats" oninput="updateChampionnats()" onkeypress="return addChampionnat(event)" disabled>
+<datalist id="championnatsDataList">
+
+</datalist>
+<br>
+
+ici les clubs
+<input list="clubsDataList" type="text" id="inputClubs" oninput="updateClubs()" onkeypress="return addClub(event)" disabled>
+<datalist id="clubsDataList">
+
+</datalist>
+<br>
+LORSQUE LA COULEUR EST ROUGE, APPUYEZ SUR ENTREE, PUIS VALIDEZ LE DIALOGUE.
+</body>
+<script type="text/javascript" src="listesDeroulantes.js"></script>
+
+</html>

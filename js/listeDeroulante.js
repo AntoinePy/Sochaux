@@ -6,7 +6,6 @@ function activListChampionnat(numeroListe, idNation){
     switch (numeroListe) {
         case 1:
             document.getElementById("championnat1").disabled = document.getElementById("nation1").value === "";
-            document.getElementById("hiddennation").value=document.getElementById("nation1").value;
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -42,7 +41,6 @@ function activListClub(numeroListe, idChampionnat){
     switch (numeroListe) {
         case 1:
             document.getElementById("club1").disabled = document.getElementById("championnat1").value === "";
-            document.getElementById("hiddenchamp").value=document.getElementById("championnat1").value;
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {

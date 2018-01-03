@@ -35,21 +35,28 @@
 
                 <div class="liste1" style="margin-bottom: 100px">
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-6">
 
-                        <h4>Nations</h4>
-
+                        <h4><center>DOMICILE</center></h4>
                         <?php
                         $nations = $bd->query('SELECT * FROM nations'); ?>
                         <SELECT id ="nation1" Name="Nation1" class="form-control" onchange='activListChampionnat(1, this.value)'>
                             <option> </option>
-                        <?php while ($nation = $nations->fetch()){ ?>
-                            <OPTION value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
-                        <?php } ?>
+                            <?php while ($nation = $nations->fetch()){ ?>
+                                <OPTION value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
+                            <?php } ?>
                         </SELECT>
-
                         </br>
 
+                        <SELECT id ="championnat1" Name="Championship1"  class="form-control" onchange='activListClub(1, this.value)' disabled>"</SELECT>
+                        </br>
+                        <SELECT id ="club1" Name="Club1"  class="form-control"  disabled>"</SELECT>
+                        </br>
+                    </div>
+
+                    <div class="col-sm-6">
+
+                        <h4><center> EXTERIEUR</center></h4>
                         <?php
                         $nations2 = $bd->query('SELECT * FROM nations'); ?>
                         <SELECT id ="nation2" Name="Nation2" class="form-control" onchange='activListChampionnat(2, this.value)'>
@@ -59,61 +66,19 @@
                             <?php } ?>
                         </SELECT>
                         </br>
-                        <div class="addChamp">
-                            <form action="../traitementPHP/ajout_fdm.php" method="post">
-                                <label>Ajout Nation</label> : <input type="text" name="nation" />
-                                <input name="validerNation" type="submit" value="Ajouter" />
-                            </form>
-                        </div>
-
-                    </div>
-
-                    <div class="col-sm-4">
-
-                        <h4>Championnats</h4>
-
-                        <SELECT id ="championnat1" Name="Championship1"  class="form-control" onchange='activListClub(1, this.value)' disabled>"</SELECT>
-
-                        </br>
 
                         <SELECT id ="championnat2" Name="Championship2"  class="form-control" onchange='activListClub(2, this.value)' disabled>"</SELECT>
                         </br>
-                        <div class="addChamp">
-                            <form action="../traitementPHP/ajout_fdm.php" method="post">
-                                <label>Ajout Championnat</label> : <input type="text" name="championnat" />
-                                <input type="hidden" name="idnation" value="" id="hiddennation">
-                                <input name="validerChampionnat" type="submit" value="Ajouter" />
-                            </form>
-                        </div>
-
-                    </div>
-
-                    <div class="col-sm-4">
-
-                        <h4>Clubs</h4>
-
-                        <SELECT id ="club1" Name="Club1"  class="form-control"  disabled>"</SELECT>
-
-                        </br>
-
                         <SELECT id ="club2" Name="Club2"  class="form-control"  disabled>"</SELECT>
                         </br>
-                        <div class="addChamp">
-                            <form action="../traitementPHP/ajout_fdm.php" method="post">
-                                <label>Ajout Club</label> : <input type="text" name="club" />
-                                <input type="hidden" name="idchamp" value="" id="hiddenchamp">
-                                <input name="validerClub" type="submit" value="Ajouter" />
-                            </form>
-                        </div>
-
                     </div>
+
+
 
                 </div>
 
-                </br>
 
                 <div class="effectif">
-                    </br>
                     </br>
                     </br>
                     <h2>Effectifs</h2>
@@ -346,7 +311,7 @@
                 <div class="col-sm-4">
                     <div class="addNation">
                         <form action="../traitementPHP/ajout_fdm.php" method="post">
-                            <label>Ajout Nation</label> : <input size="14" type="text" name="nation" />
+                            <label>Ajout Nation</label> : <input size="14" type="text" name="Nation" />
                             <input name="validerNation" type="submit" value="Ajouter" />
                         </form>
                     </div>
@@ -381,7 +346,7 @@
                                 <OPTION value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
                             <?php } ?>
                         </SELECT>
-                        <SELECT id ="championnat3" Name="Championship3"  class="form-control" disabled>"</SELECT>
+                        <SELECT id ="championnat3" Name="Championnat"  class="form-control" disabled>"</SELECT>
                         <div class="addChamp">
                             <input type="text" size="14" name="Club" />
                             <input type="hidden" name="idnation" value="" id="hiddennation">

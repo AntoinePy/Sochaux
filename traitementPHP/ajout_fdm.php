@@ -30,7 +30,7 @@ if (isset ($_POST['validerChampionnat']))
 
 if (isset ($_POST['validerNation']))
 {
-    $nat = $_POST['nation'];
+    $nat = $_POST['Nation'];
     if (empty ($nat))
         $info = 'Veuillez renseigner ce champ';
     else

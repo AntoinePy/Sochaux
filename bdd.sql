@@ -217,8 +217,11 @@ CREATE TABLE `players` (
   `PlayerNote` smallint(2) UNSIGNED DEFAULT NULL,
   `ClubID` smallint(3) UNSIGNED DEFAULT NULL,
   `PositionID1` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerImageFilePath` char(255) DEFAULT NULL,
+  `NationID` smallint(3) UNSIGNED DEFAULT NULL,
   `PositionID2` smallint(2) UNSIGNED DEFAULT NULL,
   `PositionID3` smallint(2) UNSIGNED DEFAULT NULL
+
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -525,29 +528,29 @@ ALTER TABLE `nations` ADD UNIQUE(`NationName`);
 ALTER TABLE `championships` ADD UNIQUE(`ChampionshipName`);
 ALTER TABLE `clubs` ADD UNIQUE(`ClubName`);
 
-INSERT INTO `players` (`PlayerID`, `PlayerFirstName`,`PlayerFamilyName`,`PlayerWeight`,`PlayerHeight`,`PlayerFoot`,`PlayerComment`,`PlayerVideoFilePath`,`PlayerNote`,`ClubID`,`PositionID1`) VALUES
-(1,'Zinedine','Zidane',80,180,'Droit','Tres bon','#',10,1,20),
-(2,'Léo','Messi',70,170,'Gauche','Tres bon','#',10,1,2),
-(3,'Cristiano','Ronaldo',80,180,'Droit','Tres bon','#',10,1,3),
-(4,'Gianluigi','Buffon',80,180,'Droit','Tres bon','#',10,1,1),
-(5,'Dani','Alves',80,180,'Droit','Tres bon','#',10,1,4),
-(6,'Gerard','Piqué',80,180,'Droit','Tres bon','#',10,1,5),
-(7,'Sergio','Ramos',80,180,'Droit','Tres bon','#',10,1,6),
-(8,'Layvin','Kurzawa',80,180,'Droit','Tres bon','#',10,1,7),
-(9,'Ngolo','Kanté',80,180,'Droit','Tres bon','#',10,1,8),
-(10,'Kevin','De Bruyne',80,180,'Droit','Tres bon','#',10,1,9),
-(11,'Luka','Modric',80,180,'Droit','Tres bon','#',10,1,10),
-(12,'Samuel','Umtiti',80,180,'Droit','Tres bon','#',10,2,20),
-(13,'Ousmane','Dembele',70,170,'Gauche','Tres bon','#',10,2,2),
-(14,'Andres','Iniesta',80,180,'Droit','Tres bon','#',10,2,3),
-(15,'Marc Andre','Ter Stegen',80,180,'Droit','Tres bon','#',10,2,1),
-(16,'Jordi','Alba',80,180,'Droit','Tres bon','#',10,2,4),
-(17,'Nelson','Semedo',80,180,'Droit','Tres bon','#',10,2,5),
-(18,'Sergio','Busquets',80,180,'Droit','Tres bon','#',10,2,6),
-(19,'Denis','Suarez',80,180,'Droit','Tres bon','#',10,2,7),
-(20,'Ivan','Rakitic',80,180,'Droit','Tres bon','#',10,2,8),
-(21,'Paco','Alcacer',80,180,'Droit','Tres bon','#',10,2,9),
-(22,'Philippe','Coutinho',80,180,'Droit','Tres bon','#',10,2,10);
+INSERT INTO `players` (`PlayerID`, `PlayerFirstName`,`PlayerFamilyName`,`PlayerWeight`,`PlayerHeight`,`PlayerFoot`,`PlayerComment`,`PlayerVideoFilePath`,`PlayerNote`,`ClubID`,`PositionID1`,`PlayerImageFilePath`,`NationID`) VALUES
+(1,'Zinedine','Zidane',80,180,'Droit','Tres bon','#',10,1,20,'defaut.png'),
+(2,'Léo','Messi',70,170,'Gauche','Tres bon','#',10,1,2,'defaut.png'),
+(3,'Cristiano','Ronaldo',80,180,'Droit','Tres bon','#',10,1,3,'defaut.png'),
+(4,'Gianluigi','Buffon',80,180,'Droit','Tres bon','#',10,1,1,'buffon.jpg',8),
+(5,'Dani','Alves',80,180,'Droit','Tres bon','#',10,1,4,'defaut.png'),
+(6,'Gerard','Piqué',80,180,'Droit','Tres bon','#',10,1,5,'defaut.png'),
+(7,'Sergio','Ramos',80,180,'Droit','Tres bon','#',10,1,6,'defaut.png'),
+(8,'Layvin','Kurzawa',80,180,'Droit','Tres bon','#',10,1,7,'defaut.png'),
+(9,'Ngolo','Kanté',80,180,'Droit','Tres bon','#',10,1,8,'defaut.png'),
+(10,'Kevin','De Bruyne',80,180,'Droit','Tres bon','#',10,1,9,'defaut.png'),
+(11,'Luka','Modric',80,180,'Droit','Tres bon','#',10,1,10,'defaut.png'),
+(12,'Samuel','Umtiti',80,180,'Droit','Tres bon','#',10,2,20,'defaut.png'),
+(13,'Ousmane','Dembele',70,170,'Gauche','Tres bon','#',10,2,2,'defaut.png'),
+(14,'Andres','Iniesta',80,180,'Droit','Tres bon','#',10,2,3,'defaut.png'),
+(15,'Marc Andre','Ter Stegen',80,180,'Droit','Tres bon','#',10,2,1,'defaut.png'),
+(16,'Jordi','Alba',80,180,'Droit','Tres bon','#',10,2,4,'defaut.png'),
+(17,'Nelson','Semedo',80,180,'Droit','Tres bon','#',10,2,5,'defaut.png'),
+(18,'Sergio','Busquets',80,180,'Droit','Tres bon','#',10,2,6,'defaut.png'),
+(19,'Denis','Suarez',80,180,'Droit','Tres bon','#',10,2,7,'defaut.png'),
+(20,'Ivan','Rakitic',80,180,'Droit','Tres bon','#',10,2,8,'defaut.png'),
+(21,'Paco','Alcacer',80,180,'Droit','Tres bon','#',10,2,9,'defaut.png'),
+(22,'Philippe','Coutinho',80,180,'Droit','Tres bon','#',10,2,10,'defaut.png');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

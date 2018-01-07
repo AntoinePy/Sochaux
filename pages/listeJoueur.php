@@ -15,7 +15,7 @@ $req = "SELECT PlayerFirstName,PlayerFamilyName,PlayerImageFilePath, NationID, C
 if (isset ($_POST['NomJoueur'])&& $_POST['NomJoueur'] != "") {
     $nomJoueur = $_POST['NomJoueur'];
     echo $nomJoueur;
-    $req .= " AND PlayerFirstName=".$nomJoueur;
+    $req .= " AND PlayerFamilyName=".$nomJoueur;
 }
 
 if (isset ($_POST['Poste']) && $_POST['Poste'] != ""){

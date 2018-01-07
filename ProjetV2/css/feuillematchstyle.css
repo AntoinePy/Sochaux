@@ -1,0 +1,36 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	background-color: #05061F;
+	color: white;
+}
+#navbar{
+	background-color: #31314C;
+	color: yellow;
+}
+#navbar>a{
+	text-decoration: none;
+	display: block;
+	color: #878FA9;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#navbar>a:hover{
+	background-color: #1B1D36;
+}
+#navbar>h1{
+	display: block;
+	margin-bottom: 20px;
+}
+.selectionClub{
+	text-align: right;
+}
+.inputSelection{
+	background-color: #0D0E29;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 5px;
+}

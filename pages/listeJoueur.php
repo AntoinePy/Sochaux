@@ -8,21 +8,35 @@
 
 include_once('../traitementPHP/connection.php'); // connection base de données
 $con = mysqli_connect('localhost','root','','fcsochaux');
+$req = "SELECT PlayerFirstName,PlayerFamilyName,PlayerImageFilePath, NationID, ClubID, PositionID1, playerID  
+        FROM players 
+        WHERE 0=0";
 
-$poste = $_POST['Poste'];
-if (isset ($_POST['Pays'])){
+if (isset ($_POST['NomJoueur'])&& $_POST['NomJoueur'] != "") {
+    $nomJoueur = $_POST['NomJoueur'];
+    echo $nomJoueur;
+    $req .= " AND PlayerFirstName=".$nomJoueur;
+}
+
+if (isset ($_POST['Poste']) && $_POST['Poste'] != ""){
+    $poste = $_POST['Poste'];
+    $req .= " AND PositionID1=".$poste;
+}
+
+if (isset ($_POST['Pays']) && $_POST['Pays'] != ""){
     $pays = $_POST['Pays'];
+    $req .= " AND NationID=".$pays;
 }
-$championnat = $_POST['Championnat'];
 
-if (isset ($_POST['Club'])){
+if (isset ($_POST['Club']) && $_POST['Club'] != ""){
     $club = $_POST['Club'];
+    $req .= " AND ClubID=".$club;
+}else {
+    if (isset ($_POST['Championnat']) && $_POST['Championnat'] != "") {
+        $championnat = $_POST['Championnat'];
+        $req .= " AND ClubID IN (SELECT ClubID FROM clubs WHERE ChampionshipID=".$championnat.")";
+    }
 }
-
-$nom = $_POST['NomJoueur'];
-
-
-$req = "SELECT PlayerFirstName, PlayerFamilyName,PlayerImageFilePath  FROM players WHERE PositionID1=".$poste;
 $result = mysqli_query($con,$req);
 ?>
 <!DOCTYPE html>
@@ -49,7 +63,7 @@ $result = mysqli_query($con,$req);
 <div class="feuilleDeMatch col-lg-10">
 
     <div class="barreTitre">
-        <h1>Rechercher un Joueur </h1>
+        <h1>Liste des joueurs </h1>
 
     </div>
 
@@ -59,21 +73,29 @@ $result = mysqli_query($con,$req);
             <?php
                     while($row = mysqli_fetch_array($result)) {?>
             <div class="colone col-sm-6">
-
-                <div class="liste1" style="margin-bottom: 100px">
-                    <img src="../images/<?php echo $row[2]; ?>"/>
-                    <?php
-                    echo $row[0]," ";
-                    echo $row[1];
-                    ?>
-                    </br>
-                    <a>voir bio</a>
-                </div>
-
+                <?php
+                    $reqNation = "SELECT NationName FROM nations WHERE NationID=".$row[3];
+                    $reqClub = "SELECT ClubName FROM clubs WHERE ClubID=".$row[4];
+                    $reqPosition = "SELECT PositionName FROM positions WHERE positionID=".$row[5];
+                    $resultNation = mysqli_query($con,$reqNation);
+                    $resultClub = mysqli_query($con,$reqClub);
+                    $resultPosition = mysqli_query($con,$reqPosition);
+                    while($rowNation = mysqli_fetch_array($resultNation)) {
+                        while($rowClub = mysqli_fetch_array($resultClub)) {
+                            while ($rowPosition = mysqli_fetch_array($resultPosition)) {
+                                ?>
+                                <div class="listeJoueur" style="margin-bottom: 100px">
+                                    <img src="../images/<?php echo $row[2]; ?> " width="70" height="70"/>
+                                    <a><?php echo $row[0], " ", $row[1]; ?></a>
+                                    <?php echo " - ", $rowNation[0], " - ", $rowClub[0], " - ", $rowPosition[0]; ?>
+                                </div>
+                            <?php
+                            }
+                        }
+                     }
+                     ?>
             </div>
-            <?php
-            }
-            ?>
+            <?php } ?>
         </div>
 
     </div>

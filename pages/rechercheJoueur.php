@@ -42,8 +42,8 @@ include_once('../traitementPHP/connection.php'); // connection base de données
                         <?php
                         $players = $bd->query('SELECT * FROM players'); ?>
                         <datalist id="joueurListe">
-                                <?php while ($player = $players->fetch()){ ?>
-                            <option  value=<?php echo $player['PlayerFirstName'],"",$player['PlayerFamilyName']; ?>>
+                            <?php while ($player = $players->fetch()){ ?>
+                            <option value=<?php echo $player['PlayerFirstName']; ?> >
                             <?php } ?>
                         </datalist>
                         </br></br>

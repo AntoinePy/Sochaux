@@ -11,3 +11,9 @@
     width: 100%;
     background-color: white;
 }
+
+.listeJoueur{
+    position: relative;
+    margin-top: 20px;
+
+}

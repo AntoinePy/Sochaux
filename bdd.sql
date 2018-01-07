@@ -2,10 +2,10 @@
 -- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1
--- Généré le :  lun. 04 déc. 2017 à 22:48
--- Version du serveur :  10.1.28-MariaDB
--- Version de PHP :  7.1.10
+-- Host: 127.0.0.1
+-- Generation Time: Jan 07, 2018 at 02:47 PM
+-- Server version: 10.1.29-MariaDB
+-- PHP Version: 7.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `esurleau`
+-- Database: `fcsochaux`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `championships`
+-- Table structure for table `championships`
 --
 
 CREATE TABLE `championships` (
@@ -35,7 +35,7 @@ CREATE TABLE `championships` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `championships`
+-- Dumping data for table `championships`
 --
 
 INSERT INTO `championships` (`ChampionshipID`, `ChampionshipName`, `NationID`) VALUES
@@ -48,11 +48,10 @@ INSERT INTO `championships` (`ChampionshipID`, `ChampionshipName`, `NationID`) V
 (8, 'Serie A', 8),
 (9, 'Serie B', 8);
 
-
 -- --------------------------------------------------------
 
 --
--- Structure de la table `clubs`
+-- Table structure for table `clubs`
 --
 
 CREATE TABLE `clubs` (
@@ -64,7 +63,7 @@ CREATE TABLE `clubs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `clubs`
+-- Dumping data for table `clubs`
 --
 
 INSERT INTO `clubs` (`ClubID`, `ClubName`, `ClubVille`, `ClubAdress`, `ChampionshipID`) VALUES
@@ -86,7 +85,7 @@ INSERT INTO `clubs` (`ClubID`, `ClubName`, `ClubVille`, `ClubAdress`, `Champions
 -- --------------------------------------------------------
 
 --
--- Structure de la table `clubs_matchs`
+-- Table structure for table `clubs_matchs`
 --
 
 CREATE TABLE `clubs_matchs` (
@@ -99,7 +98,7 @@ CREATE TABLE `clubs_matchs` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `comments`
+-- Table structure for table `comments`
 --
 
 CREATE TABLE `comments` (
@@ -112,7 +111,7 @@ CREATE TABLE `comments` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `contracts`
+-- Table structure for table `contracts`
 --
 
 CREATE TABLE `contracts` (
@@ -128,7 +127,7 @@ CREATE TABLE `contracts` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `formations`
+-- Table structure for table `formations`
 --
 
 CREATE TABLE `formations` (
@@ -148,7 +147,7 @@ CREATE TABLE `formations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `formations`
+-- Dumping data for table `formations`
 --
 
 INSERT INTO `formations` (`FormationID`, `FormationName`, `Position1`, `Position2`, `Position3`, `Position4`, `Position5`, `Position6`, `Position7`, `Position8`, `Position9`, `Position10`, `Position11`) VALUES
@@ -163,7 +162,7 @@ INSERT INTO `formations` (`FormationID`, `FormationName`, `Position1`, `Position
 -- --------------------------------------------------------
 
 --
--- Structure de la table `matchs`
+-- Table structure for table `matchs`
 --
 
 CREATE TABLE `matchs` (
@@ -181,7 +180,7 @@ CREATE TABLE `matchs` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `nations`
+-- Table structure for table `nations`
 --
 
 CREATE TABLE `nations` (
@@ -190,25 +189,24 @@ CREATE TABLE `nations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `nations`
+-- Dumping data for table `nations`
 --
 
 INSERT INTO `nations` (`NationID`, `NationName`) VALUES
-(6, 'France'),
-(7, 'Espagne'),
-(8, 'Italie'),
 (9, 'Allemagne'),
+(12, 'Argentine'),
+(14, 'Belgique'),
 (10, 'Bresil'),
 (11, 'Croatie'),
-(12, 'Argentine'),
-(13, 'Portugal'),
-(14, 'Belgique');
-
+(7, 'Espagne'),
+(6, 'France'),
+(8, 'Italie'),
+(13, 'Portugal');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `players`
+-- Table structure for table `players`
 --
 
 CREATE TABLE `players` (
@@ -227,37 +225,40 @@ CREATE TABLE `players` (
   `NationID` smallint(3) UNSIGNED DEFAULT NULL,
   `PositionID2` smallint(2) UNSIGNED DEFAULT NULL,
   `PositionID3` smallint(2) UNSIGNED DEFAULT NULL
-
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `players` (`PlayerID`, `PlayerFirstName`,`PlayerFamilyName`,`PlayerWeight`,`PlayerHeight`,`PlayerFoot`,`PlayerComment`,`PlayerVideoFilePath`,`PlayerNote`,`ClubID`,`PositionID1`,`PlayerImageFilePath`,`NationID`) VALUES
-(1,'Zinedine','Zidane',80,180,'Droit','Tres bon','#',10,1,20,'defaut.png',6),
-(2,'Léo','Messi',70,170,'Gauche','Tres bon','#',10,1,2,'defaut.png',12),
-(3,'Cristiano','Ronaldo',80,180,'Droit','Tres bon','#',10,1,3,'defaut.png',13),
-(4,'Gianluigi','Buffon',80,180,'Droit','Tres bon','#',10,1,1,'buffon.jpg',8),
-(5,'Dani','Alves',80,180,'Droit','Tres bon','#',10,1,4,'defaut.png',10),
-(6,'Gerard','Piqué',80,180,'Droit','Tres bon','#',10,1,5,'defaut.png',7),
-(7,'Sergio','Ramos',80,180,'Droit','Tres bon','#',10,1,6,'defaut.png',7),
-(8,'Layvin','Kurzawa',80,180,'Droit','Tres bon','#',10,1,7,'defaut.png',6),
-(9,'Ngolo','Kanté',80,180,'Droit','Tres bon','#',10,1,8,'defaut.png',6),
-(10,'Kevin','De Bruyne',80,180,'Droit','Tres bon','#',10,1,9,'defaut.png',14),
-(11,'Luka','Modric',80,180,'Droit','Tres bon','#',10,1,10,'defaut.png',11),
-(12,'Samuel','Umtiti',80,180,'Droit','Tres bon','#',10,2,20,'defaut.png',6),
-(13,'Ousmane','Dembele',70,170,'Gauche','Tres bon','#',10,2,2,'defaut.png',6),
-(14,'Andres','Iniesta',80,180,'Droit','Tres bon','#',10,2,3,'defaut.png',7),
-(15,'Marc Andre','Ter Stegen',80,180,'Droit','Tres bon','#',10,2,1,'defaut.png',9),
-(16,'Jordi','Alba',80,180,'Droit','Tres bon','#',10,2,4,'defaut.png',7),
-(17,'Nelson','Semedo',80,180,'Droit','Tres bon','#',10,2,5,'defaut.png',13),
-(18,'Sergio','Busquets',80,180,'Droit','Tres bon','#',10,2,6,'defaut.png',7),
-(19,'Denis','Suarez',80,180,'Droit','Tres bon','#',10,2,7,'defaut.png',7),
-(20,'Ivan','Rakitic',80,180,'Droit','Tres bon','#',10,2,8,'defaut.png',11),
-(21,'Paco','Alcacer',80,180,'Droit','Tres bon','#',10,2,9,'defaut.png',7),
-(22,'Philippe','Coutinho',80,180,'Droit','Tres bon','#',10,2,10,'defaut.png',10);
+--
+-- Dumping data for table `players`
+--
+
+INSERT INTO `players` (`PlayerID`, `PlayerFirstName`, `PlayerFamilyName`, `PlayerWeight`, `PlayerHeight`, `PlayerFoot`, `PlayerComment`, `PlayerVideoFilePath`, `PlayerNote`, `ClubID`, `PositionID1`, `PlayerImageFilePath`, `NationID`, `PositionID2`, `PositionID3`) VALUES
+(1, 'Zinedine', 'Zidane', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 20, 'defaut.png', 6, NULL, NULL),
+(2, 'Léo', 'Messi', 70, 170, 'Gauche', 'Tres bon', '#', 10, 1, 2, 'defaut.png', 12, NULL, NULL),
+(3, 'Cristiano', 'Ronaldo', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 3, 'defaut.png', 13, NULL, NULL),
+(4, 'Gianluigi', 'Buffon', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 1, 'buffon.jpg', 8, NULL, NULL),
+(5, 'Dani', 'Alves', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 4, 'defaut.png', 10, NULL, NULL),
+(6, 'Gerard', 'Piqué', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 5, 'defaut.png', 7, NULL, NULL),
+(7, 'Sergio', 'Ramos', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 6, 'defaut.png', 7, NULL, NULL),
+(8, 'Layvin', 'Kurzawa', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 7, 'defaut.png', 6, NULL, NULL),
+(9, 'Ngolo', 'Kanté', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 8, 'defaut.png', 6, NULL, NULL),
+(10, 'Kevin', 'De Bruyne', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 9, 'defaut.png', 14, NULL, NULL),
+(11, 'Luka', 'Modric', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 10, 'defaut.png', 11, NULL, NULL),
+(12, 'Samuel', 'Umtiti', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 20, 'defaut.png', 6, NULL, NULL),
+(13, 'Ousmane', 'Dembele', 70, 170, 'Gauche', 'Tres bon', '#', 10, 2, 2, 'defaut.png', 6, NULL, NULL),
+(14, 'Andres', 'Iniesta', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 3, 'defaut.png', 7, NULL, NULL),
+(15, 'Marc Andre', 'Ter Stegen', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 1, 'defaut.png', 9, NULL, NULL),
+(16, 'Jordi', 'Alba', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 4, 'defaut.png', 7, NULL, NULL),
+(17, 'Nelson', 'Semedo', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 5, 'defaut.png', 13, NULL, NULL),
+(18, 'Sergio', 'Busquets', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 6, 'defaut.png', 7, NULL, NULL),
+(19, 'Denis', 'Suarez', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 7, 'defaut.png', 7, NULL, NULL),
+(20, 'Ivan', 'Rakitic', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 8, 'defaut.png', 11, NULL, NULL),
+(21, 'Paco', 'Alcacer', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 9, 'defaut.png', 7, NULL, NULL),
+(22, 'Philippe', 'Coutinho', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 10, 'defaut.png', 10, NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `players_matchs`
+-- Table structure for table `players_matchs`
 --
 
 CREATE TABLE `players_matchs` (
@@ -271,7 +272,7 @@ CREATE TABLE `players_matchs` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `positions`
+-- Table structure for table `positions`
 --
 
 CREATE TABLE `positions` (
@@ -280,7 +281,7 @@ CREATE TABLE `positions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `positions`
+-- Dumping data for table `positions`
 --
 
 INSERT INTO `positions` (`PositionID`, `PositionName`) VALUES
@@ -304,7 +305,7 @@ INSERT INTO `positions` (`PositionID`, `PositionName`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `tournaments`
+-- Table structure for table `tournaments`
 --
 
 CREATE TABLE `tournaments` (
@@ -312,40 +313,62 @@ CREATE TABLE `tournaments` (
   `TournamentName` char(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
 --
--- Index pour les tables déchargées
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `ID` smallint(2) UNSIGNED NOT NULL,
+  `UserName` char(30) NOT NULL,
+  `UserPassword` char(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`ID`, `UserName`, `UserPassword`) VALUES
+(1, 'etienne', 'surleau'),
+(2, 'fcsm', 'fcsm');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Index pour la table `championships`
+-- Indexes for table `championships`
 --
 ALTER TABLE `championships`
   ADD PRIMARY KEY (`ChampionshipID`),
+  ADD UNIQUE KEY `ChampionshipName` (`ChampionshipName`),
   ADD KEY `NationID` (`NationID`);
 
 --
--- Index pour la table `clubs`
+-- Indexes for table `clubs`
 --
 ALTER TABLE `clubs`
   ADD PRIMARY KEY (`ClubID`),
+  ADD UNIQUE KEY `ClubName` (`ClubName`),
   ADD KEY `ChampionshipID` (`ChampionshipID`);
 
 --
--- Index pour la table `clubs_matchs`
+-- Indexes for table `clubs_matchs`
 --
 ALTER TABLE `clubs_matchs`
   ADD PRIMARY KEY (`ClubID`,`MatchID`),
   ADD KEY `MatchID` (`MatchID`);
 
 --
--- Index pour la table `comments`
+-- Indexes for table `comments`
 --
 ALTER TABLE `comments`
   ADD PRIMARY KEY (`CommentID`),
   ADD KEY `MatchID` (`MatchID`);
 
 --
--- Index pour la table `contracts`
+-- Indexes for table `contracts`
 --
 ALTER TABLE `contracts`
   ADD PRIMARY KEY (`ContractID`),
@@ -353,7 +376,7 @@ ALTER TABLE `contracts`
   ADD KEY `PlayerID` (`PlayerID`);
 
 --
--- Index pour la table `formations`
+-- Indexes for table `formations`
 --
 ALTER TABLE `formations`
   ADD PRIMARY KEY (`FormationID`),
@@ -370,7 +393,7 @@ ALTER TABLE `formations`
   ADD KEY `Position11` (`Position11`);
 
 --
--- Index pour la table `matchs`
+-- Indexes for table `matchs`
 --
 ALTER TABLE `matchs`
   ADD PRIMARY KEY (`MatchID`),
@@ -379,13 +402,14 @@ ALTER TABLE `matchs`
   ADD KEY `ClubID2` (`ClubID2`);
 
 --
--- Index pour la table `nations`
+-- Indexes for table `nations`
 --
 ALTER TABLE `nations`
-  ADD PRIMARY KEY (`NationID`);
+  ADD PRIMARY KEY (`NationID`),
+  ADD UNIQUE KEY `NationName` (`NationName`);
 
 --
--- Index pour la table `players`
+-- Indexes for table `players`
 --
 ALTER TABLE `players`
   ADD PRIMARY KEY (`PlayerID`),
@@ -395,126 +419,138 @@ ALTER TABLE `players`
   ADD KEY `PositionID3` (`PositionID3`);
 
 --
--- Index pour la table `players_matchs`
+-- Indexes for table `players_matchs`
 --
 ALTER TABLE `players_matchs`
   ADD PRIMARY KEY (`PlayerID`,`MatchID`),
   ADD KEY `MatchID` (`MatchID`);
 
 --
--- Index pour la table `positions`
+-- Indexes for table `positions`
 --
 ALTER TABLE `positions`
   ADD PRIMARY KEY (`PositionID`);
 
 --
--- Index pour la table `tournaments`
+-- Indexes for table `tournaments`
 --
 ALTER TABLE `tournaments`
   ADD PRIMARY KEY (`TournamentID`);
 
 --
--- AUTO_INCREMENT pour les tables déchargées
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT pour la table `championships`
+-- AUTO_INCREMENT for table `championships`
 --
 ALTER TABLE `championships`
-  MODIFY `ChampionshipID` smallint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ChampionshipID` smallint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT pour la table `clubs`
+-- AUTO_INCREMENT for table `clubs`
 --
 ALTER TABLE `clubs`
-  MODIFY `ClubID` smallint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ClubID` smallint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT pour la table `comments`
+-- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
   MODIFY `CommentID` int(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT pour la table `contracts`
+-- AUTO_INCREMENT for table `contracts`
 --
 ALTER TABLE `contracts`
   MODIFY `ContractID` int(4) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT pour la table `formations`
+-- AUTO_INCREMENT for table `formations`
 --
 ALTER TABLE `formations`
   MODIFY `FormationID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT pour la table `matchs`
+-- AUTO_INCREMENT for table `matchs`
 --
 ALTER TABLE `matchs`
   MODIFY `MatchID` int(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT pour la table `nations`
+-- AUTO_INCREMENT for table `nations`
 --
 ALTER TABLE `nations`
-  MODIFY `NationID` smallint(4) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `NationID` smallint(4) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT pour la table `players`
+-- AUTO_INCREMENT for table `players`
 --
 ALTER TABLE `players`
-  MODIFY `PlayerID` int(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `PlayerID` int(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- AUTO_INCREMENT pour la table `positions`
+-- AUTO_INCREMENT for table `positions`
 --
 ALTER TABLE `positions`
   MODIFY `PositionID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT pour la table `tournaments`
+-- AUTO_INCREMENT for table `tournaments`
 --
 ALTER TABLE `tournaments`
   MODIFY `TournamentID` smallint(4) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- Contraintes pour les tables déchargées
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `ID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
 --
 
 --
--- Contraintes pour la table `championships`
+-- Constraints for table `championships`
 --
 ALTER TABLE `championships`
   ADD CONSTRAINT `championships_ibfk_1` FOREIGN KEY (`NationID`) REFERENCES `nations` (`NationID`);
 
 --
--- Contraintes pour la table `clubs`
+-- Constraints for table `clubs`
 --
 ALTER TABLE `clubs`
   ADD CONSTRAINT `clubs_ibfk_1` FOREIGN KEY (`ChampionshipID`) REFERENCES `championships` (`ChampionshipID`);
 
 --
--- Contraintes pour la table `clubs_matchs`
+-- Constraints for table `clubs_matchs`
 --
 ALTER TABLE `clubs_matchs`
   ADD CONSTRAINT `clubs_matchs_ibfk_1` FOREIGN KEY (`ClubID`) REFERENCES `clubs` (`ClubID`),
   ADD CONSTRAINT `clubs_matchs_ibfk_2` FOREIGN KEY (`MatchID`) REFERENCES `matchs` (`MatchID`);
 
 --
--- Contraintes pour la table `comments`
+-- Constraints for table `comments`
 --
 ALTER TABLE `comments`
   ADD CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`MatchID`) REFERENCES `matchs` (`MatchID`);
 
 --
--- Contraintes pour la table `contracts`
+-- Constraints for table `contracts`
 --
 ALTER TABLE `contracts`
   ADD CONSTRAINT `contracts_ibfk_1` FOREIGN KEY (`ClubID`) REFERENCES `clubs` (`ClubID`),
   ADD CONSTRAINT `contracts_ibfk_2` FOREIGN KEY (`PlayerID`) REFERENCES `players` (`PlayerID`);
 
 --
--- Contraintes pour la table `formations`
+-- Constraints for table `formations`
 --
 ALTER TABLE `formations`
   ADD CONSTRAINT `formations_ibfk_1` FOREIGN KEY (`Position1`) REFERENCES `positions` (`PositionID`),
@@ -530,7 +566,7 @@ ALTER TABLE `formations`
   ADD CONSTRAINT `formations_ibfk_9` FOREIGN KEY (`Position9`) REFERENCES `positions` (`PositionID`);
 
 --
--- Contraintes pour la table `matchs`
+-- Constraints for table `matchs`
 --
 ALTER TABLE `matchs`
   ADD CONSTRAINT `matchs_ibfk_1` FOREIGN KEY (`TournamentID`) REFERENCES `tournaments` (`TournamentID`),
@@ -538,7 +574,7 @@ ALTER TABLE `matchs`
   ADD CONSTRAINT `matchs_ibfk_3` FOREIGN KEY (`ClubID2`) REFERENCES `clubs` (`ClubID`);
 
 --
--- Contraintes pour la table `players`
+-- Constraints for table `players`
 --
 ALTER TABLE `players`
   ADD CONSTRAINT `players_ibfk_1` FOREIGN KEY (`ClubID`) REFERENCES `clubs` (`ClubID`),
@@ -547,16 +583,12 @@ ALTER TABLE `players`
   ADD CONSTRAINT `players_ibfk_4` FOREIGN KEY (`PositionID3`) REFERENCES `positions` (`PositionID`);
 
 --
--- Contraintes pour la table `players_matchs`
+-- Constraints for table `players_matchs`
 --
 ALTER TABLE `players_matchs`
   ADD CONSTRAINT `players_matchs_ibfk_1` FOREIGN KEY (`PlayerID`) REFERENCES `players` (`PlayerID`),
   ADD CONSTRAINT `players_matchs_ibfk_2` FOREIGN KEY (`MatchID`) REFERENCES `matchs` (`MatchID`);
 COMMIT;
-
-ALTER TABLE `nations` ADD UNIQUE(`NationName`);
-ALTER TABLE `championships` ADD UNIQUE(`ChampionshipName`);
-ALTER TABLE `clubs` ADD UNIQUE(`ClubName`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

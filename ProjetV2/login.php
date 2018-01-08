@@ -22,7 +22,7 @@
 				Mot de passe:<br>
 				<input type="password" name="password" id="password"><br>
 				<br>
-				<input type="submit" name="valider" value="connexion" onclick="logUser()">
+				<input class="btn btn-primary" type="submit" name="valider" value="Connexion" onclick="logUser()">
 			</div>
 		</div>
 	</div>

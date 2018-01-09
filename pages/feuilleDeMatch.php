@@ -8,6 +8,7 @@
     <link href="../css/feuilleDeMatch.css" type="text/css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="../js/listeDeroulante.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/equipe.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/popup.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
@@ -50,7 +51,7 @@
 
                         <SELECT id ="championnat1" Name="Championship1"  class="form-control" onchange='activListClub(1, this.value)' disabled>"</SELECT>
                         </br>
-                        <SELECT id ="club1" Name="Club1"  class="form-control"  disabled>"</SELECT>
+                        <SELECT id ="club1" Name="Club1" class="form-control" onchange="choixClub(1, this.value)" disabled>"</SELECT>
                         </br>
                     </div>
 
@@ -69,7 +70,7 @@
 
                         <SELECT id ="championnat2" Name="Championship2"  class="form-control" onchange='activListClub(2, this.value)' disabled>"</SELECT>
                         </br>
-                        <SELECT id ="club2" Name="Club2"  class="form-control"  disabled>"</SELECT>
+                        <SELECT id ="club2" Name="Club2"  class="form-control" onchange="choixClub(2, this.value)" disabled>"</SELECT>
                         </br>
                     </div>
 
@@ -86,7 +87,7 @@
 
                     <div class="equipe1 col-sm-6">
 
-                        <h3>Equipe 1</h3>
+                        <h3 id="nomEquipe1">Equipe 1</h3>
 
                         <div class="entraineur">
                             <p> entraineur 1 </p>
@@ -189,7 +190,7 @@
 
                     <div class="equipe2 col-sm-6">
 
-                        <h3>Equipe 2</h3>
+                        <h3 id="nomEquipe2">Equipe 2</h3>
 
                         <div class="entraineur">
                             <p> entraineur 2 </p>
@@ -363,7 +364,7 @@
                     <div class="listeFormation">
 
                         <div class="col-sm-6">
-                            <h4>Domicile</h4>
+                            <h4 id="domicile">Domicile</h4>
                             <?php
                             $rep = $bd->query('SELECT FormationName FROM formations');
                             echo "<SELECT id =\"formation\" Name=\"Formation\"  class=\"form-control\">";
@@ -375,7 +376,7 @@
                         </div>
 
                         <div class="col-sm-6">
-                            <h4>Extérieur</h4>
+                            <h4 id="exterieur">Extérieur</h4>
                             <?php
                             $rep = $bd->query('SELECT FormationName FROM formations');
                             echo "<SELECT id =\"formation\" Name=\"Formation\"  class=\"form-control\">";

@@ -3,7 +3,7 @@ function activNomClub(numeroListe, idClub){
         case 1:
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                     document.getElementById("nomEquipe1").innerText = xmlhttp.responseText;
                     document.getElementById("domicile").innerText = xmlhttp.responseText;
                 }
@@ -12,7 +12,7 @@ function activNomClub(numeroListe, idClub){
         case 2:
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                     document.getElementById("nomEquipe2").innerText = xmlhttp.responseText;
                     document.getElementById("exterieur").innerText = xmlhttp.responseText;
                 }
@@ -21,11 +21,9 @@ function activNomClub(numeroListe, idClub){
     }
     xmlhttp.open("GET", "../traitementPHP/remplissageNomClub.php?idClub=" + idClub, true);
     xmlhttp.send();
-    activListeJoueur(numeroListe, idClub);
 }
 
 function activListeJoueur(numeroListe, idClub) {
-    alert('activListeJoueur');
     switch (numeroListe) {
         case 1:
             for(i = 1; i <= 11; i++) {
@@ -33,7 +31,7 @@ function activListeJoueur(numeroListe, idClub) {
             }
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                     for(i = 1; i <= 11; i++) {
                         document.getElementById("player" + i).innerHtml = xmlhttp.responseText;
                     }
@@ -46,7 +44,7 @@ function activListeJoueur(numeroListe, idClub) {
             }
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                     for(i = 1; i <= 11; i++) {
                         document.getElementById("joueur" + i).innerHtml = xmlhttp.responseText;
                     }

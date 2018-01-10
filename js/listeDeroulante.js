@@ -8,7 +8,7 @@ function activListChampionnat(numeroListe, idNation){
             document.getElementById("championnat1").disabled = document.getElementById("nation1").value === "";
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                     document.getElementById("championnat1").innerHTML = xmlhttp.responseText;
                 }
             };
@@ -17,7 +17,7 @@ function activListChampionnat(numeroListe, idNation){
             document.getElementById("championnat2").disabled = document.getElementById("nation2").value === "";
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                     document.getElementById("championnat2").innerHTML = xmlhttp.responseText;
                 }
             };
@@ -26,7 +26,7 @@ function activListChampionnat(numeroListe, idNation){
             document.getElementById("championnat3").disabled = document.getElementById("nation3").value === "";
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                     document.getElementById("championnat3").innerHTML = xmlhttp.responseText;
                 }
             };
@@ -43,7 +43,7 @@ function activListClub(numeroListe, idChampionnat){
             document.getElementById("club1").disabled = document.getElementById("championnat1").value === "";
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                     document.getElementById("club1").innerHTML = xmlhttp.responseText;
                 }
             };
@@ -52,7 +52,7 @@ function activListClub(numeroListe, idChampionnat){
             document.getElementById("club2").disabled = document.getElementById("championnat2").value === "";
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                     document.getElementById("club2").innerHTML = xmlhttp.responseText;
                 }
             };

@@ -14,7 +14,7 @@
 
     $championschips = $bd->query($sql);
     $championschips->setFetchMode(PDO::FETCH_ASSOC);
-    ?> <option> </option> <?php
+    ?> <option> Choisir un championnat </option> <?php
     while ($championschip = $championschips->fetch()) { ?>
         <OPTION value= <?php echo  $championschip['ChampionshipID']; ?> > <?php echo $championschip['ChampionshipName']; ?> </OPTION>
     <?php }

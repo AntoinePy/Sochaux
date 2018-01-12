@@ -1,14 +1,17 @@
-var listeNations ,listeChampionnats, listeClubs;
+var listeNations ,listeChampionnats, listeClubs, listeFormations1, listeFormations2, listeJoueursClub1, listeJoueursClub2;
 var inputNation1, inputNation2, inputChampion1, inputChampion2, inputClub1, inputClub2;
 var valueNation1, valueNation2, valueChampion1, valueChampion2, valueCLub1, valueCLub2;
-var idNation1, idNation2, idChampion1, idChampion2, idClub1, idClub2;
+var idNation1, idNation2, idChampion1, idChampion2, idClub1, idClub2, idFormation1, idFormation2;
 var clubValide1, clubValide2;
 
 window.onload = function() {
 	listeNations=document.getElementById("nationList");
     listeChampionnats=document.getElementById("championList");
     listeClubs=document.getElementById("clubList");
-
+    listeJoueursClub1=document.getElementById("club1PlayersList");
+    listeJoueursClub2=document.getElementById("club2PlayersList");
+    listeFormations1=document.getElementById("formationSelect1");
+    listeFormations2=document.getElementById("formationSelect2");
 
     inputNation1=document.getElementById("inputNation1");
 	inputNation2=document.getElementById("inputNation2");
@@ -16,7 +19,6 @@ window.onload = function() {
 	inputChampion2=document.getElementById("inputChampion2");
     inputClub1=document.getElementById("inputClub1");
 	inputClub2=document.getElementById("inputClub2");
-
 
 	inputNation1.value="";
 	inputChampion1.value="";
@@ -29,7 +31,7 @@ window.onload = function() {
     inputChampion2.disabled=true;
     inputClub2.disabled=true;
 	getNations();
-
+    getFormations();
 };
 
 function getNations() {
@@ -41,6 +43,49 @@ function getNations() {
     };
     xmlhttp.open("GET","php/getNations.php?q=",true);
     xmlhttp.send();
+}
+
+function getFormations() {
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            listeFormations1.innerHTML = this.responseText;
+            listeFormations2.innerHTML = this.responseText;
+            formationSelect1.selectedIndex="1";
+            formationSelect2.selectedIndex="1";
+            updatePlayersPlace(1);
+            updatePlayersPlace(2);  
+        }
+    };
+    xmlhttp.open("GET","php/getFormations.php?q=",true);
+    xmlhttp.send();
+}
+
+function updatePlayersPlace(ClubNumber){
+    if (ClubNumber==1) {
+        idFormation1=formationSelect1.value;
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("playersClub1").innerHTML = this.responseText;
+                updateClub1();
+            }
+        };
+        xmlhttp.open("GET","php/getPositions.php?q="+idFormation1+"&r="+ClubNumber,true);
+        xmlhttp.send();
+    }
+    else{
+        idFormation2=formationSelect2.value;
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("playersClub2").innerHTML = this.responseText;
+                updateClub2();
+            }
+        };
+        xmlhttp.open("GET","php/getPositions.php?q="+idFormation2+"&r="+ClubNumber,true);
+        xmlhttp.send();
+    }
 }
 
 function updateNation1() {
@@ -223,6 +268,9 @@ function updateClub1() {
     		clubValide1=true;
     		inputClub1.style.backgroundColor="green";
     		idClub1=listeClubs.options[i].dataset.value;
+            for (var i = 0; i < 11; i++) {
+                document.getElementsByClassName('positionClub1')[i].disabled=false;
+            }
     	}
     	else{
     		if (!clubValide1) {
@@ -240,6 +288,9 @@ function updateClub2() {
             clubValide2=true;
             inputClub2.style.backgroundColor="green";
             idClub2=listeClubs.options[i].dataset.value;
+            for (var i = 0; i < 11; i++) {
+                document.getElementsByClassName('positionClub2')[i].disabled=false;
+            }
         }
         else{
             if (!clubValide2) {

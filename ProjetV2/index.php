@@ -8,6 +8,7 @@ include 'php/checkSession.php';
 	<title>FCSM Acceuil</title>
 	<link rel="icon" type="image/png" href="assets/images/fcsm.png" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/navbarstyle.css">
 </head>
 <body>
 <div class="container-fluid">

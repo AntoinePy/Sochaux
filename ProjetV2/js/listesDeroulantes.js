@@ -3,8 +3,11 @@ var inputNation1, inputNation2, inputChampion1, inputChampion2, inputClub1, inpu
 var valueNation1, valueNation2, valueChampion1, valueChampion2, valueCLub1, valueCLub2;
 var idNation1, idNation2, idChampion1, idChampion2, idClub1, idClub2, idFormation1, idFormation2;
 var clubValide1, clubValide2;
-
+var listePlayers;
 window.onload = function() {
+
+    listePlayers = document.getElementById("playerList");
+
 	listeNations=document.getElementById("nationList");
     listeChampionnats=document.getElementById("championList");
     listeClubs=document.getElementById("clubList");
@@ -34,6 +37,20 @@ window.onload = function() {
     getFormations();
 };
 
+function getPlayers(){
+    clubid1 = inputClub1.value;
+    positionid1 = ;
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            listePlayers.innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.open("GET","php/getPlayers.php?clubid="+clubid1+"&positionid="+positionid1,true);
+    xmlhttp.send();
+}
+
+
 function getNations() {
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -54,7 +71,7 @@ function getFormations() {
             formationSelect1.selectedIndex="1";
             formationSelect2.selectedIndex="1";
             updatePlayersPlace(1);
-            updatePlayersPlace(2);  
+            updatePlayersPlace(2);
         }
     };
     xmlhttp.open("GET","php/getFormations.php?q=",true);
@@ -172,7 +189,7 @@ function getChampionnats(idNat) {
     xmlhttp.open("GET","php/getChampionnats.php?q="+idNat,true);
     xmlhttp.send();
 
-    
+
 }
 
 function updateChampion1() {

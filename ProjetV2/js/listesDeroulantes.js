@@ -3,11 +3,8 @@ var inputNation1, inputNation2, inputChampion1, inputChampion2, inputClub1, inpu
 var valueNation1, valueNation2, valueChampion1, valueChampion2, valueCLub1, valueCLub2;
 var idNation1, idNation2, idChampion1, idChampion2, idClub1, idClub2, idFormation1, idFormation2;
 var clubValide1, clubValide2;
-var listePlayers;
+
 window.onload = function() {
-
-    listePlayers = document.getElementById("playerList");
-
 	listeNations=document.getElementById("nationList");
     listeChampionnats=document.getElementById("championList");
     listeClubs=document.getElementById("clubList");
@@ -37,20 +34,6 @@ window.onload = function() {
     getFormations();
 };
 
-function getPlayers(){
-    clubid1 = inputClub1.value;
-    positionid1 = ;
-    xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            listePlayers.innerHTML = this.responseText;
-        }
-    };
-    xmlhttp.open("GET","php/getPlayers.php?clubid="+clubid1+"&positionid="+positionid1,true);
-    xmlhttp.send();
-}
-
-
 function getNations() {
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -71,7 +54,7 @@ function getFormations() {
             formationSelect1.selectedIndex="1";
             formationSelect2.selectedIndex="1";
             updatePlayersPlace(1);
-            updatePlayersPlace(2);
+            updatePlayersPlace(2);  
         }
     };
     xmlhttp.open("GET","php/getFormations.php?q=",true);
@@ -189,7 +172,7 @@ function getChampionnats(idNat) {
     xmlhttp.open("GET","php/getChampionnats.php?q="+idNat,true);
     xmlhttp.send();
 
-
+    
 }
 
 function updateChampion1() {
@@ -288,6 +271,8 @@ function updateClub1() {
             for (var i = 0; i < 11; i++) {
                 document.getElementsByClassName('positionClub1')[i].disabled=false;
             }
+            getJoueurs(idClub1,1);
+            console.log("ok");
     	}
     	else{
     		if (!clubValide1) {
@@ -308,6 +293,7 @@ function updateClub2() {
             for (var i = 0; i < 11; i++) {
                 document.getElementsByClassName('positionClub2')[i].disabled=false;
             }
+            getJoueurs(idClub2,2);
         }
         else{
             if (!clubValide2) {
@@ -348,5 +334,80 @@ function addClub2(e) {
             console.log("non validé");
         }
         getClubs(idChampion2);
+    }
+}
+
+function getJoueurs(idCLub,numClub) {
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            if (numClub==1) {
+                listeJoueursClub1.innerHTML = this.responseText;
+            }
+            else if (numClub==2) {
+                listeJoueursClub2.innerHTML = this.responseText;
+            }
+            
+        }
+    };
+    xmlhttp.open("GET","php/getJoueurs.php?q="+idCLub,true);
+    xmlhttp.send();
+}
+
+function updatePlayers(id,numClub) {
+    var valueName=document.getElementById(id).value;
+    var joueurValide=false;
+    var clubJoueur;
+    var listeJoueur;
+    if (numClub==1) {
+        clubJoueur==idClub1;
+        listeJoueur=listeJoueursClub1
+    }
+    else{
+        clubJoueur==idClub2;
+        listeJoueur=listeJoueursClub2
+    }
+    for (var i = 0; i < listeJoueur.options.length; i++) {
+        if (listeJoueur.options[i].value==valueName) {
+            joueurValide=true;
+            document.getElementById(id).style.backgroundColor="green";
+            console.log("ok");
+        }
+        else{
+            if (!joueurValide) {
+                document.getElementById(id).style.backgroundColor="red";
+            }
+        }
+    }
+
+}
+
+
+function addPlayer(e, id, numCLub) {
+    var elt=document.getElementById(id);
+    var nomJoueur=elt.value;
+    console.log(nomJoueur);
+    var clubJoueur;
+    if ((e.keyCode==13)&&(elt.style.backgroundColor=="red") ) {
+        var noms=nomJoueur.split(" ");
+        if (numCLub==1) {
+            clubJoueur=idClub1;
+        }
+        else if (numCLub==2) {
+            clubJoueur=idClub2;
+        }
+        if (confirm("Ajouter le joueur "+noms[0]+" "+noms[1]+"?") == true) {
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                console.log("réeussi");
+            };
+            xmlhttp.open("GET","php/addJoueur.php?prenom="+noms[0]+"&famille="+noms[1]+"&club="+clubJoueur,true);
+            xmlhttp.send();
+            
+        }
+        else {
+            console.log("non validé");
+        }
+        getClubs(idChampion1);
     }
 }

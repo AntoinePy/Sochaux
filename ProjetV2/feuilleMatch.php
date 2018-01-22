@@ -53,6 +53,7 @@ include 'php/checkSession.php';
 				<datalist id="club2PlayersList"></datalist>
 
 			</div>
+            <input type="button" value="Valider" class="homebutton" id="btnCommentaire" onclick="document.location.href='commentaireJoueur.php'"/>
 		</div>
 	</div>
 	

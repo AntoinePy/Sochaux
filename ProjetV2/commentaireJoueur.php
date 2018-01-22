@@ -28,7 +28,10 @@ include 'php/checkSession.php';
             <datalist id="club2PlayersList"></datalist>
 
         </div>
+
+
     </div>
+    <input type="button" value="Retour" class="homebutton" id="btnCommentaire" onclick="document.location.href='feuilleMatch.php'"/>
 </div>
 <script type="text/javascript" src="js/listesDeroulantes.js"></script>
 </body>

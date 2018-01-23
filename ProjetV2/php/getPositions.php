@@ -29,7 +29,7 @@ $sql="SELECT * FROM positions WHERE PositionID=".
 	$tableau[10];
 $result = mysqli_query($con,$sql);
 while($row = mysqli_fetch_array($result)){
-	echo utf8_encode("<div id='player".$row[0]."Club".$_GET['r']."'>".$row[1]."<input type='text' class='positionClub positionClub".$_GET['r']."' id='inputPlayer".$row[0]."Club".$_GET['r']."' list='club".$_GET['r']."PlayersList' oninput='updatePlayers(".$_GET['r'].")' onkeypress='return addPlayer(event,".$_GET['r'].")' disabled></div>");
+	echo utf8_encode("<div id='player".$row[0]."Club".$_GET['r']."'>".$row[1]."<input type='text' class='positionClub positionClub".$_GET['r']."' id='inputPlayer".$row[0]."Club".$_GET['r']."' list='club".$_GET['r']."PlayersList' oninput='updatePlayers(this.id,".$_GET['r'].")' onkeypress='return addPlayer(event, this.id,".$_GET['r'].")' disabled></div>");
 }
 mysqli_close($con);
 ?>

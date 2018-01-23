@@ -236,9 +236,7 @@
                         Ronaldo : homme du match
                     </p>
                 </div>
-
             </div>
-
 
             <div class="colone col-sm-5">
 

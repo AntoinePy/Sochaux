@@ -23,7 +23,21 @@ include 'php/checkSession.php';
             </div>
         </div>
         <?php
-            var_dump($_POST);
+            $joueursInterressants = array();
+            $posts = $_POST;
+            /*foreach($posts as $key => $value) {
+                if ($value == 'on') {
+                    $joueursInterressants[] = $value;
+                }
+            }
+            var_dump($joueursInterressants)*/
+            $values = array_values($posts);
+            foreach ($values as $key => $value) {
+                if ($value == 'on') {
+                    $joueursInterressants[] = $values[$key-1];
+                }
+            }
+            var_dump($joueursInterressants)
         ?>
 
 

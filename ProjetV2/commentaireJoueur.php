@@ -21,13 +21,10 @@ include 'php/checkSession.php';
                     Commentaires joueurs
                 </h1>
             </div>
-            <div id="playersClub1"></div>
-            <div id="playersClub2"></div>
-
-            <datalist id="club1PlayersList"></datalist>
-            <datalist id="club2PlayersList"></datalist>
-
         </div>
+        <?php
+            var_dump($_POST);
+        ?>
 
 
     </div>

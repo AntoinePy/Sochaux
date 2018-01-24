@@ -12,6 +12,7 @@ include 'php/checkSession.php';
 	<link rel="stylesheet" type="text/css" href="css/navbarstyle.css">
 </head>
 <body>
+<form action="commentaireJoueur.php" method="post">
 <div class="container-fluid">
 	<div class="row">
 		<?php include 'navbar.php'; ?>
@@ -53,11 +54,12 @@ include 'php/checkSession.php';
 				<datalist id="club2PlayersList"></datalist>
 
 			</div>
-            <input type="button" value="Valider" class="homebutton" id="btnCommentaire" onclick="document.location.href='commentaireJoueur.php'"/>
+            <input type="submit" value="Valider" class="homebutton" id="btnCommentaire"/>
 		</div>
 	</div>
 	
 </div>
+</form>
 <script type="text/javascript" src="js/listesDeroulantes.js"></script>
 </body>
 </html>

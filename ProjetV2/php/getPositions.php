@@ -29,7 +29,7 @@ $sql="SELECT * FROM positions WHERE PositionID=".
 	$tableau[10];
 $result = mysqli_query($con,$sql);
 while($row = mysqli_fetch_array($result)){
-	echo utf8_encode("<div id='player".$row[0]."Club".$_GET['r']."'>".$row[1]."<input name='inputPlayer".$row[0]."Club".$_GET['r']."'type='text' class='positionClub positionClub".$_GET['r']."' id='inputPlayer".$row[0]."Club".$_GET['r']."' list='club".$_GET['r']."PlayersList' oninput='updatePlayers(this.id,".$_GET['r'].")' onkeypress='return addPlayer(event, this.id,".$_GET['r'].")' disabled><input name='checkbox".$row[0]."Club".$_GET['r']."' id='checkbox".$row[0]."Club".$_GET['r']."'type='checkbox'/></div>");
+	echo utf8_encode("<div id='player".$row[0]."Club".$_GET['r']."'>".$row[1]."<input name='inputPlayer".$row[0]."Club".$_GET['r']."'type='text' class='positionClub positionClub".$_GET['r']."' id='inputPlayer".$row[0]."Club".$_GET['r']."' list='club".$_GET['r']."PlayersList' oninput='updatePlayers(this.id,".$_GET['r'].")' onfocus='updatePlayers(this.id,".$_GET['r'].")' onkeypress='return addPlayer(event, this.id,".$_GET['r'].")' disabled><input name='checkbox".$row[0]."Club".$_GET['r']."' id='checkbox".$row[0]."Club".$_GET['r']."'type='checkbox'/></div>");
 }
 mysqli_close($con);
 ?>

@@ -28,16 +28,16 @@ include 'php/checkSession.php';
 					<div class="row inputSelection">
 						<div class="col-sm-6 selectionClub">
 							Nation: <input type="text" name="nation1" id="inputNation1" list="nationList" oninput="updateNation1()" onkeypress="return addNation1(event)"><br>
-							Championnat: <input type="text" name="champion1" id="inputChampion1" list="championList" oninput="updateChampion1()" onkeypress="return addChampion1(event)" disabled><br>
-							Club: <input type="text" name="club1" id="inputClub1" list="clubList" oninput="updateClub1()" onkeypress="return addClub1(event)" disabled><br>
+							Championnat: <input type="text" name="champion1" id="inputChampion1" list="championList1" oninput="updateChampion1()" onkeypress="return addChampion1(event)" disabled><br>
+							Club: <input type="text" name="club1" id="inputClub1" list="clubList1" oninput="updateClub1()" onkeypress="return addClub1(event)" disabled><br>
 							Formation: <select id="formationSelect1" class="formSelect" onchange="updatePlayersPlace(1)""></select>
 							<div id="playersClub1"></div>
 
 						</div>
 						<div class="col-sm-6 selectionClub">
 							Nation: <input type="text" name="nation2" id="inputNation2" list="nationList" oninput="updateNation2()" onkeypress="return addNation2(event)"><br>
-							Championnat: <input type="text" name="champion2" id="inputChampion2" list="championList" oninput="updateChampion2()" onkeypress="return addChampion2(event)" disabled><br>
-							Club: <input type="text" name="club2" id="inputClub2" list="clubList" oninput="updateClub2()" onkeypress="return addClub2(event)" disabled><br>
+							Championnat: <input type="text" name="champion2" id="inputChampion2" list="championList2" oninput="updateChampion2()" onkeypress="return addChampion2(event)" disabled><br>
+							Club: <input type="text" name="club2" id="inputClub2" list="clubList2" oninput="updateClub2()" onkeypress="return addClub2(event)" disabled><br>
 							Formation: <select id="formationSelect2" class="formSelect" onchange="updatePlayersPlace(2)"></select>
 							<div id="playersClub2"></div>
 
@@ -47,9 +47,11 @@ include 'php/checkSession.php';
 				<div class="col-sm-4">
 					<img src="assets/images/terrain.png" class="img-fluid" id="terrain">
 				</div>
-				<datalist id="clubList"></datalist>
+				<datalist id="clubList1"></datalist>
+				<datalist id="clubList2"></datalist>
 				<datalist id="nationList"></datalist>
-				<datalist id="championList"></datalist>
+				<datalist id="championList1"></datalist>
+				<datalist id="championList2"></datalist>
 				<datalist id="club1PlayersList"></datalist>
 				<datalist id="club2PlayersList"></datalist>
 

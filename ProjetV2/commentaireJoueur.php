@@ -1,49 +1,120 @@
 <?php
 include 'php/checkSession.php';
+
+    $posts = $_POST;
+    $club1 = $posts['club1'];
+    $club2 = $posts['club2'];
+    $joueursInterressantsEquipe1 = array();
+    $joueursInterressantsEquipe2 = array();
+
+    $values = array_values($posts);
+
+    // joueurs intérressant de l'équipe 1
+    $keyClub2 = 0;
+    foreach ($values as $key => $value) {
+        if($value != $club2) {
+            if ($value == 'on') {
+                $joueursInterressantsEquipe1[] = $values[$key-1];
+            }
+        } else {
+            $keyClub2 = $key;
+            break;
+        }
+
+    }
+
+    // joueurs intérressant de l'équipe 2
+    foreach ($values as $key => $value) {
+        if ($value == 'on' && $key > $keyClub2) {
+            $joueursInterressantsEquipe2[] = $values[$key-1];
+        }
+    }
+
 ?>
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <html>
+
 <head>
     <title>Commentaires joueurs</title>
     <link rel="icon" type="image/png" href="assets/images/fcsm.png" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/feuillematchstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/commentairejoueurstyle.css">
     <link rel="stylesheet" type="text/css" href="css/navbarstyle.css">
 </head>
-<body>
-<div class="container-fluid">
-    <div class="row">
-        <?php include 'navbar.php'; ?>
-        <div class="col-sm-8">
-            <div class="row">
-                <h1>
-                    Commentaires joueurs
-                </h1>
-            </div>
-        </div>
-        <?php
-            $joueursInterressants = array();
-            $posts = $_POST;
-            /*foreach($posts as $key => $value) {
-                if ($value == 'on') {
-                    $joueursInterressants[] = $value;
-                }
-            }
-            var_dump($joueursInterressants)*/
-            $values = array_values($posts);
-            foreach ($values as $key => $value) {
-                if ($value == 'on') {
-                    $joueursInterressants[] = $values[$key-1];
-                }
-            }
-            var_dump($joueursInterressants)
-        ?>
 
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <?php include 'navbar.php'; ?>
+
+            <div class="col-sm-10">
+
+                <div class="row"><h1>Commentaires joueurs</h1></div>
+
+                <div class="row"><h3><?php echo $club1 ?></h3></div>
+
+                <div class="row">
+
+                    <table class="table">
+                        <thead>
+                            <tr><th>#</th><th>Joueur</th><th>Commentaire</th></tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                        $i = 0;
+                        foreach($joueursInterressantsEquipe1 as $joueur) {
+                            $i++ ?>
+                            <tr>
+                                <td><?php echo $i ?></td>
+                                <td><?php echo $joueur ?></td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                        <?php }?>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="row"><h3><?php echo $club2 ?></h3></div>
+
+                <div class="row">
+
+                    <table class="table">
+                        <thead>
+                        <tr><th>#</th><th>Joueur</th><th>Commentaire</th></tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                        $i = 0;
+                        foreach($joueursInterressantsEquipe2 as $joueur) {
+                            $i++ ?>
+                            <tr>
+                                <td><?php echo $i ?></td>
+                                <td><?php echo $joueur ?></td>
+                                <td><textarea></textarea></td>
+                            </tr>
+                        <?php }?>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <input class="btn btn-dark homebutton" type="button" value="Retour" id="btnRetourCommentaire" onclick="document.location.href='feuilleMatch.php'"/>
+                <input class="btn btn-primary homebutton" type="submit" value="Valider" id="btnValiderCommentaire" onclick=""/>
+
+            </div>
+
+        </div>
 
     </div>
-    <input type="button" value="Retour" class="homebutton" id="btnCommentaire" onclick="document.location.href='feuilleMatch.php'"/>
-</div>
-<script type="text/javascript" src="js/listesDeroulantes.js"></script>
+
+    <script type="text/javascript" src="js/listesDeroulantes.js"></script>
+
 </body>
+
 </html>

@@ -56,7 +56,7 @@ include 'php/checkSession.php';
 				<datalist id="club2PlayersList"></datalist>
 
 			</div>
-            <input type="submit" value="Valider" class="homebutton" id="btnCommentaire"/>
+            <input type="submit" value="Valider" class="btn btn-primary homebutton" id="btnCommentaire"/>
 		</div>
 	</div>
 	

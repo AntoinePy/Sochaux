@@ -27,18 +27,18 @@ include 'php/checkSession.php';
 					</div>
 					<div class="row inputSelection">
 						<div class="col-sm-6 selectionClub">
-							Nation: <input type="text" name="nation1" id="inputNation1" list="nationList" oninput="updateNation1()" onkeypress="return addNation1(event)"><br>
-							Championnat: <input type="text" name="champion1" id="inputChampion1" list="championList1" oninput="updateChampion1()" onkeypress="return addChampion1(event)" disabled><br>
-							Club: <input type="text" name="club1" id="inputClub1" list="clubList1" oninput="updateClub1()" onkeypress="return addClub1(event)" disabled><br>
-							Formation: <select id="formationSelect1" class="formSelect" onchange="updatePlayersPlace(1)""></select>
+							Nation: <input type="text" name="nation1" id="inputNation1" list="nationList" oninput="updateNation1()" onkeypress="return addNation1(event)"><br><br>
+							Championnat: <input type="text" name="champion1" id="inputChampion1" list="championList1" oninput="updateChampion1()" onkeypress="return addChampion1(event)" disabled><br><br>
+							Club: <input type="text" name="club1" id="inputClub1" list="clubList1" oninput="updateClub1()" onkeypress="return addClub1(event)" disabled><br><br>
+							Formation: <select id="formationSelect1" class="formSelect" onchange="updatePlayersPlace(1)""></select><br><br>
 							<div id="playersClub1"></div>
 
 						</div>
 						<div class="col-sm-6 selectionClub">
-							Nation: <input type="text" name="nation2" id="inputNation2" list="nationList" oninput="updateNation2()" onkeypress="return addNation2(event)"><br>
-							Championnat: <input type="text" name="champion2" id="inputChampion2" list="championList2" oninput="updateChampion2()" onkeypress="return addChampion2(event)" disabled><br>
-							Club: <input type="text" name="club2" id="inputClub2" list="clubList2" oninput="updateClub2()" onkeypress="return addClub2(event)" disabled><br>
-							Formation: <select id="formationSelect2" class="formSelect" onchange="updatePlayersPlace(2)"></select>
+							Nation: <input type="text" name="nation2" id="inputNation2" list="nationList" oninput="updateNation2()" onkeypress="return addNation2(event)"><br><br>
+							Championnat: <input type="text" name="champion2" id="inputChampion2" list="championList2" oninput="updateChampion2()" onkeypress="return addChampion2(event)" disabled><br><br>
+							Club: <input type="text" name="club2" id="inputClub2" list="clubList2" oninput="updateClub2()" onkeypress="return addClub2(event)" disabled><br><br>
+							Formation: <select id="formationSelect2" class="formSelect" onchange="updatePlayersPlace(2)"></select><br><br>
 							<div id="playersClub2"></div>
 
 						</div>

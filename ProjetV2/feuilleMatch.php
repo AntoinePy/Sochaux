@@ -20,6 +20,29 @@ include 'php/checkSession.php';
 			
 			<div class="row">
 				<div class="col-sm-8">
+                    <div class="row">
+                        <h1>
+                            Informations match
+                        </h1>
+                    </div>
+                    <div class="row inputSelection">
+                        <div class="col-sm-6">
+                            <table>
+                                <tr><td>Lieu: </td><td><input type="text" name="lieuMatch"></td></tr>
+                                <tr><td>Date du match: </td><td><input type="date" name="dateMatch"></td></tr>
+                                <tr><td>Auteur du rapport: </td><td><input type="text" name="auteurMatch"></td></tr>
+                                <tr><td>Tournoi: </td><td><input type="text" name="tournoiMatch"></td></tr>
+                            </table>
+                        </div>
+                        <div class="col-sm-6">
+                            <table>
+                                <tr><td>Condition du match: </td></tr>
+                                <tr><td><textarea name="conditionMatch"></textarea></td></tr>
+                                <tr><td>Commentaire sur le match: </td></tr>
+                                <tr><td><textarea name="commentaireMatch"></textarea></td></tr>
+                            </table>
+                        </div>
+                    </div>
 					<div class="row">
 						<h1>	
 							Feuille de Match

@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a2107d85-da32-40a5-92a5-731c99d7faf6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" afterPath="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" />
-      <change beforePath="$PROJECT_DIR$/ProjetV2/css/commentairejoueurstyle.css" afterPath="$PROJECT_DIR$/ProjetV2/css/commentairejoueurstyle.css" />
-      <change beforePath="$PROJECT_DIR$/ProjetV2/css/feuillematchstyle.css" afterPath="$PROJECT_DIR$/ProjetV2/css/feuillematchstyle.css" />
+      <change beforePath="$PROJECT_DIR$/ProjetV2/css/navbarstyle.css" afterPath="$PROJECT_DIR$/ProjetV2/css/navbarstyle.css" />
+      <change beforePath="$PROJECT_DIR$/ProjetV2/navbar.php" afterPath="$PROJECT_DIR$/ProjetV2/navbar.php" />
     </list>
     <ignored path="Sochaux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +41,28 @@
       <file leaf-file-name="feuilleMatch.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="467">
               <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetV2/navbar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbarstyle.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ProjetV2/css/navbarstyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -59,21 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commentaireJoueur.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="commentaireJoueur.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="-78">
               <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commentairejoueurstyle.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/css/commentairejoueurstyle.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -146,14 +155,14 @@
         <option value="$PROJECT_DIR$/ProjetV2/php/getClubs.php" />
         <option value="$PROJECT_DIR$/ProjetV2/php/getPlayers.php" />
         <option value="$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js" />
-        <option value="$PROJECT_DIR$/ProjetV2/navbar.php" />
         <option value="$PROJECT_DIR$/pages/feuilleDeMatch.php" />
-        <option value="$PROJECT_DIR$/ProjetV2/css/navbarstyle.css" />
         <option value="$PROJECT_DIR$/ProjetV2/php/getPositions.php" />
         <option value="$PROJECT_DIR$/ProjetV2/feuilleMatch.php" />
         <option value="$PROJECT_DIR$/ProjetV2/css/feuillematchstyle.css" />
         <option value="$PROJECT_DIR$/ProjetV2/css/commentairejoueurstyle.css" />
         <option value="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" />
+        <option value="$PROJECT_DIR$/ProjetV2/navbar.php" />
+        <option value="$PROJECT_DIR$/ProjetV2/css/navbarstyle.css" />
       </list>
     </option>
   </component>
@@ -354,7 +363,7 @@
       <workItem from="1517496287119" duration="7879000" />
       <workItem from="1517575392953" duration="299000" />
       <workItem from="1517819380701" duration="1292000" />
-      <workItem from="1517866363810" duration="2740000" />
+      <workItem from="1517866363810" duration="2926000" />
     </task>
     <task id="LOCAL-00001" summary="Debut test">
       <created>1512564431133</created>
@@ -594,11 +603,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517867811970</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Affichage information sur la page commentaire">
+      <created>1517869141605</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1517869141605</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152134000" />
+    <option name="totallyTimeSpent" value="152320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -690,7 +706,8 @@
     <MESSAGE value="modification design bouton" />
     <MESSAGE value="Amélioration vu" />
     <MESSAGE value="Ajout information du match" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout information du match" />
+    <MESSAGE value="Affichage information sur la page commentaire" />
+    <option name="LAST_COMMIT_MESSAGE" value="Affichage information sur la page commentaire" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -843,13 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/traitementPHP/ajout_fdm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -934,13 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/css/navbarstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/php/getFormations.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -979,14 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/css/commentairejoueurstyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -997,8 +992,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="-78">
           <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/css/navbarstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>

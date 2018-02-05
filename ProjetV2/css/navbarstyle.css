@@ -2,6 +2,7 @@
 	background-color: #31314C;
 	color: #e3d21d;
 }
+
 #navbar>a{
 	text-decoration: none;
 	display: block;
@@ -10,16 +11,15 @@
 	padding-bottom: 10px;
 	padding-left: 10px;
 }
+
 #navbar>a:hover{
 	background-color: #1B1D36;
 }
-#navbar>h1{
-	display: block;
-	margin-bottom: 20px;
-}
+
 html{
 	height: 100%;
 }
+
 body{
 	height: 100%;
 	background-color: #05061F;

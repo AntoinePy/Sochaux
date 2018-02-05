@@ -7,6 +7,8 @@ include 'php/checkSession.php';
     $dateMatch = $day."/".$month."/".$year;
     $auteurMatch = $posts['auteurMatch'];
     $tournoiMatch = $posts['tournoiMatch'];
+    $commentaireMatch = $posts['commentaireMatch'];
+    $conditionMatch = $posts['conditionMatch'];
     $club1 = $posts['club1'];
     $club2 = $posts['club2'];
     $joueursInterressantsEquipe1 = array();
@@ -68,6 +70,8 @@ include 'php/checkSession.php';
                         <tr><td>Date du match</td><td><?php echo $dateMatch ?></td></tr>
                         <tr><td>Tournoi du match</td><td><?php echo $tournoiMatch ?></td></tr>
                         <tr><td>Auteur</td><td><?php echo $auteurMatch ?></td></tr>
+                        <tr><td>Condition du match</td><td><?php echo $conditionMatch ?></td></tr>
+                        <tr><td>Commentaire du match</td><td><?php echo $commentaireMatch ?></td></tr>
                     </table>
 
                 </div>

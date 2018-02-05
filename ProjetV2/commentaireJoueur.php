@@ -2,6 +2,11 @@
 include 'php/checkSession.php';
 
     $posts = $_POST;
+    $lieuMatch = $posts['lieuMatch'];
+    list($year, $month, $day) = explode('-',  $posts['dateMatch']);
+    $dateMatch = $day."/".$month."/".$year;
+    $auteurMatch = $posts['auteurMatch'];
+    $tournoiMatch = $posts['tournoiMatch'];
     $club1 = $posts['club1'];
     $club2 = $posts['club2'];
     $joueursInterressantsEquipe1 = array();
@@ -54,53 +59,70 @@ include 'php/checkSession.php';
 
             <div class="col-sm-10">
 
-                <div class="row"><h1>Commentaires joueurs</h1></div>
+                <div class="row"><h1>Informations du match</h1></div>
 
-                <div class="row"><h3><?php echo $club1 ?></h3></div>
-
-                <div class="row">
+                <div class="inputSelection">
 
                     <table class="table">
-                        <thead>
-                            <tr><th>#</th><th>Joueur</th><th>Commentaire</th></tr>
-                        </thead>
-                        <tbody>
-                        <?php
-                        $i = 0;
-                        foreach($joueursInterressantsEquipe1 as $joueur) {
-                            $i++ ?>
-                            <tr>
-                                <td><?php echo $i ?></td>
-                                <td><?php echo $joueur ?></td>
-                                <td><textarea></textarea></td>
-                            </tr>
-                        <?php }?>
-                        </tbody>
+                        <tr><td>Lieu du match</td><td><?php echo $lieuMatch ?></td></tr>
+                        <tr><td>Date du match</td><td><?php echo $dateMatch ?></td></tr>
+                        <tr><td>Tournoi du match</td><td><?php echo $tournoiMatch ?></td></tr>
+                        <tr><td>Auteur</td><td><?php echo $auteurMatch ?></td></tr>
                     </table>
 
                 </div>
 
-                <div class="row"><h3><?php echo $club2 ?></h3></div>
+                <div class="row"><h1>Commentaires joueurs</h1></div>
 
-                <div class="row">
+                <div class="inputSelection">
 
-                    <table class="table">
-                        <thead>
-                        <tr><th>#</th><th>Joueur</th><th>Commentaire</th></tr>
-                        </thead>
-                        <tbody>
-                        <?php
-                        $i = 0;
-                        foreach($joueursInterressantsEquipe2 as $joueur) {
-                            $i++ ?>
-                            <tr>
-                                <td><?php echo $i ?></td>
-                                <td><?php echo $joueur ?></td>
-                                <td><textarea></textarea></td>
-                            </tr>
-                        <?php }?>
-                        </tbody>
-                    </table>
+                    <div class="row"><h3><?php echo $club1 ?></h3></div>
+
+                    <div class="row">
+
+                        <table class="table">
+                            <thead>
+                            <tr><th>#</th><th>Joueur</th><th>Commentaire</th></tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            $i = 0;
+                            foreach($joueursInterressantsEquipe1 as $joueur) {
+                                $i++ ?>
+                                <tr>
+                                    <td><?php echo $i ?></td>
+                                    <td><?php echo $joueur ?></td>
+                                    <td><textarea></textarea></td>
+                                </tr>
+                            <?php }?>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="row"><h3><?php echo $club2 ?></h3></div>
+
+                    <div class="row">
+
+                        <table class="table">
+                            <thead>
+                            <tr><th>#</th><th>Joueur</th><th>Commentaire</th></tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            $i = 0;
+                            foreach($joueursInterressantsEquipe2 as $joueur) {
+                                $i++ ?>
+                                <tr>
+                                    <td><?php echo $i ?></td>
+                                    <td><?php echo $joueur ?></td>
+                                    <td><textarea></textarea></td>
+                                </tr>
+                            <?php }?>
+                            </tbody>
+                        </table>
+
+                    </div>
 
                 </div>
 

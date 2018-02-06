@@ -28,18 +28,18 @@ include 'php/checkSession.php';
                     <div class="row inputSelection">
                         <div class="col-sm-6">
                             <table>
-                                <tr><td>Lieu: </td><td><input type="text" name="lieuMatch"></td></tr>
-                                <tr><td>Date du match: </td><td><input type="date" name="dateMatch"></td></tr>
-                                <tr><td>Auteur du rapport: </td><td><input type="text" name="auteurMatch"></td></tr>
-                                <tr><td>Tournoi: </td><td><input type="text" name="tournoiMatch"></td></tr>
+                                <tr><td>Lieu: </td><td><input type="text" name="lieuMatch" id="inputLieuMatch"></td></tr>
+                                <tr><td>Date du match: </td><td><input type="date" name="dateMatch" id="inputDateMatch"></td></tr>
+                                <tr><td>Auteur du rapport: </td><td><input type="text" name="auteurMatch" id="inputAuteurMatch"></td></tr>
+                                <tr><td>Tournoi: </td><td><input type="text" name="tournoiMatch" id="inputTournoiMatch" list="tournoiList" oninput="updateTournoi()" onkeypress="return addTournoi(event)"></td></tr>
                             </table>
                         </div>
                         <div class="col-sm-6">
                             <table>
                                 <tr><td>Condition du match: </td></tr>
-                                <tr><td><textarea name="conditionMatch"></textarea></td></tr>
+                                <tr><td><textarea name="conditionMatch" id="textAreaConditionMatch"></textarea></td></tr>
                                 <tr><td>Commentaire sur le match: </td></tr>
-                                <tr><td><textarea name="commentaireMatch"></textarea></td></tr>
+                                <tr><td><textarea name="commentaireMatch" id="commentaireMatch"></textarea></td></tr>
                             </table>
                         </div>
                     </div>
@@ -70,6 +70,8 @@ include 'php/checkSession.php';
 				<div class="col-sm-4">
 					<img src="assets/images/terrain.png" class="img-fluid" id="terrain">
 				</div>
+
+                <datalist id="tournoiList"></datalist>
 				<datalist id="clubList1"></datalist>
 				<datalist id="clubList2"></datalist>
 				<datalist id="nationList"></datalist>

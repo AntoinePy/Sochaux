@@ -9,7 +9,7 @@ $sql="INSERT INTO clubs (ClubID, ClubName, ChampionshipID) VALUES (null, '".$_GE
 if (mysqli_query($con, $sql)) {
     echo "New record created successfully";
 } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    echo "Error: " . $sql . "<br>" . mysqli_error($con);
 }
 
 mysqli_close($con);

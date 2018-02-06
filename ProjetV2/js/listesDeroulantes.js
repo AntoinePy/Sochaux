@@ -1,10 +1,15 @@
 var listeNations ,listeChampionnats1,listeChampionnats2, listeClubs1,listeClubs2, listeFormations1, listeFormations2, listeJoueursClub1, listeJoueursClub2;
 var inputNation1, inputNation2, inputChampion1, inputChampion2, inputClub1, inputClub2;
 var valueNation1, valueNation2, valueChampion1, valueChampion2, valueCLub1, valueCLub2;
-var idNation1, idNation2, idChampion1, idChampion2, idClub1, idClub2, idFormation1, idFormation2;
+var idTournoi, idNation1, idNation2, idChampion1, idChampion2, idClub1, idClub2, idFormation1, idFormation2;
 var clubValide1, clubValide2;
+var lieuMatch, dateMatch, auteurMatch, tournoiMatch, conditionMatch, commentaireMatch;
+var lieuMatchValue, dateMatchValue, auteurMatchValue, tournoiMatchValue, conditionMatchValue, commentaireMatchValue;
+var listeTournois;
 
 window.onload = function() {
+
+    listeTournois=document.getElementById("tournoiList");
 	listeNations=document.getElementById("nationList");
     listeChampionnats1=document.getElementById("championList1");
     listeChampionnats2=document.getElementById("championList2");
@@ -15,6 +20,12 @@ window.onload = function() {
     listeFormations1=document.getElementById("formationSelect1");
     listeFormations2=document.getElementById("formationSelect2");
 
+    inputLieuMatch=document.getElementById("inputLieuMatch");
+    inputDateMatch=document.getElementById("inputDateMatch");
+    inputAuteurMatch=document.getElementById("inputAuteurMatch");
+    inputTournoiMatch=document.getElementById("inputTournoiMatch");
+    textareaCommentaireMatch=document.getElementById("textAreaCommentaireMatch");
+    textareaConditionMatch=document.getElementById("textAreaConditionMatch");
     inputNation1=document.getElementById("inputNation1");
 	inputNation2=document.getElementById("inputNation2");
     inputChampion1=document.getElementById("inputChampion1");
@@ -32,9 +43,22 @@ window.onload = function() {
 	inputClub1.disabled=true;
     inputChampion2.disabled=true;
     inputClub2.disabled=true;
+    getTournois();
 	getNations();
     getFormations();
 };
+
+function getTournois() {
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            listeTournois.innerHTML = this.responseText;
+        }
+    };
+    xmlhttp.open("GET","php/getTournois.php",true);
+    xmlhttp.send();
+    setTimeout(updateTournoi,500);
+}
 
 function getNations() {
     xmlhttp = new XMLHttpRequest();
@@ -95,7 +119,7 @@ function updateNation1() {
 	var enabled=false;
     valueNation1=inputNation1.value;
     for (var i = 0; i < listeNations.options.length; i++) {
-    	if (listeNations.options[i].value==valueNation1) {
+    	if (listeNations.options[i].value===valueNation1) {
     		enabled=true;
     		inputChampion1.disabled = false;
     		idNation1=listeNations.options[i].dataset.value;
@@ -115,7 +139,7 @@ function updateNation2() {
     var enabled=false;
     valueNation2=inputNation2.value;
     for (var i = 0; i < listeNations.options.length; i++) {
-        if (listeNations.options[i].value==valueNation2) {
+        if (listeNations.options[i].value===valueNation2) {
             enabled=true;
             inputChampion2.disabled = false;
             idNation2=listeNations.options[i].dataset.value;
@@ -131,15 +155,27 @@ function updateNation2() {
     }
 }
 
+function updateTournoi() {
+    var enabled=false;
+    tournoiMatchValue=inputTournoiMatch.value;
+    for (var i = 0; i < listeTournois.options.length; i++) {
+        if (listeTournois.options[i].value===tournoiMatchValue) {
+            enabled=true;
+            inputTournoiMatch.disabled = false;
+            idTournoi=listeTournois.options[i].dataset.value;
+            inputTournoiMatch.style.backgroundColor="green";
+        }
+    }
+}
 
 function addNation1(e) {
     
-	if ((e.keyCode==13)&&(inputChampion1.disabled==true) ) {
+	if ((e.keyCode===13)&&(inputChampion1.disabled===true) ) {
         e.preventDefault();
-		if (confirm("Ajouter la nation "+valueNation1+"?") == true) {
+		if (confirm("Ajouter la nation "+valueNation1+"?") === true) {
         	xmlhttp = new XMLHttpRequest();
 		    xmlhttp.onreadystatechange = function() {
-		        console.log("réeussi");
+		        console.log("réussi");
 		    };
 		    xmlhttp.open("GET","php/addNation.php?q="+valueNation1,true);
 		    xmlhttp.send();
@@ -151,12 +187,12 @@ function addNation1(e) {
 	}
 }
 function addNation2(e) {
-    if ((e.keyCode==13)&&(inputChampion2.disabled==true) ) {
+    if ((e.keyCode===13)&&(inputChampion2.disabled===true) ) {
         e.preventDefault();
-        if (confirm("Ajouter la nation "+valueNation2+"?") == true) {
+        if (confirm("Ajouter la nation "+valueNation2+"?") === true) {
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
-                console.log("réeussi");
+                console.log("réussi");
             };
             xmlhttp.open("GET","php/addNation.php?q="+valueNation2,true);
             xmlhttp.send();
@@ -165,6 +201,24 @@ function addNation2(e) {
             console.log("non validé");
         }
         setTimeout(getNations,500);
+    }
+}
+
+function addTournoi(e) {
+    if ((e.keyCode===13)) {
+        e.preventDefault();
+        if (confirm("Ajouter le tournoi "+tournoiMatchValue+"?") === true) {
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                console.log("réussi");
+            };
+            xmlhttp.open("GET","php/addTournoi.php?value="+tournoiMatchValue,true);
+            xmlhttp.send();
+        }
+        else {
+            console.log("non validé");
+        }
+        setTimeout(getTournois,500);
     }
 }
 

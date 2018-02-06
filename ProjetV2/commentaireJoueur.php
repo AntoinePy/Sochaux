@@ -92,7 +92,7 @@ include 'php/checkSession.php';
 
                 <div class="inputSelection">
 
-                    <div class="row"><h3><?php echo $club1 ?></h3></div>
+                    <div class="row"><h3 style="width: 95%;"><?php echo $club1 ?></h3></div>
 
                     <div class="row">
 
@@ -143,7 +143,7 @@ include 'php/checkSession.php';
 
                     </div>
 
-                    <div class="row"><h3><?php echo $club2 ?></h3></div>
+                    <div class="row"><h3 style="width: 95%;"><?php echo $club2 ?></h3></div>
 
                     <div class="row">
 

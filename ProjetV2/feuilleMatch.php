@@ -10,6 +10,8 @@ include 'php/checkSession.php';
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/feuillematchstyle.css">
 	<link rel="stylesheet" type="text/css" href="css/navbarstyle.css">
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/jquery-ui.js"></script>
 </head>
 <body>
 <form action="commentaireJoueur.php" method="post">
@@ -55,7 +57,6 @@ include 'php/checkSession.php';
 							Club: <input type="text" name="club1" id="inputClub1" list="clubList1" oninput="updateClub1()" onkeypress="return addClub1(event)" disabled><br><br>
 							Formation: <select id="formationSelect1" class="formSelect" onchange="updatePlayersPlace(1)""></select><br><br>
 							<div id="playersClub1"></div>
-
 						</div>
 						<div class="col-sm-6 selectionClub">
 							Nation: <input type="text" name="nation2" id="inputNation2" list="nationList" oninput="updateNation2()" onkeypress="return addNation2(event)"><br><br>
@@ -63,7 +64,6 @@ include 'php/checkSession.php';
 							Club: <input type="text" name="club2" id="inputClub2" list="clubList2" oninput="updateClub2()" onkeypress="return addClub2(event)" disabled><br><br>
 							Formation: <select id="formationSelect2" class="formSelect" onchange="updatePlayersPlace(2)"></select><br><br>
 							<div id="playersClub2"></div>
-
 						</div>
 					</div>
 				</div>

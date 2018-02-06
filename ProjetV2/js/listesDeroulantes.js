@@ -6,6 +6,7 @@ var clubValide1, clubValide2;
 var lieuMatch, dateMatch, auteurMatch, tournoiMatch, conditionMatch, commentaireMatch;
 var lieuMatchValue, dateMatchValue, auteurMatchValue, tournoiMatchValue, conditionMatchValue, commentaireMatchValue;
 var listeTournois;
+var inputLieuMatch, inputDateMatch, inputAuteurMatch, inputTournoiMatch, textareaCommentaireMatch, textareaConditionMatch;
 
 window.onload = function() {
 

@@ -1,0 +1,12 @@
+#navbar > a {
+    display: none;
+}
+
+.btn {
+    display: none;
+}
+
+#logonavbar {
+    width: 10%;
+    float: right;
+}

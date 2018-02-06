@@ -114,8 +114,8 @@ include 'php/checkSession.php';
                                 <tr>
                                     <td><?php echo $i ?></td>
                                     <td><?php echo $joueur ?></td>
-                                    <td><textarea></textarea></td>
-                                    <td><textarea></textarea></td>
+                                    <td><textarea name="commentaireEquipe1Joueur<?php echo $i ?>"></textarea></td>
+                                    <td><textarea name="tempsJeuEquipe1Joueur<?php echo $i ?>"></textarea></td>
                                     <td>
                                         <select>
                                             <option>Droitier</option>
@@ -130,7 +130,7 @@ include 'php/checkSession.php';
                                         </select>
                                     </td>
                                     <td>
-                                        <select name="posteEquipe1<?php echo $i?>">
+                                        <select name="posteEquipe1Joueur<?php echo $i?>">
                                             <?php
                                             while($row = mysqli_fetch_array($result)) {
                                                 echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
@@ -161,8 +161,8 @@ include 'php/checkSession.php';
                                 <tr>
                                     <td><?php echo $i ?></td>
                                     <td><?php echo $joueur ?></td>
-                                    <td><textarea></textarea></td>
-                                    <td><textarea></textarea></td>
+                                    <td><textarea name="commentaireEquipe2Joueur<?php echo $i ?>"></textarea></td>
+                                    <td><textarea name="tempsJeuEquipe2Joueur<?php echo $i ?>"></textarea></td>
                                     <td>
                                         <select>
                                             <option>Droitier</option>
@@ -177,7 +177,7 @@ include 'php/checkSession.php';
                                         </select>
                                     </td>
                                     <td>
-                                        <select name="posteEquipe2<?php echo $i?>">
+                                        <select name="posteEquipe1Joueur<?php echo $i?>">
                                             <?php
                                             while($row = mysqli_fetch_array($result)) {
                                                 echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";

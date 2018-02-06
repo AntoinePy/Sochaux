@@ -93,7 +93,7 @@ include 'php/checkSession.php';
 
                     <div class="row">
 
-                        <table class="table">
+                        <table class="table" style="width: 95%;">
                             <thead>
                             <tr><th>#</th><th>Joueur</th><th>Commentaire</th><th>Temps de jeu</th><th>Pied</th><th>Note</th><th>Poste</th></tr>
                             </thead>
@@ -107,28 +107,28 @@ include 'php/checkSession.php';
                                     <td><?php echo $joueur ?></td>
                                     <td><textarea></textarea></td>
                                     <td><textarea></textarea></td>
-                                    <td><form>
-                                            <select>
-                                                <option>Droitier</option>
-                                                <option>Gaucher</option>
-                                            </select>
-                                        </form></td>
-                                    <td><form>
-                                            <select>
-                                                <option>1 (ne pas suivre)</option>
-                                                <option>2 (à suivre)</option>
-                                                <option>3 (à recruter)</option>
-                                            </select>
-                                        </form></td>
-                                    <td><form>
-                                            <select name="poste">
-                                                <?php
-                                                while($row = mysqli_fetch_array($result)) {
-                                                    echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
-                                                }
-                                                ?>
-                                            </select>
-                                        </form></td>
+                                    <td>
+                                        <select>
+                                            <option>Droitier</option>
+                                            <option>Gaucher</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>1 (ne pas suivre)</option>
+                                            <option>2 (à suivre)</option>
+                                            <option>3 (à recruter)</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="posteEquipe1<?php echo $i?>">
+                                            <?php
+                                            while($row = mysqli_fetch_array($result)) {
+                                                echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
+                                            }
+                                            ?>
+                                        </select>
+                                     </td>
                                 </tr>
                             <?php }?>
                             </tbody>
@@ -140,7 +140,7 @@ include 'php/checkSession.php';
 
                     <div class="row">
 
-                        <table class="table">
+                        <table class="table" style="width: 95%;">
                             <thead>
                             <tr><th>#</th><th>Joueur</th><th>Commentaire</th><th>Temps de jeu</th><th>Pied</th><th>Note</th><th>Poste</th></tr>
                             </thead>
@@ -154,28 +154,28 @@ include 'php/checkSession.php';
                                     <td><?php echo $joueur ?></td>
                                     <td><textarea></textarea></td>
                                     <td><textarea></textarea></td>
-                                    <td><form>
-                                            <select>
-                                                <option>Droitier</option>
-                                                <option>Gaucher</option>
-                                            </select>
-                                        </form></td>
-                                    <td><form>
-                                            <select>
-                                                <option>1 (ne pas suivre)</option>
-                                                <option>2 (suivre)</option>
-                                                <option>3 (à recruter)</option>
-                                            </select>
-                                        </form></td>
-                                    <td><form>
-                                            <select name="poste">
-                                                <?php
-                                                while($row = mysqli_fetch_array($result)) {
-                                                    echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
-                                                }
-                                                ?>
-                                            </select>
-                                        </form></td>
+                                    <td>
+                                        <select>
+                                            <option>Droitier</option>
+                                            <option>Gaucher</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>1 (ne pas suivre)</option>
+                                            <option>2 (suivre)</option>
+                                            <option>3 (à recruter)</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="posteEquipe2<?php echo $i?>">
+                                            <?php
+                                            while($row = mysqli_fetch_array($result)) {
+                                                echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
+                                            }
+                                            ?>
+                                        </select>
+                                    </td>
                                 </tr>
                             <?php }?>
                             </tbody>

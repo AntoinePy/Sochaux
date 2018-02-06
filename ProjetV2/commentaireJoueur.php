@@ -1,6 +1,8 @@
 <?php
 include 'php/checkSession.php';
-
+ /*  cacher les erreurs php pour affichage correct
+ ini_set("display_errors",0);error_reporting(0);*/
+    $con = mysqli_connect('localhost','root','','fcsochaux');
     $posts = $_POST;
     $lieuMatch = $posts['lieuMatch'];
     list($year, $month, $day) = explode('-',  $posts['dateMatch']);
@@ -37,6 +39,12 @@ include 'php/checkSession.php';
         }
     }
 
+    // positions pour liste
+    $listePositions = array();
+    $sql = "SELECT PositionName FROM positions ORDER BY PositionID";
+    $result = mysqli_query($con,$sql);
+    //$row = mysqli_fetch_array($result);
+
 ?>
 
 <!DOCTYPE html>
@@ -44,15 +52,16 @@ include 'php/checkSession.php';
 <html>
 
 <head>
-    <title>Commentaires joueurs</title>
+    <title id="titreCom">Commentaires joueurs</title>
     <link rel="icon" type="image/png" href="assets/images/fcsm.png" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/commentairejoueurstyle.css">
     <link rel="stylesheet" type="text/css" href="css/navbarstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/impression.css" media="print">
 </head>
 
 <body>
-
+<!-- <form action="recapFeuilleDeMatch.php" method="post"> -->
     <div class="container-fluid">
 
         <div class="row">
@@ -66,7 +75,7 @@ include 'php/checkSession.php';
                 <div class="inputSelection">
 
                     <table class="table">
-                        <tr><td>Lieu du match</td><td><?php echo $lieuMatch ?></td></tr>
+                        <tr><td id="lieuM">Lieu du match</td><td><?php echo $lieuMatch ?></td></tr>
                         <tr><td>Date du match</td><td><?php echo $dateMatch ?></td></tr>
                         <tr><td>Tournoi du match</td><td><?php echo $tournoiMatch ?></td></tr>
                         <tr><td>Auteur</td><td><?php echo $auteurMatch ?></td></tr>
@@ -86,7 +95,7 @@ include 'php/checkSession.php';
 
                         <table class="table">
                             <thead>
-                            <tr><th>#</th><th>Joueur</th><th>Commentaire</th></tr>
+                            <tr><th>#</th><th>Joueur</th><th>Commentaire</th><th>Temps de jeu</th><th>Pied</th><th>Note</th><th>Poste</th></tr>
                             </thead>
                             <tbody>
                             <?php
@@ -97,6 +106,29 @@ include 'php/checkSession.php';
                                     <td><?php echo $i ?></td>
                                     <td><?php echo $joueur ?></td>
                                     <td><textarea></textarea></td>
+                                    <td><textarea></textarea></td>
+                                    <td><form>
+                                            <select>
+                                                <option>Droitier</option>
+                                                <option>Gaucher</option>
+                                            </select>
+                                        </form></td>
+                                    <td><form>
+                                            <select>
+                                                <option>1 (ne pas suivre)</option>
+                                                <option>2 (à suivre)</option>
+                                                <option>3 (à recruter)</option>
+                                            </select>
+                                        </form></td>
+                                    <td><form>
+                                            <select name="poste">
+                                                <?php
+                                                while($row = mysqli_fetch_array($result)) {
+                                                    echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
+                                                }
+                                                ?>
+                                            </select>
+                                        </form></td>
                                 </tr>
                             <?php }?>
                             </tbody>
@@ -110,7 +142,7 @@ include 'php/checkSession.php';
 
                         <table class="table">
                             <thead>
-                            <tr><th>#</th><th>Joueur</th><th>Commentaire</th></tr>
+                            <tr><th>#</th><th>Joueur</th><th>Commentaire</th><th>Temps de jeu</th><th>Pied</th><th>Note</th><th>Poste</th></tr>
                             </thead>
                             <tbody>
                             <?php
@@ -121,6 +153,29 @@ include 'php/checkSession.php';
                                     <td><?php echo $i ?></td>
                                     <td><?php echo $joueur ?></td>
                                     <td><textarea></textarea></td>
+                                    <td><textarea></textarea></td>
+                                    <td><form>
+                                            <select>
+                                                <option>Droitier</option>
+                                                <option>Gaucher</option>
+                                            </select>
+                                        </form></td>
+                                    <td><form>
+                                            <select>
+                                                <option>1 (ne pas suivre)</option>
+                                                <option>2 (suivre)</option>
+                                                <option>3 (à recruter)</option>
+                                            </select>
+                                        </form></td>
+                                    <td><form>
+                                            <select name="poste">
+                                                <?php
+                                                while($row = mysqli_fetch_array($result)) {
+                                                    echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
+                                                }
+                                                ?>
+                                            </select>
+                                        </form></td>
                                 </tr>
                             <?php }?>
                             </tbody>
@@ -132,13 +187,11 @@ include 'php/checkSession.php';
 
                 <input class="btn btn-dark homebutton" type="button" value="Retour" id="btnRetourCommentaire" onclick="document.location.href='feuilleMatch.php'"/>
                 <input class="btn btn-primary homebutton" type="submit" value="Valider" id="btnValiderCommentaire" onclick=""/>
-
+                <a href="javascript:window.print()"><button class="btn btn-default">Imprimer</button></a>
             </div>
-
         </div>
-
     </div>
-
+<!-- </form> -->
     <script type="text/javascript" src="js/listesDeroulantes.js"></script>
 
 </body>

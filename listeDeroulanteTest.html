@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Title</title>
 </head>
 <body>
+
 
 <select name="nation" id="nation">
     <option value="5"></option>
@@ -15,6 +18,16 @@
     <option value="3">Espagne</option>
     <option value="4">Angleterre</option>
 </select>
+<div id="drag">
+
+
+<datalist id="clubList">
+    <option value="1">France</option>
+    <option value="2">Italie</option>
+    <option value="3">Espagne</option>
+    <option value="4">Angleterre</option>
+</datalist>
+</div>
 
 <select name ="champ" disabled="disabled" id="champ">
     <option value="5"></option>
@@ -33,17 +46,9 @@
 </select>
 
 <script>
-
-    $('#nation').on('change',function(){
-
-        $('#champ').attr('disabled',false);
+    $(function() {
+        $("#drag" ).draggable();
     });
-
-    $('#champ').on('change',function(){
-
-        $('#club').attr('disabled',false);
-    });
-
 </script>
 
 </body>

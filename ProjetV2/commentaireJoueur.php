@@ -114,23 +114,23 @@ include 'php/checkSession.php';
                                 <tr>
                                     <td><?php echo $i ?></td>
                                     <td><?php echo $joueur ?></td>
-                                    <td><textarea name="commentaireEquipe1Joueur<?php echo $i ?>"></textarea></td>
-                                    <td><textarea name="tempsJeuEquipe1Joueur<?php echo $i ?>"></textarea></td>
+                                    <td><textarea class="form-control" name="commentaireEquipe1Joueur<?php echo $i ?>"></textarea></td>
+                                    <td><textarea class="form-control" name="tempsJeuEquipe1Joueur<?php echo $i ?>"></textarea></td>
                                     <td>
-                                        <select>
+                                        <select class="form-control">
                                             <option>Droitier</option>
                                             <option>Gaucher</option>
                                         </select>
                                     </td>
                                     <td>
-                                        <select>
+                                        <select class="form-control">
                                             <option>1 (ne pas suivre)</option>
                                             <option>2 (à suivre)</option>
                                             <option>3 (à recruter)</option>
                                         </select>
                                     </td>
                                     <td>
-                                        <select name="posteEquipe1Joueur<?php echo $i?>">
+                                        <select class="form-control" name="posteEquipe1Joueur<?php echo $i?>">
                                             <?php
                                             while($row = mysqli_fetch_array($result)) {
                                                 echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
@@ -161,23 +161,23 @@ include 'php/checkSession.php';
                                 <tr>
                                     <td><?php echo $i ?></td>
                                     <td><?php echo $joueur ?></td>
-                                    <td><textarea name="commentaireEquipe2Joueur<?php echo $i ?>"></textarea></td>
-                                    <td><textarea name="tempsJeuEquipe2Joueur<?php echo $i ?>"></textarea></td>
+                                    <td><textarea class="form-control" name="commentaireEquipe2Joueur<?php echo $i ?>"></textarea></td>
+                                    <td><textarea class="form-control" name="tempsJeuEquipe2Joueur<?php echo $i ?>"></textarea></td>
                                     <td>
-                                        <select>
+                                        <select class="form-control">
                                             <option>Droitier</option>
                                             <option>Gaucher</option>
                                         </select>
                                     </td>
                                     <td>
-                                        <select>
+                                        <select class="form-control">
                                             <option>1 (ne pas suivre)</option>
                                             <option>2 (suivre)</option>
                                             <option>3 (à recruter)</option>
                                         </select>
                                     </td>
                                     <td>
-                                        <select name="posteEquipe1Joueur<?php echo $i?>">
+                                        <select class="form-control" name="posteEquipe1Joueur<?php echo $i?>">
                                             <?php
                                             while($row = mysqli_fetch_array($result)) {
                                                 echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";

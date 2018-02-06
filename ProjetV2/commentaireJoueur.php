@@ -39,12 +39,6 @@ include 'php/checkSession.php';
         }
     }
 
-    // positions pour liste
-    $listePositions = array();
-    $sql = "SELECT PositionName FROM positions ORDER BY PositionID";
-    $result = mysqli_query($con,$sql);
-    //$row = mysqli_fetch_array($result);
-
 ?>
 
 <!DOCTYPE html>
@@ -132,6 +126,10 @@ include 'php/checkSession.php';
                                     <td>
                                         <select class="form-control" name="posteEquipe1Joueur<?php echo $i?>">
                                             <?php
+                                            // positions pour liste
+                                            $listePositions = array();
+                                            $sql = "SELECT PositionName FROM positions ORDER BY PositionID";
+                                            $result = mysqli_query($con,$sql);
                                             while($row = mysqli_fetch_array($result)) {
                                                 echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
                                             }
@@ -179,6 +177,10 @@ include 'php/checkSession.php';
                                     <td>
                                         <select class="form-control" name="posteEquipe1Joueur<?php echo $i?>">
                                             <?php
+                                            // positions pour liste
+                                            $listePositions = array();
+                                            $sql = "SELECT PositionName FROM positions ORDER BY PositionID";
+                                            $result = mysqli_query($con,$sql);
                                             while($row = mysqli_fetch_array($result)) {
                                                 echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
                                             }

@@ -68,7 +68,7 @@ include 'php/checkSession.php';
 
             <?php include 'navbar.php'; ?>
 
-            <div class="col-sm-10">
+            <form class="col-sm-10" method="post" action="php/soumissionFeuilleDeMatchCommentaire.php">
 
                 <div class="row"><h1>Informations du match</h1></div>
 
@@ -188,7 +188,7 @@ include 'php/checkSession.php';
                 <input class="btn btn-dark homebutton" type="button" value="Retour" id="btnRetourCommentaire" onclick="document.location.href='feuilleMatch.php'"/>
                 <input class="btn btn-primary homebutton" type="submit" value="Valider" id="btnValiderCommentaire" onclick=""/>
                 <a href="javascript:window.print()"><button class="btn btn-default">Imprimer</button></a>
-            </div>
+            </form>
         </div>
     </div>
 <!-- </form> -->

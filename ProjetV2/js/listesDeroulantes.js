@@ -51,7 +51,7 @@ window.onload = function() {
 function getTournois() {
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             listeTournois.innerHTML = this.responseText;
         }
     };
@@ -63,7 +63,7 @@ function getTournois() {
 function getNations() {
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             listeNations.innerHTML = this.responseText;
         }
     };
@@ -76,7 +76,7 @@ function getNations() {
 function getFormations() {
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             listeFormations1.innerHTML = this.responseText;
             listeFormations2.innerHTML = this.responseText;
             formationSelect1.selectedIndex="1";
@@ -90,11 +90,11 @@ function getFormations() {
 }
 
 function updatePlayersPlace(ClubNumber){
-    if (ClubNumber==1) {
+    if (ClubNumber===1) {
         idFormation1=formationSelect1.value;
         xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
+            if (this.readyState === 4 && this.status === 200) {
                 document.getElementById("playersClub1").innerHTML = this.responseText;
             }
         };
@@ -105,7 +105,7 @@ function updatePlayersPlace(ClubNumber){
         idFormation2=formationSelect2.value;
         xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
+            if (this.readyState === 4 && this.status === 200) {
                 document.getElementById("playersClub2").innerHTML = this.responseText;
                 
             }
@@ -224,7 +224,7 @@ function addTournoi(e) {
 
 function getChampionnats(idNat,natNumber) {
     var listeChampionnats;
-    if (natNumber==1) {
+    if (natNumber===1) {
         listeChampionnats=listeChampionnats1;
     }
     else{
@@ -232,14 +232,14 @@ function getChampionnats(idNat,natNumber) {
     }
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             console.log(listeChampionnats);
             listeChampionnats.innerHTML = this.responseText;
         }
     };
     xmlhttp.open("GET","php/getChampionnats.php?q="+idNat,true);
     xmlhttp.send();
-    if (natNumber==1) {
+    if (natNumber===1) {
         setTimeout(updateChampion1,500);
     }
     else{
@@ -251,12 +251,12 @@ function updateChampion1() {
     console.log("hey");
 	valueChampion1=inputChampion1.value;
     var enabled=false;
-    if (listeChampionnats1.options.length==0) {
+    if (listeChampionnats1.options.length===0) {
         inputChampion1.style.backgroundColor="red";
         inputClub1.disabled = true;
     }
     for (var i = 0; i < listeChampionnats1.options.length; i++) {
-    	if (listeChampionnats1.options[i].value==valueChampion1) {
+    	if (listeChampionnats1.options[i].value===valueChampion1) {
     		enabled=true;
     		inputClub1.disabled = false;
     		inputChampion1.style.backgroundColor="green";
@@ -276,12 +276,12 @@ function updateChampion2() {
     valueChampion2=inputChampion2.value;
     console.log("ok");
     var enabled=false;
-    if (listeChampionnats2.options.length==0) {
+    if (listeChampionnats2.options.length===0) {
         inputChampion2.style.backgroundColor="red";
         inputClub2.disabled = true;
     }
     for (var i = 0; i < listeChampionnats2.options.length; i++) {
-        if (listeChampionnats2.options[i].value==valueChampion2) {
+        if (listeChampionnats2.options[i].value===valueChampion2) {
             enabled=true;
             inputClub2.disabled = false;
             inputChampion2.style.backgroundColor="green";
@@ -298,9 +298,9 @@ function updateChampion2() {
 }
 
 function addChampion1(e) {
-	if ((e.keyCode==13)&&(inputClub1.disabled==true) ) {
+	if ((e.keyCode===13)&&(inputClub1.disabled===true) ) {
         e.preventDefault();
-		if (confirm("Ajouter le championnat "+valueChampion1+"?") == true) {
+		if (confirm("Ajouter le championnat "+valueChampion1+"?") === true) {
         	xmlhttp = new XMLHttpRequest();
 		    xmlhttp.onreadystatechange = function() {
 		        console.log("réeussi");
@@ -317,9 +317,9 @@ function addChampion1(e) {
 }
 
 function addChampion2(e) {
-    if ((e.keyCode==13)&&(inputClub2.disabled==true) ) {
+    if ((e.keyCode===13)&&(inputClub2.disabled===true) ) {
         e.preventDefault();
-        if (confirm("Ajouter le championnat "+valueChampion2+"?") == true) {
+        if (confirm("Ajouter le championnat "+valueChampion2+"?") === true) {
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
                 console.log("réeussi");
@@ -336,7 +336,7 @@ function addChampion2(e) {
 
 function getClubs(idChamp,numChamp) {
     var listeClubs;
-    if (numChamp==1) {
+    if (numChamp===1) {
         listeClubs=listeClubs1;
     }
     else{
@@ -344,13 +344,13 @@ function getClubs(idChamp,numChamp) {
     }
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             listeClubs.innerHTML = this.responseText;
         }
     };
     xmlhttp.open("GET","php/getClubs.php?q="+idChamp,true);
     xmlhttp.send();
-    if (numChamp==1) {
+    if (numChamp===1) {
         setTimeout(updateClub1,500);
     }
     else{
@@ -362,7 +362,7 @@ function getClubs(idChamp,numChamp) {
 function updateClub1() {
 	valueClub1=inputClub1.value;
     clubValide1=false;
-    if (listeClubs1.options.length==0) {
+    if (listeClubs1.options.length===0) {
         console.log("ici");
         inputClub1.style.backgroundColor="red";
         for (var i = 0; i < 11; i++) {
@@ -370,7 +370,7 @@ function updateClub1() {
         }
     }
     for (var i = 0; i < listeClubs1.options.length; i++) {
-    	if (listeClubs1.options[i].value==valueClub1) {
+    	if (listeClubs1.options[i].value===valueClub1) {
     		clubValide1=true;
     		inputClub1.style.backgroundColor="green";
     		idClub1=listeClubs1.options[i].dataset.value;
@@ -392,7 +392,7 @@ function updateClub1() {
 function updateClub2() {
     valueClub2=inputClub2.value;
     clubValide2=false;
-    if (listeClubs2.options.length==0) {
+    if (listeClubs2.options.length===0) {
         inputClub2.style.backgroundColor="red";
         for (var i = 0; i < 11; i++) {
             document.getElementsByClassName('positionClub2')[i].disabled=true;
@@ -400,7 +400,7 @@ function updateClub2() {
         }
     }
     for (var i = 0; i < listeClubs2.options.length; i++) {
-        if (listeClubs2.options[i].value==valueClub2) {
+        if (listeClubs2.options[i].value===valueClub2) {
             clubValide2=true;
             inputClub2.style.backgroundColor="green";
             idClub2=listeClubs2.options[i].dataset.value;
@@ -418,9 +418,9 @@ function updateClub2() {
 }
 
 function addClub1(e) {
-	if ((e.keyCode==13)&&(clubValide1==false) ) {
+	if ((e.keyCode===13)&&(clubValide1===false) ) {
         e.preventDefault();
-		if (confirm("Ajouter le club "+valueClub1+"?") == true) {
+		if (confirm("Ajouter le club "+valueClub1+"?") === true) {
         	xmlhttp = new XMLHttpRequest();
 		    xmlhttp.onreadystatechange = function() {
 		        console.log("réeussi");
@@ -436,9 +436,9 @@ function addClub1(e) {
 }
 
 function addClub2(e) {
-    if ((e.keyCode==13)&&(clubValide2==false) ) {
+    if ((e.keyCode===13)&&(clubValide2===false) ) {
         e.preventDefault();
-        if (confirm("Ajouter le club "+valueClub2+"?") == true) {
+        if (confirm("Ajouter le club "+valueClub2+"?") === true) {
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
                 console.log("réeussi");
@@ -456,17 +456,17 @@ function addClub2(e) {
 function getJoueurs(idCLub,numClub) {
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            if (numClub==1) {
+        if (this.readyState === 4 && this.status === 200) {
+            if (numClub===1) {
                 listeJoueursClub1.innerHTML = this.responseText;
             }
-            else if (numClub==2) {
+            else if (numClub===2) {
                 listeJoueursClub2.innerHTML = this.responseText;
             }
             
         }
     };
-    if (numClub==1) {
+    if (numClub===1) {
 
     }
     xmlhttp.open("GET","php/getJoueurs.php?q="+idCLub,true);
@@ -478,7 +478,7 @@ function updatePlayers(id,numClub) {
     var joueurValide=false;
     var clubJoueur;
     var listeJoueur;
-    if (numClub==1) {
+    if (numClub===1) {
         clubJoueur==idClub1;
         listeJoueur=listeJoueursClub1
     }
@@ -487,7 +487,7 @@ function updatePlayers(id,numClub) {
         listeJoueur=listeJoueursClub2
     }
     for (var i = 0; i < listeJoueur.options.length; i++) {
-        if (listeJoueur.options[i].value==valueName) {
+        if (listeJoueur.options[i].value===valueName) {
             joueurValide=true;
             document.getElementById(id).style.backgroundColor="green";
             console.log("ok");
@@ -507,16 +507,16 @@ function addPlayer(e, id, numCLub) {
     var nomJoueur=elt.value;
     console.log(nomJoueur);
     var clubJoueur;
-    if ((e.keyCode==13)&&(elt.style.backgroundColor=="red") ) {
+    if ((e.keyCode===13)&&(elt.style.backgroundColor==="red") ) {
         e.preventDefault();
         var noms=nomJoueur.split(" ");
-        if (numCLub==1) {
+        if (numCLub===1) {
             clubJoueur=idClub1;
         }
-        else if (numCLub==2) {
+        else if (numCLub===2) {
             clubJoueur=idClub2;
         }
-        if (confirm("Ajouter le joueur "+noms[0]+" "+noms[1]+"?") == true) {
+        if (confirm("Ajouter le joueur "+noms[0]+" "+noms[1]+"?") === true) {
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
                 console.log("réeussi");

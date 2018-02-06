@@ -59,7 +59,16 @@ include 'php/checkSession.php';
 
             <?php include 'navbar.php'; ?>
 
-            <div class="col-sm-10">
+            <form class="col-sm-10" action="php/soumissionFeuilleDeMatchCommentaire.php" method="post">
+
+                <input type="hidden" name="matchPlace" value="<?php echo $lieuMatch ?>">
+                <input type="hidden" name="matchDate" value="<?php echo $posts['dateMatch'] ?>">
+                <input type="hidden" name="matchCondition" value="<?php echo $conditionMatch ?>">
+                <input type="hidden" name="matchComment" value="<?php echo $commentaireMatch ?>">
+                <input type="hidden" name="matchAuthor" value="<?php echo $auteurMatch ?>">
+                <input type="hidden" name="tournementID" value="<?php echo $tournoiMatch ?>">
+                <input type="hidden" name="club1ID" value="<?php echo $club1 ?>">
+                <input type="hidden" name="club2ID" value="<?php echo $club2 ?>">
 
                 <div class="row"><h1>Informations du match</h1></div>
 
@@ -96,7 +105,7 @@ include 'php/checkSession.php';
                                 <tr>
                                     <td><?php echo $i ?></td>
                                     <td><?php echo $joueur ?></td>
-                                    <td><textarea></textarea></td>
+                                    <td><textarea name="commentaireEquipe1Joueur <?php echo $i ?>"></textarea></td>
                                 </tr>
                             <?php }?>
                             </tbody>
@@ -120,7 +129,7 @@ include 'php/checkSession.php';
                                 <tr>
                                     <td><?php echo $i ?></td>
                                     <td><?php echo $joueur ?></td>
-                                    <td><textarea></textarea></td>
+                                    <td><textarea name="commentaireEquipe2Joueur <?php echo $i ?>"></textarea></td>
                                 </tr>
                             <?php }?>
                             </tbody>
@@ -128,12 +137,12 @@ include 'php/checkSession.php';
 
                     </div>
 
+                    <input class="btn btn-dark homebutton" type="button" value="Retour" id="btnRetourCommentaire" onclick="document.location.href='feuilleMatch.php'"/>
+                    <input class="btn btn-primary homebutton" type="submit" value="Valider" id="btnValiderCommentaire" onclick="/*document.location.href='index.php'*/"/>
+
                 </div>
 
-                <input class="btn btn-dark homebutton" type="button" value="Retour" id="btnRetourCommentaire" onclick="document.location.href='feuilleMatch.php'"/>
-                <input class="btn btn-primary homebutton" type="submit" value="Valider" id="btnValiderCommentaire" onclick=""/>
-
-            </div>
+            </form>
 
         </div>
 

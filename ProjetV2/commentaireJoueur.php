@@ -70,6 +70,15 @@ include 'php/checkSession.php';
 
             <form class="col-sm-10" method="post" action="php/soumissionFeuilleDeMatchCommentaire.php">
 
+                <input type="hidden" name="matchPlace" value="<?php echo $lieuMatch?>">
+                <input type="hidden" name="matchDate" value="<?php $posts['dateMatch'] ?>">
+                <input type="hidden" name="matchCondition" value="<?php echo $conditionMatch ?>">
+                <input type="hidden" name="matchComment" value="<?php echo $commentaireMatch?>">
+                <input type="hidden" name="matchAuthor" value="<?php echo $auteurMatch?>">
+                <input type="hidden" name="tournamentID" value="<?php echo $tournoiMatch?>">
+                <input type="hidden" name="club1ID" value="<?php echo $club1?>">
+                <input type="hidden" name="club2ID" value="<?php echo $club2?>">
+
                 <div class="row"><h1>Informations du match</h1></div>
 
                 <div class="inputSelection">

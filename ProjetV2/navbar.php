@@ -3,5 +3,5 @@
 	<a href="index.php">Accueil</a>
 	<a href="feuilleMatch.php">Feuille de Match</a>
 	<a href="club.php">Clubs</a>
-	<a href="joueurs.php">Joueurs</a>
+	<a href="rechercheJoueur.php">Joueurs</a>
 </div>

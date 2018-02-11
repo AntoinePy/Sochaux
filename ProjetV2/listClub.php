@@ -8,24 +8,14 @@
 
 include_once('../traitementPHP/connection.php'); // connection base de données
 $con = mysqli_connect('localhost','root','','fcsochaux');
-$req = "SELECT PlayerFirstName,PlayerFamilyName,PlayerImageFilePath, NationID, ClubID, PositionID1, playerID  
-        FROM players 
+$req = "SELECT ClubName,ClubVille 
+        FROM clubs
         WHERE 0=0";
 
-if (isset ($_POST['NomJoueur'])&& $_POST['NomJoueur'] != "") {
-    $nomJoueur = $_POST['NomJoueur'];
-    echo $nomJoueur;
-    $req .= " AND PlayerFamilyName=".$nomJoueur;
-}
-
-if (isset ($_POST['Poste']) && $_POST['Poste'] != ""){
-    $poste = $_POST['Poste'];
-    $req .= " AND PositionID1=".$poste;
-}
-
-if (isset ($_POST['Pays']) && $_POST['Pays'] != ""){
-    $pays = $_POST['Pays'];
-    $req .= " AND NationID=".$pays;
+if (isset ($_POST['NomClub'])&& $_POST['NomClub'] != "") {
+    $nomClub = $_POST['NomClub'];
+    echo $nomClub;
+    $req .= " AND PlayerFamilyName=".$nomClub;
 }
 
 if (isset ($_POST['Club']) && $_POST['Club'] != ""){
@@ -45,7 +35,7 @@ $result = mysqli_query($con,$req);
 <head>
     <meta charset="UTF-8">
     <title>Fiche Joueur</title>
-    <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <link href="../css/feuilleDeMatch.css" type="text/css" rel="stylesheet" />
     <link href="../css/rechercheJoueur.css" type="text/css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -70,9 +60,9 @@ $result = mysqli_query($con,$req);
 
         <div class="row">
             <?php
-                    while($row = mysqli_fetch_array($result)) { ?>
-            <div class="colone col-sm-11">
-                <?php
+            while($row = mysqli_fetch_array($result)) { ?>
+                <div class="colone col-sm-11">
+                    <?php
                     $reqNation = "SELECT NationName FROM nations WHERE NationID=".$row[3];
                     $reqClub = "SELECT ClubName FROM clubs WHERE ClubID=".$row[4];
                     $reqPosition = "SELECT PositionName FROM positions WHERE positionID=".$row[5];
@@ -88,12 +78,12 @@ $result = mysqli_query($con,$req);
                                     <?php echo '<a href="pageJoueur.php?IDJoueur='.$row[6].'"> '.$row[0].' '." ".' '.$row[1].'</a>'; ?>
                                     <?php echo " - ", $rowNation[0], " - ", $rowClub[0], " - ", $rowPosition[0]; ?>
                                 </div>
-                            <?php
+                                <?php
                             }
                         }
-                     }
-                     ?>
-            </div>
+                    }
+                    ?>
+                </div>
             <?php } ?>
         </div>
 

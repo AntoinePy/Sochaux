@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Fiche Joueur</title>
-    <link href="../css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <link href="../css/feuilleDeMatch.css" type="text/css" rel="stylesheet" />
     <link href="../css/rechercheJoueur.css" type="text/css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -21,11 +21,9 @@ include_once('../traitementPHP/connection.php'); // connection base de données
 
 <?php
 function mb_form_option($class, $value,$echo) {
-return	"<OPTION class=\"$class\" value=\"$value\"> $echo </OPTION>";
+    return	"<OPTION class=\"$class\" value=\"$value\"> $echo </OPTION>";
 }
 ?>
-
-
 
 <div class="navigation col-lg-2">
     <?php include 'navigation.html' ?>
@@ -34,7 +32,7 @@ return	"<OPTION class=\"$class\" value=\"$value\"> $echo </OPTION>";
 <div class="feuilleDeMatch col-lg-10">
 
     <div class="barreTitre">
-        <h1>Rechercher un Joueur </h1>
+        <h1>Rechercher un Club </h1>
 
     </div>
 
@@ -44,35 +42,16 @@ return	"<OPTION class=\"$class\" value=\"$value\"> $echo </OPTION>";
             <div class="colone col-sm-6">
 
                 <div class="liste1" style="margin-bottom: 100px">
-                    <form method="post" action="listeJoueur.php">
-                        <input id="www" type="joueur" list="joueurListe" class="formulaireRechercheJoueur"
-                               placeholder="Saisissez nom joueur" Name="NomJoueur">
+                    <form method="post" action="listeClub.php">
+                        <input id="www" type="joueur" list="clubListe" class="formulaireRechercheClub"
+                               placeholder="Saisissez nom club" Name="NomClub">
                         <?php
-                        $players = $bd->query('SELECT * FROM players'); ?>
-                        <datalist id="joueurListe">
-                            <?php while ($player = $players->fetch()){ ?>
-                            <option value=<?php echo $player['PlayerFamilyName']; ?> >
-                            <?php } ?>
+                        $championnats = $bd->query('SELECT * FROM championships'); ?>
+                        <datalist id="clubListe">
+                            <?php while ($championnat= $championnats->fetch()){ ?>
+                            <option value=<?php echo $championnat['ChampionshipName']; ?> >
+                                <?php } ?>
                         </datalist>
-                        </br></br>
-                        <?php
-                        $positions = $bd->query('SELECT * FROM positions'); ?>
-                        <SELECT  title="Poste" id ="poste" Name="Poste" class="formulaireRechercheJoueur" >
-                            <option value="" >Poste</option>
-                            <?php while ($position = $positions->fetch()){ ?>
-                                <OPTION class="formulaireRechercheJoueurSelectionne" value=<?php echo $position['PositionID']; ?> > <?php  echo $position['PositionName']; ?> </OPTION>
-                            <?php } ?>
-                        </SELECT>
-                        </br></br>
-                        <?php
-                        $nations = $bd->query('SELECT * FROM nations'); ?>
-                        <SELECT title="pays" id ="pays" Name="Pays" class="formulaireRechercheJoueur">
-                            <option value="">Pays</option>
-                            <?php while ($nation = $nations->fetch()){ ?>
-                                <OPTION class="formulaireRechercheJoueurSelectionne" value=<?php echo $nation['NationID']; ?> > <?php echo $nation['NationName']; ?> </OPTION>
-                            <?php } ?>
-                        </SELECT>
-                        </br></br>
                         <?php
                         $champs = $bd->query('SELECT * FROM championships'); ?>
                         <SELECT title="championnat" id ="championnat1" Name="Championnat" class="formulaireRechercheJoueur" onchange='activListClub(1, this.value)'>

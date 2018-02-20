@@ -11,9 +11,7 @@ $con = mysqli_connect('localhost','root','','fcsochaux');
 
 $id = $_GET['IDJoueur'];
 
-$req = "SELECT *  
-        FROM players 
-        WHERE PlayerID=$id";
+$req = "SELECT * FROM players WHERE PlayerID=$id";
 
 $result = mysqli_query($con,$req);
 ?>
@@ -37,9 +35,10 @@ $result = mysqli_query($con,$req);
 
 <div class="container-fluid">
     <div class="row">
+
         <?php include 'navbar.php' ?>
 
-        <div class="feuilleDeMatch col-lg-10">
+        <div class="col-sm-10 feuilleDeMatch ">
             <?php
             while($row = mysqli_fetch_array($result)) {
                 $reqNation = "SELECT NationName FROM nations WHERE NationID=".$row['NationID'];
@@ -56,27 +55,31 @@ $result = mysqli_query($con,$req);
             <div class="starter-template">
 
                 <div class="row">
-                            <div class="colone col-sm-11">
-                                <img src="../images/<?php echo $row['PlayerImageFilePath']; ?> " width="220" height="300"/>
-                                <?php
-                                    while($rowNation = mysqli_fetch_array($resultNation)) {
-                                        while($rowClub = mysqli_fetch_array($resultClub)) {
-                                            while ($rowPosition = mysqli_fetch_array($resultPosition)) {?>
-                                                <h2>  Nationalité: <?php  echo $rowNation[0] ?></h2></br>
-                                                <h2>  Club actuel: <?php  echo $rowClub[0] ?></h2></br>
-                                                <h2>  Poste : <?php  echo $rowPosition[0] ?></h2></br>
-                                <?php
-                                        }
+                    <div class="col-sm-11">
+                        <div class="col-lg-4">
+                            <img src="../images/<?php echo $row['PlayerImageFilePath']; ?> " width="220" height="300"/>
+                        </div>
+                        <div class="infoJoueur col-lg-8">
+                            <?php
+                            while($rowNation = mysqli_fetch_array($resultNation)) {
+                                while($rowClub = mysqli_fetch_array($resultClub)) {
+                                    while ($rowPosition = mysqli_fetch_array($resultPosition)) {?>
+                                        <p>  Nationalité: <?php  echo $rowNation[0] ?></p></br>
+                                        <p>  Club actuel: <?php  echo $rowClub[0] ?></p></br>
+                                        <p>  Poste : <?php  echo $rowPosition[0] ?></p></br>
+                                        <?php
                                     }
                                 }
-                                ?>
-                                <h2>  Pied : <?php  echo $row['PlayerFoot'] ?></h2></br>
-                                <h2> Taille : <?php  echo $row['PlayerHeight'] ?></h2></br>
-                                <h2> Poids : <?php  echo $row['PlayerWeight'] ?></h2></br>
-                                <h2>  Note : <?php  echo $row['PlayerNote'] ?></h2></br>
-                                <h2> Commentaire : <?php  echo $row['PlayerComment'] ?></h2></br>
-                            </div>
+                            }
+                            ?>
+                            <p>  Pied : <?php  echo $row['PlayerFoot'] ?></p></br>
+                            <p> Taille : <?php  echo $row['PlayerHeight'] ?></p></br>
+                            <p> Poids : <?php  echo $row['PlayerWeight'] ?></p></br>
+                            <p>  Note : <?php  echo $row['PlayerNote'] ?></p></br>
+                            <p> Commentaire : <?php  echo $row['PlayerComment'] ?></p></br>
+                        </div>
                         <?php } ?>
+                        </div>
                 </div>
             </div>
         </div>

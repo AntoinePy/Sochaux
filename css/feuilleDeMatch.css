@@ -27,7 +27,12 @@ h1, h2{
     background-color: #0D0E29;
     margin-top: 20px;
     margin-left: 50px;
-    border-radius: 20px
+    border-radius: 20px;
+}
+
+.infoJoueur {
+    background-color: #0D0E29;
+    border-radius: 20px;
 }
 
 

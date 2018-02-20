@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2107d85-da32-40a5-92a5-731c99d7faf6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ProjetV2/pageClub.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ProjetV2/listClub.php" afterPath="$PROJECT_DIR$/ProjetV2/listClub.php" />
-      <change beforePath="$PROJECT_DIR$/ProjetV2/navbar.php" afterPath="$PROJECT_DIR$/ProjetV2/navbar.php" />
       <change beforePath="$PROJECT_DIR$/ProjetV2/pageJoueur.php" afterPath="$PROJECT_DIR$/ProjetV2/pageJoueur.php" />
-      <change beforePath="$PROJECT_DIR$/ProjetV2/rechercheClub.php" afterPath="$PROJECT_DIR$/ProjetV2/rechercheClub.php" />
-      <change beforePath="$PROJECT_DIR$/ProjetV2/rechercheJoueur.php" afterPath="$PROJECT_DIR$/ProjetV2/rechercheJoueur.php" />
-      <change beforePath="$PROJECT_DIR$/traitementPHP/remplissageListeClub.php" afterPath="$PROJECT_DIR$/traitementPHP/remplissageListeClub.php" />
+      <change beforePath="$PROJECT_DIR$/css/feuilleDeMatch.css" afterPath="$PROJECT_DIR$/css/feuilleDeMatch.css" />
     </list>
     <ignored path="Sochaux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,96 +38,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rechercheJoueur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/rechercheJoueur.php">
+      <file leaf-file-name="feuilleMatch.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="526">
+              <caret line="33" column="101" lean-forward="false" selection-start-line="33" selection-start-column="101" selection-end-line="33" selection-end-column="118" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commentaireJoueur.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1946">
+              <caret line="126" column="78" lean-forward="false" selection-start-line="126" selection-start-column="78" selection-end-line="126" selection-end-column="78" />
               <folding>
-                <marker date="1518369569348" expanded="true" signature="1817:1838" ph="SELECT * FRO... players" />
-                <marker date="1518369569348" expanded="true" signature="2433:2456" ph="SELECT * FRO... positions" />
-                <marker date="1518369569348" expanded="true" signature="3263:3284" ph="SELECT * FRO... nations" />
-                <marker date="1518369569348" expanded="true" signature="4074:4101" ph="SELECT * FRO... championships" />
+                <marker date="1517936720518" expanded="true" signature="5937:5991" ph="SELECT Posit... positions" />
+                <marker date="1517936720518" expanded="true" signature="8874:8928" ph="SELECT Posit... positions" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pageJoueur.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pageJoueur.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjetV2/pageJoueur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="70" lean-forward="false" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+            <state relative-caret-position="169">
+              <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
               <folding>
-                <marker date="1518372110849" expanded="true" signature="263:319" ph="SELECT * FRO... players" />
-                <marker date="1518372110849" expanded="true" signature="1390:1436" ph="SELECT Natio... nations" />
-                <marker date="1518372110849" expanded="true" signature="1484:1524" ph="SELECT ClubN... clubs" />
-                <marker date="1518372110849" expanded="true" signature="1574:1626" ph="SELECT Posit... positions" />
+                <marker date="1519120920636" expanded="true" signature="263:300" ph="SELECT * FRO... players" />
+                <marker date="1519120920636" expanded="true" signature="1373:1419" ph="SELECT Natio... nations" />
+                <marker date="1519120920636" expanded="true" signature="1467:1507" ph="SELECT ClubN... clubs" />
+                <marker date="1519120920636" expanded="true" signature="1557:1609" ph="SELECT Posit... positions" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rechercheClub.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/rechercheClub.php">
+      <file leaf-file-name="feuilleDeMatch.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/feuilleDeMatch.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="48" column="97" lean-forward="true" selection-start-line="48" selection-start-column="97" selection-end-line="48" selection-end-column="97" />
-              <folding>
-                <marker date="1518371179535" expanded="true" signature="1577:1604" ph="SELECT * FRO... championships" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listClub.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/listClub.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="31" column="74" lean-forward="true" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
-              <folding>
-                <element signature="e#6#89#0#PHP" expanded="true" />
-                <marker date="1518371575991" expanded="true" signature="236:306" ph="SELECT ClubN... clubs" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pageClub.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/pageClub.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <marker date="1518372085771" expanded="true" signature="261:313" ph="SELECT * FRO... clubs" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remplissageListeClub.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/traitementPHP/remplissageListeClub.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-              <folding>
-                <marker date="1518371421725" expanded="true" signature="183:263" ph="SELECT * FRO... clubs" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listeJoueur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/listeJoueur.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1149">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="62" selection-end-column="41" />
-              <folding>
-                <marker date="1518366995715" expanded="true" signature="230:372" ph="SELECT Playe... players" />
-                <marker date="1518366995715" expanded="true" signature="2574:2620" ph="SELECT Natio... nations" />
-                <marker date="1518366995715" expanded="true" signature="2671:2711" ph="SELECT ClubN... clubs" />
-                <marker date="1518366995715" expanded="true" signature="2766:2818" ph="SELECT Posit... positions" />
-              </folding>
+            <state relative-caret-position="237">
+              <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -191,7 +140,6 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/pages/navigation.html" />
         <option value="$PROJECT_DIR$/pages/tableauDeBord.php" />
-        <option value="$PROJECT_DIR$/css/feuilleDeMatch.css" />
         <option value="$PROJECT_DIR$/css/tableauDeBord.css" />
         <option value="$PROJECT_DIR$/traitementPHP/remplissageNomClub.php" />
         <option value="$PROJECT_DIR$/traitementPHP/remplissageListeChampionnat.php" />
@@ -221,6 +169,7 @@
         <option value="$PROJECT_DIR$/ProjetV2/listClub.php" />
         <option value="$PROJECT_DIR$/ProjetV2/pageClub.php" />
         <option value="$PROJECT_DIR$/ProjetV2/pageJoueur.php" />
+        <option value="$PROJECT_DIR$/css/feuilleDeMatch.css" />
       </list>
     </option>
   </component>
@@ -232,9 +181,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="976" />
-    <option name="height" value="1041" />
+    <option name="x" value="677" />
+    <option name="y" value="14" />
+    <option name="width" value="677" />
+    <option name="height" value="724" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -251,23 +201,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
@@ -284,18 +224,13 @@
               <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ProjetV2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="traitementPHP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,6 +252,134 @@
       <recent name="C:\wamp64\www\Sochaux\includes" />
       <recent name="C:\wamp64\www\Sochaux\stylesheets" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/listeJoueur.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/navbar.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/rechercheJoueur.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/bdd.sql</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/css/rechercheJoueur.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pages/listeJoueur.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pages/rechercheJoueur.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/traitementPHP/remplissageListeClub.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/listClub.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/navigation.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/pageClub.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/pageJoueur.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/rechercheClub.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/alves.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/messi.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/ronaldo.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/zidane.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/pages/pageJoueur.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -709,31 +772,42 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172966000" />
+    <option name="totallyTimeSpent" value="174312000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19763695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256579" sideWeight="0.50527906" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32616082" sideWeight="0.49472097" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256579" sideWeight="0.49472097" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256579" sideWeight="0.50527906" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32616082" sideWeight="0.49472097" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19763695" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -815,20 +889,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/traitementPHP/remplissageNomClub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/npm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/traitementPHP/remplissageListeJoueur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -882,13 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/feuilleDeMatch.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1055,50 +1108,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="8126">
+          <caret line="478" column="19" lean-forward="false" selection-start-line="478" selection-start-column="19" selection-end-line="478" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/recapFeuilleDeMatch.php" />
-    <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="63" column="62" lean-forward="false" selection-start-line="63" selection-start-column="62" selection-end-line="63" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/pageJoueur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1517957875891" expanded="true" signature="263:319" ph="SELECT * FRO... players" />
-            <marker date="1517957875891" expanded="true" signature="1277:1323" ph="SELECT Natio... nations" />
-            <marker date="1517957875891" expanded="true" signature="1363:1403" ph="SELECT ClubN... clubs" />
-            <marker date="1517957875891" expanded="true" signature="1445:1497" ph="SELECT Posit... positions" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/listeJoueur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1517957875890" expanded="true" signature="236:378" ph="SELECT Playe... players" />
-            <marker date="1517957875890" expanded="true" signature="2347:2393" ph="SELECT Natio... nations" />
-            <marker date="1517957875890" expanded="true" signature="2436:2476" ph="SELECT ClubN... clubs" />
-            <marker date="1517957875890" expanded="true" signature="2523:2575" ph="SELECT Posit... positions" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1106,7 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,20 +1141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="60" column="50" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <marker date="1517957875894" expanded="true" signature="1640:1661" ph="SELECT * FRO... players" />
-            <marker date="1517957875894" expanded="true" signature="2070:2093" ph="SELECT * FRO... positions" />
-            <marker date="1517957875894" expanded="true" signature="2716:2737" ph="SELECT * FRO... nations" />
-            <marker date="1517957875894" expanded="true" signature="3339:3366" ph="SELECT * FRO... championships" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/css/feuillematchstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1143,12 +1148,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1149">
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="62" selection-end-column="41" />
-          <folding>
-            <marker date="1518366995715" expanded="true" signature="230:372" ph="SELECT Playe... players" />
-            <marker date="1518366995715" expanded="true" signature="2574:2620" ph="SELECT Natio... nations" />
-            <marker date="1518366995715" expanded="true" signature="2671:2711" ph="SELECT ClubN... clubs" />
-            <marker date="1518366995715" expanded="true" signature="2766:2818" ph="SELECT Posit... positions" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,9 +1156,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="48" column="97" lean-forward="true" selection-start-line="48" selection-start-column="97" selection-end-line="48" selection-end-column="97" />
-          <folding>
-            <marker date="1518371179535" expanded="true" signature="1577:1604" ph="SELECT * FRO... championships" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,9 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <marker date="1518371421725" expanded="true" signature="183:263" ph="SELECT * FRO... clubs" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1178,7 +1173,6 @@
           <caret line="31" column="74" lean-forward="true" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1518371575991" expanded="true" signature="236:306" ph="SELECT ClubN... clubs" />
           </folding>
         </state>
       </provider>
@@ -1187,12 +1181,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <marker date="1518369569348" expanded="true" signature="1817:1838" ph="SELECT * FRO... players" />
-            <marker date="1518369569348" expanded="true" signature="2433:2456" ph="SELECT * FRO... positions" />
-            <marker date="1518369569348" expanded="true" signature="3263:3284" ph="SELECT * FRO... nations" />
-            <marker date="1518369569348" expanded="true" signature="4074:4101" ph="SELECT * FRO... championships" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,22 +1189,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/php/soumissionFeuilleDeMatchCommentaire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
-            <marker date="1518372085771" expanded="true" signature="261:313" ph="SELECT * FRO... clubs" />
+            <marker date="1517932173369" expanded="true" signature="279:396" ph="INSERT INTO championships... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="33" column="101" lean-forward="false" selection-start-line="33" selection-start-column="101" selection-end-line="33" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1946">
+          <caret line="126" column="78" lean-forward="false" selection-start-line="126" selection-start-column="78" selection-end-line="126" selection-end-column="78" />
+          <folding>
+            <marker date="1517936720518" expanded="true" signature="5937:5991" ph="SELECT Posit... positions" />
+            <marker date="1517936720518" expanded="true" signature="8874:8928" ph="SELECT Posit... positions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/listeJoueur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="73" column="24" lean-forward="false" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+            <marker date="1519119486204" expanded="true" signature="236:378" ph="SELECT Playe... players" />
+            <marker date="1519119486204" expanded="true" signature="2347:2393" ph="SELECT Natio... nations" />
+            <marker date="1519119486204" expanded="true" signature="2436:2476" ph="SELECT ClubN... clubs" />
+            <marker date="1519119486204" expanded="true" signature="2523:2575" ph="SELECT Posit... positions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/css/feuilleDeMatch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/css/feuillematchstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/pageJoueur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="70" lean-forward="false" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+        <state relative-caret-position="169">
+          <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
           <folding>
-            <marker date="1518372110849" expanded="true" signature="263:319" ph="SELECT * FRO... players" />
-            <marker date="1518372110849" expanded="true" signature="1390:1436" ph="SELECT Natio... nations" />
-            <marker date="1518372110849" expanded="true" signature="1484:1524" ph="SELECT ClubN... clubs" />
-            <marker date="1518372110849" expanded="true" signature="1574:1626" ph="SELECT Posit... positions" />
+            <marker date="1519120920636" expanded="true" signature="263:300" ph="SELECT * FRO... players" />
+            <marker date="1519120920636" expanded="true" signature="1373:1419" ph="SELECT Natio... nations" />
+            <marker date="1519120920636" expanded="true" signature="1467:1507" ph="SELECT ClubN... clubs" />
+            <marker date="1519120920636" expanded="true" signature="1557:1609" ph="SELECT Posit... positions" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/feuilleDeMatch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

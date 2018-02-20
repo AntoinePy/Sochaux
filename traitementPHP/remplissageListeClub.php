@@ -14,7 +14,7 @@
 
     $clubs = $bd->query($sql);
     $clubs->setFetchMode(PDO::FETCH_ASSOC);
-    ?> <OPTION> Choisir un club </OPTION> <?php
+    ?> <OPTION value=""> Choisir un club </OPTION> <?php
     while ($club = $clubs->fetch()) { ?>
         <OPTION value= <?php echo $club['ClubID']; ?> > <?php echo $club['ClubName']; ?></OPTION>;
     <?php }

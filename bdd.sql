@@ -232,11 +232,11 @@ CREATE TABLE `players` (
 --
 
 INSERT INTO `players` (`PlayerID`, `PlayerFirstName`, `PlayerFamilyName`, `PlayerWeight`, `PlayerHeight`, `PlayerFoot`, `PlayerComment`, `PlayerVideoFilePath`, `PlayerNote`, `ClubID`, `PositionID1`, `PlayerImageFilePath`, `NationID`, `PositionID2`, `PositionID3`) VALUES
-(1, 'Zinedine', 'Zidane', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 20, 'defaut.png', 6, NULL, NULL),
-(2, 'Léo', 'Messi', 70, 170, 'Gauche', 'Tres bon', '#', 10, 1, 2, 'defaut.png', 12, NULL, NULL),
-(3, 'Cristiano', 'Ronaldo', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 3, 'defaut.png', 13, NULL, NULL),
+(1, 'Zinedine', 'Zidane', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 20, 'zidane.jpg', 6, NULL, NULL),
+(2, 'Léo', 'Messi', 70, 170, 'Gauche', 'Tres bon', '#', 10, 1, 2, 'messi.jpg', 12, NULL, NULL),
+(3, 'Cristiano', 'Ronaldo', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 3, 'ronaldo.jpg', 13, NULL, NULL),
 (4, 'Gianluigi', 'Buffon', 80, 180, 'Droit', 'Tres bon', '#', 10, 11, 1, 'buffon.jpg', 8, NULL, NULL),
-(5, 'Dani', 'Alves', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 4, 'defaut.png', 10, NULL, NULL),
+(5, 'Dani', 'Alves', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 4, 'alves.jpg', 10, NULL, NULL),
 (6, 'Gerard', 'Piqué', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 5, 'defaut.png', 7, NULL, NULL),
 (7, 'Sergio', 'Ramos', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 6, 'defaut.png', 7, NULL, NULL),
 (8, 'Layvin', 'Kurzawa', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 7, 'defaut.png', 6, NULL, NULL),

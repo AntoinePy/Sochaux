@@ -88,7 +88,7 @@ $result = mysqli_query($con,$req);
                                         ?>
                                         <div class="listeJoueur" style="margin-bottom: 100px">
                                             <img src="../images/<?php echo $row[2]; ?> " width="70" height="70"/>
-                                            <a><?php echo $row[0], " ", $row[1]; ?></a>
+                                            <?php echo '<a href="pageJoueur.php?IDJoueur='.$row[6].'"> '.$row[0].' '." ".' '.$row[1].'</a>'; ?>
                                             <?php echo " - ", $rowNation[0], " - ", $rowClub[0], " - ", $rowPosition[0]; ?>
                                         </div>
                                     <?php

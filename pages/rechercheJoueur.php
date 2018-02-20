@@ -19,6 +19,14 @@
 include_once('../traitementPHP/connection.php'); // connection base de données
 ?>
 
+<?php
+function mb_form_option($class, $value,$echo) {
+return	"<OPTION class=\"$class\" value=\"$value\"> $echo </OPTION>";
+}
+?>
+
+
+
 <div class="navigation col-lg-2">
     <?php include 'navigation.html' ?>
 </div>
@@ -52,7 +60,7 @@ include_once('../traitementPHP/connection.php'); // connection base de données
                         <SELECT  title="Poste" id ="poste" Name="Poste" class="formulaireRechercheJoueur" >
                             <option value="" >Poste</option>
                             <?php while ($position = $positions->fetch()){ ?>
-                                <OPTION class="formulaireRechercheJoueurSelectionne" value=<?php echo $position['PositionID']; ?> > <?php echo $position['PositionName']; ?> </OPTION>
+                                <OPTION class="formulaireRechercheJoueurSelectionne" value=<?php echo $position['PositionID']; ?> > <?php  echo $position['PositionName']; ?> </OPTION>
                             <?php } ?>
                         </SELECT>
                         </br></br>

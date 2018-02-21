@@ -5,7 +5,7 @@
  * Date: 06/02/2018
  * Time: 09:34
  */
-
+echo $_GET['value'];
 $con = mysqli_connect('localhost','root','','fcsochaux');
 if (!$con) {
     die('Could not connect: ' . mysqli_error($con));

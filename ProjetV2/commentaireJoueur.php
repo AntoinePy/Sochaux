@@ -16,6 +16,14 @@ include 'php/checkSession.php';
     $joueursInterressantsEquipe1 = array();
     $joueursInterressantsEquipe2 = array();
 
+    //récuperation ID des 2 clubs et du tournoi
+    $sqlClubId1 = "SELECT ClubID FROM clubs WHERE ClubName = " . $club1;
+    $sqlClubId2 = "SELECT ClubID FROM clubs WHERE ClubName = " . $club2;
+    $sqlTournoiId = "SELECT TournamentID FROM tournaments WHERE TournamentName = " . $tournoiMatch;
+    $idClub1 = mysqli_query($con,$sqlClubId1);
+    $idClub2 = mysqli_query($con,$sqlClubId2);
+    $idTournoi = mysqli_query($con,$sqlTournoiId);
+
     $values = array_values($posts);
 
     // joueurs intérressant de l'équipe 1
@@ -69,9 +77,11 @@ include 'php/checkSession.php';
                 <input type="hidden" name="matchCondition" value="<?php echo $conditionMatch ?>">
                 <input type="hidden" name="matchComment" value="<?php echo $commentaireMatch?>">
                 <input type="hidden" name="matchAuthor" value="<?php echo $auteurMatch?>">
-                <input type="hidden" name="tournamentID" value="<?php echo $tournoiMatch?>">
-                <input type="hidden" name="club1ID" value="<?php echo $club1?>">
-                <input type="hidden" name="club2ID" value="<?php echo $club2?>">
+                <input type="hidden" name="tournamentID" value="<?php echo $idTournoi?>">
+                <input type="hidden" name="club1ID" value="<?php echo $idClub1?>">
+                <input type="hidden" name="club2ID" value="<?php echo $idClub2?>">
+
+                <?php var_dump($idTournoi . " " . $idClub1 . " " . $idClub2) ?>
 
                 <div class="row"><h1>Informations du match</h1></div>
 

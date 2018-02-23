@@ -91,6 +91,17 @@ include_once('php/connectionJoueurs.php'); // connection base de données
                                         </SELECT>
                                     </div>
 
+                                    <div class="form-group">
+                                        <?php
+                                        $notes = $bd->query('SELECT * FROM notes'); ?>
+                                        <SELECT title="note" id ="note1" Name="Note" class="form-control">
+                                            <option value="">Note</option>
+                                            <?php while ($note = $notes->fetch()){ ?>
+                                                <OPTION class="formulaireRechercheJoueurSelectionne" value=<?php echo $note['NoteID']; ?> > <?php echo $note['NoteName']; ?> </OPTION>
+                                            <?php } ?>
+                                        </SELECT>
+                                    </div>
+
                                     <input type="submit" id="uname" name="name" class="btn btn-primary">
 			                    </form>
 			                </div>

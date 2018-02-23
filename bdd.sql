@@ -224,36 +224,37 @@ CREATE TABLE `players` (
   `PlayerImageFilePath` char(255) DEFAULT NULL,
   `NationID` smallint(3) UNSIGNED DEFAULT NULL,
   `PositionID2` smallint(2) UNSIGNED DEFAULT NULL,
-  `PositionID3` smallint(2) UNSIGNED DEFAULT NULL
+  `PositionID3` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerNoteID` smallint(2) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `players`
 --
 
-INSERT INTO `players` (`PlayerID`, `PlayerFirstName`, `PlayerFamilyName`, `PlayerWeight`, `PlayerHeight`, `PlayerFoot`, `PlayerComment`, `PlayerVideoFilePath`, `PlayerNote`, `ClubID`, `PositionID1`, `PlayerImageFilePath`, `NationID`, `PositionID2`, `PositionID3`) VALUES
-(1, 'Zinedine', 'Zidane', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 20, 'zidane.jpg', 6, NULL, NULL),
-(2, 'Léo', 'Messi', 70, 170, 'Gauche', 'Tres bon', '#', 10, 1, 2, 'messi.jpg', 12, NULL, NULL),
-(3, 'Cristiano', 'Ronaldo', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 3, 'ronaldo.jpg', 13, NULL, NULL),
-(4, 'Gianluigi', 'Buffon', 80, 180, 'Droit', 'Tres bon', '#', 10, 11, 1, 'buffon.jpg', 8, NULL, NULL),
-(5, 'Dani', 'Alves', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 4, 'alves.jpg', 10, NULL, NULL),
-(6, 'Gerard', 'Piqué', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 5, 'defaut.png', 7, NULL, NULL),
-(7, 'Sergio', 'Ramos', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 6, 'defaut.png', 7, NULL, NULL),
-(8, 'Layvin', 'Kurzawa', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 7, 'defaut.png', 6, NULL, NULL),
-(9, 'Ngolo', 'Kanté', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 8, 'defaut.png', 6, NULL, NULL),
-(10, 'Kevin', 'De Bruyne', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 9, 'defaut.png', 14, NULL, NULL),
-(11, 'Luka', 'Modric', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 10, 'defaut.png', 11, NULL, NULL),
-(12, 'Samuel', 'Umtiti', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 20, 'defaut.png', 6, NULL, NULL),
-(13, 'Ousmane', 'Dembele', 70, 170, 'Gauche', 'Tres bon', '#', 10, 2, 2, 'defaut.png', 6, NULL, NULL),
-(14, 'Andres', 'Iniesta', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 3, 'defaut.png', 7, NULL, NULL),
-(15, 'Marc Andre', 'Ter Stegen', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 1, 'defaut.png', 9, NULL, NULL),
-(16, 'Jordi', 'Alba', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 4, 'defaut.png', 7, NULL, NULL),
-(17, 'Nelson', 'Semedo', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 5, 'defaut.png', 13, NULL, NULL),
-(18, 'Sergio', 'Busquets', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 6, 'defaut.png', 7, NULL, NULL),
-(19, 'Denis', 'Suarez', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 7, 'defaut.png', 7, NULL, NULL),
-(20, 'Ivan', 'Rakitic', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 8, 'defaut.png', 11, NULL, NULL),
-(21, 'Paco', 'Alcacer', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 9, 'defaut.png', 7, NULL, NULL),
-(22, 'Philippe', 'Coutinho', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 10, 'defaut.png', 10, NULL, NULL);
+INSERT INTO `players` (`PlayerID`, `PlayerFirstName`, `PlayerFamilyName`, `PlayerWeight`, `PlayerHeight`, `PlayerFoot`, `PlayerComment`, `PlayerVideoFilePath`, `PlayerNote`, `ClubID`, `PositionID1`, `PlayerImageFilePath`, `NationID`, `PositionID2`, `PositionID3`, `PlayerNoteID`) VALUES
+(1, 'Zinedine', 'Zidane', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 20, 'zidane.jpg', 6, NULL, NULL,3),
+(2, 'Léo', 'Messi', 70, 170, 'Gauche', 'Tres bon', '#', 10, 1, 2, 'messi.jpg', 12, NULL, NULL,1),
+(3, 'Cristiano', 'Ronaldo', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 3, 'ronaldo.jpg', 13, NULL, NULL,3),
+(4, 'Gianluigi', 'Buffon', 80, 180, 'Droit', 'Tres bon', '#', 10, 11, 1, 'buffon.jpg', 8, NULL, NULL,3),
+(5, 'Dani', 'Alves', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 4, 'alves.jpg', 10, NULL, NULL,2),
+(6, 'Gerard', 'Piqué', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 5, 'defaut.png', 7, NULL, NULL,2),
+(7, 'Sergio', 'Ramos', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 6, 'defaut.png', 7, NULL, NULL,2),
+(8, 'Layvin', 'Kurzawa', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 7, 'defaut.png', 6, NULL, NULL,2),
+(9, 'Ngolo', 'Kanté', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 8, 'defaut.png', 6, NULL, NULL,2),
+(10, 'Kevin', 'De Bruyne', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 9, 'defaut.png', 14, NULL, NULL,2),
+(11, 'Luka', 'Modric', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 10, 'defaut.png', 11, NULL, NULL,2),
+(12, 'Samuel', 'Umtiti', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 20, 'defaut.png', 6, NULL, NULL,2),
+(13, 'Ousmane', 'Dembele', 70, 170, 'Gauche', 'Tres bon', '#', 10, 2, 2, 'defaut.png', 6, NULL, NULL,2),
+(14, 'Andres', 'Iniesta', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 3, 'defaut.png', 7, NULL, NULL,2),
+(15, 'Marc Andre', 'Ter Stegen', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 1, 'defaut.png', 9, NULL, NULL,2),
+(16, 'Jordi', 'Alba', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 4, 'defaut.png', 7, NULL, NULL,2),
+(17, 'Nelson', 'Semedo', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 5, 'defaut.png', 13, NULL, NULL,2),
+(18, 'Sergio', 'Busquets', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 6, 'defaut.png', 7, NULL, NULL,2),
+(19, 'Denis', 'Suarez', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 7, 'defaut.png', 7, NULL, NULL,2),
+(20, 'Ivan', 'Rakitic', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 8, 'defaut.png', 11, NULL, NULL,2),
+(21, 'Paco', 'Alcacer', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 9, 'defaut.png', 7, NULL, NULL,2),
+(22, 'Philippe', 'Coutinho', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 10, 'defaut.png', 10, NULL, NULL,2);
 
 -- --------------------------------------------------------
 
@@ -270,6 +271,16 @@ CREATE TABLE `players_matchs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
+
+CREATE TABLE `notes` (
+  `NoteID` smallint(2) UNSIGNED NOT NULL,
+  `NoteName` char(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `notes` (`NoteID`, `NoteName`) VALUES
+(1, 'Pas intéressant'),
+(2, 'intéressant'),
+(3, 'très intéressant');
 
 --
 -- Table structure for table `positions`

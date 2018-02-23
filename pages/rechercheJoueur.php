@@ -49,15 +49,15 @@ return	"<OPTION class=\"$class\" value=\"$value\"> $echo </OPTION>";
                                placeholder="Saisissez nom joueur" Name="NomJoueur">
                         <?php
                         $players = $bd->query('SELECT * FROM players'); ?>
-                        <datalist id="joueurListe">
+                        <datalist id="joueurListe" >
                             <?php while ($player = $players->fetch()){ ?>
-                            <option value=<?php echo $player['PlayerFamilyName']; ?> >
+                            <option value=<?php echo $player['PlayerFirstName']; ?>>
                             <?php } ?>
                         </datalist>
                         </br></br>
                         <?php
                         $positions = $bd->query('SELECT * FROM positions'); ?>
-                        <SELECT  title="Poste" id ="poste" Name="Poste" class="formulaireRechercheJoueur" >
+                        <SELECT  title="Poste" id="poste" Name="Poste" class="formulaireRechercheJoueur" >
                             <option value="" >Poste</option>
                             <?php while ($position = $positions->fetch()){ ?>
                                 <OPTION class="formulaireRechercheJoueurSelectionne" value=<?php echo $position['PositionID']; ?> > <?php  echo $position['PositionName']; ?> </OPTION>

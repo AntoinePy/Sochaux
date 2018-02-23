@@ -55,8 +55,8 @@
       <file leaf-file-name="listeJoueur.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjetV2/listeJoueur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+            <state relative-caret-position="2100">
+              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding>
                 <marker date="1519419072008" expanded="true" signature="230:369" ph="SELECT Playe... players" />
                 <marker date="1519419072008" expanded="true" signature="230:371" ph="SELECT Playe... players" />
@@ -73,8 +73,8 @@
       <file leaf-file-name="bdd.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bdd.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1016">
-              <caret line="130" column="46" lean-forward="true" selection-start-line="130" selection-start-column="46" selection-end-line="130" selection-end-column="46" />
+            <state relative-caret-position="2730">
+              <caret line="130" column="46" lean-forward="false" selection-start-line="130" selection-start-column="46" selection-end-line="130" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -99,7 +99,7 @@
       <file leaf-file-name="feuilleMatch.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
+            <state relative-caret-position="1512">
               <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
@@ -109,7 +109,7 @@
       <file leaf-file-name="listesDeroulantes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
+            <state relative-caret-position="10038">
               <caret line="478" column="19" lean-forward="false" selection-start-line="478" selection-start-column="19" selection-end-line="478" selection-end-column="19" />
               <folding />
             </state>
@@ -254,6 +254,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,7 +299,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,7 +441,8 @@
       <workItem from="1517866363810" duration="4053000" />
       <workItem from="1517904709058" duration="5821000" />
       <workItem from="1518366819365" duration="5340000" />
-      <workItem from="1519419617129" duration="4447000" />
+      <workItem from="1519419617129" duration="4547000" />
+      <workItem from="1519425636943" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="Debut test">
       <created>1512564431133</created>
@@ -758,17 +759,23 @@
       <option name="project" value="LOCAL" />
       <updated>1519424610807</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Amélioration recherche joueur + modif BDD">
+      <created>1519425426568</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1519425426568</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182749000" />
+    <option name="totallyTimeSpent" value="182857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20032224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20300752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256579" sideWeight="0.50527906" order="7" side_tool="true" content_ui="tabs" />
@@ -1161,12 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-          <folding>
-            <marker date="1519402346362" expanded="true" signature="1640:1661" ph="SELECT * FRO... players" />
-            <marker date="1519402346362" expanded="true" signature="2069:2092" ph="SELECT * FRO... positions" />
-            <marker date="1519402346362" expanded="true" signature="2714:2735" ph="SELECT * FRO... nations" />
-            <marker date="1519402346362" expanded="true" signature="3337:3364" ph="SELECT * FRO... championships" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1204,8 +1205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/listeJoueur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        <state relative-caret-position="2100">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding>
             <marker date="1519419072008" expanded="true" signature="230:369" ph="SELECT Playe... players" />
             <marker date="1519419072008" expanded="true" signature="230:371" ph="SELECT Playe... players" />
@@ -1220,15 +1221,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bdd.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1016">
-          <caret line="130" column="46" lean-forward="true" selection-start-line="130" selection-start-column="46" selection-end-line="130" selection-end-column="46" />
+        <state relative-caret-position="2730">
+          <caret line="130" column="46" lean-forward="false" selection-start-line="130" selection-start-column="46" selection-end-line="130" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
+        <state relative-caret-position="10038">
           <caret line="478" column="19" lean-forward="false" selection-start-line="478" selection-start-column="19" selection-end-line="478" selection-end-column="19" />
           <folding />
         </state>
@@ -1236,7 +1237,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
+        <state relative-caret-position="1512">
           <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>

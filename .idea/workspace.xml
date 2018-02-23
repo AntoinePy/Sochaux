@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a2107d85-da32-40a5-92a5-731c99d7faf6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" afterPath="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" />
-      <change beforePath="$PROJECT_DIR$/bdd.sql" afterPath="$PROJECT_DIR$/bdd.sql" />
     </list>
     <ignored path="Sochaux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commentaireJoueur.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="commentaireJoueur.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+            <state relative-caret-position="650">
+              <caret line="124" column="27" lean-forward="true" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
               <folding>
                 <marker date="1519420448956" expanded="true" signature="775:817" ph="SELECT ClubI... clubs" />
                 <marker date="1519420448956" expanded="true" signature="848:890" ph="SELECT ClubI... clubs" />
@@ -98,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feuilleMatch.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="feuilleMatch.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="684">
               <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
@@ -235,10 +233,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="677" />
-    <option name="y" value="14" />
-    <option name="width" value="677" />
-    <option name="height" value="724" />
+    <option name="x" value="519" />
+    <option name="y" value="-28" />
+    <option name="width" value="976" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -307,7 +305,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../snowboardproject" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
@@ -443,7 +441,7 @@
       <workItem from="1517866363810" duration="4053000" />
       <workItem from="1517904709058" duration="5821000" />
       <workItem from="1518366819365" duration="5340000" />
-      <workItem from="1519419617129" duration="3645000" />
+      <workItem from="1519419617129" duration="4447000" />
     </task>
     <task id="LOCAL-00001" summary="Debut test">
       <created>1512564431133</created>
@@ -753,11 +751,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519420009067</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Amélioration recherche joueur + modif BDD">
+      <created>1519424610807</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1519424610807</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181947000" />
+    <option name="totallyTimeSpent" value="182749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1221,20 +1226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding>
-            <marker date="1519420448956" expanded="true" signature="775:817" ph="SELECT ClubI... clubs" />
-            <marker date="1519420448956" expanded="true" signature="848:890" ph="SELECT ClubI... clubs" />
-            <marker date="1519420448956" expanded="true" signature="923:983" ph="SELECT Tourn... tournaments" />
-            <marker date="1519420448956" expanded="true" signature="6459:6513" ph="SELECT Posit... positions" />
-            <marker date="1519420448956" expanded="true" signature="9396:9450" ph="SELECT Posit... positions" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -1245,9 +1236,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="684">
           <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="124" column="27" lean-forward="true" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
+          <folding>
+            <marker date="1519420448956" expanded="true" signature="775:817" ph="SELECT ClubI... clubs" />
+            <marker date="1519420448956" expanded="true" signature="848:890" ph="SELECT ClubI... clubs" />
+            <marker date="1519420448956" expanded="true" signature="923:983" ph="SELECT Tourn... tournaments" />
+            <marker date="1519420448956" expanded="true" signature="6459:6513" ph="SELECT Posit... positions" />
+            <marker date="1519420448956" expanded="true" signature="9396:9450" ph="SELECT Posit... positions" />
+          </folding>
         </state>
       </provider>
     </entry>

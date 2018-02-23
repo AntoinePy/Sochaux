@@ -208,7 +208,7 @@ include 'php/checkSession.php';
 
                 <input class="btn btn-dark homebutton" type="button" value="Retour" id="btnRetourCommentaire" onclick="document.location.href='feuilleMatch.php'"/>
                 <input class="btn btn-primary homebutton" type="submit" value="Valider" id="btnValiderCommentaire" onclick=""/>
-                <a href="javascript:window.print()"><button class="btn btn-default">Imprimer</button></a>
+                <a href="javascript:window.print()"><input type="text" value="imprimer" class="btn btn-default"></a>
             </form>
         </div>
     </div>

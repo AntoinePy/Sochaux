@@ -125,6 +125,26 @@ CREATE TABLE `contracts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
+CREATE TABLE `compositions` (
+  `CompositionID` smallint(2) UNSIGNED NOT NULL,
+  `ClubID` smallint(2) UNSIGNED NOT NULL,
+  `FormationID` smallint(2) UNSIGNED NOT NULL,
+  `PlayerID1` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerID2` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerID3` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerID4` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerID5` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerID6` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerID7` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerID8` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerID9` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerID10` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerID11` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerReplecementID1` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerReplecementID2` smallint(2) UNSIGNED DEFAULT NULL,
+  `PlayerReplecementID3` smallint(2) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 --
 -- Table structure for table `formations`
@@ -174,7 +194,9 @@ CREATE TABLE `matchs` (
   `MatchAuthor` char(50) DEFAULT NULL,
   `TournamentID` smallint(4) UNSIGNED DEFAULT NULL,
   `ClubID1` smallint(3) UNSIGNED DEFAULT NULL,
-  `ClubID2` smallint(3) UNSIGNED DEFAULT NULL
+  `ClubID2` smallint(3) UNSIGNED DEFAULT NULL,
+  `CompositionID1` smallint(3) UNSIGNED DEFAULT NULL,
+  `CompositionID2` smallint(3) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a2107d85-da32-40a5-92a5-731c99d7faf6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" afterPath="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" />
+      <change beforePath="$PROJECT_DIR$/bdd.sql" afterPath="$PROJECT_DIR$/bdd.sql" />
     </list>
     <ignored path="Sochaux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listeJoueur.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="listeJoueur.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjetV2/listeJoueur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="85" column="26" lean-forward="false" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+            <state relative-caret-position="465">
+              <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding>
                 <marker date="1519419072008" expanded="true" signature="230:369" ph="SELECT Playe... players" />
                 <marker date="1519419072008" expanded="true" signature="230:371" ph="SELECT Playe... players" />
@@ -66,6 +68,52 @@
                 <marker date="1519419072008" expanded="true" signature="2778:2818" ph="SELECT ClubN... clubs" />
                 <marker date="1519419072008" expanded="true" signature="2873:2925" ph="SELECT Posit... positions" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bdd.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bdd.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1016">
+              <caret line="130" column="46" lean-forward="true" selection-start-line="130" selection-start-column="46" selection-end-line="130" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commentaireJoueur.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <folding>
+                <marker date="1519420448956" expanded="true" signature="775:817" ph="SELECT ClubI... clubs" />
+                <marker date="1519420448956" expanded="true" signature="848:890" ph="SELECT ClubI... clubs" />
+                <marker date="1519420448956" expanded="true" signature="923:983" ph="SELECT Tourn... tournaments" />
+                <marker date="1519420448956" expanded="true" signature="6459:6513" ph="SELECT Posit... positions" />
+                <marker date="1519420448956" expanded="true" signature="9396:9450" ph="SELECT Posit... positions" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feuilleMatch.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listesDeroulantes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="478" column="19" lean-forward="false" selection-start-line="478" selection-start-column="19" selection-end-line="478" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -163,7 +211,6 @@
         <option value="$PROJECT_DIR$/ProjetV2/css/impression.css" />
         <option value="$PROJECT_DIR$/ProjetV2/recapFeuilleDeMatch.php" />
         <option value="$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js" />
-        <option value="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" />
         <option value="$PROJECT_DIR$/ProjetV2/navbar.php" />
         <option value="$PROJECT_DIR$/ProjetV2/rechercheClub.php" />
         <option value="$PROJECT_DIR$/traitementPHP/remplissageListeClub.php" />
@@ -173,9 +220,10 @@
         <option value="$PROJECT_DIR$/css/feuilleDeMatch.css" />
         <option value="$PROJECT_DIR$/pages/rechercheJoueur.php" />
         <option value="$PROJECT_DIR$/pages/listeJoueur.php" />
-        <option value="$PROJECT_DIR$/bdd.sql" />
         <option value="$PROJECT_DIR$/ProjetV2/rechercheJoueur.php" />
         <option value="$PROJECT_DIR$/ProjetV2/listeJoueur.php" />
+        <option value="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" />
+        <option value="$PROJECT_DIR$/bdd.sql" />
       </list>
     </option>
   </component>
@@ -230,6 +278,12 @@
               <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ProjetV2" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ProjetV2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
@@ -389,7 +443,7 @@
       <workItem from="1517866363810" duration="4053000" />
       <workItem from="1517904709058" duration="5821000" />
       <workItem from="1518366819365" duration="5340000" />
-      <workItem from="1519419617129" duration="371000" />
+      <workItem from="1519419617129" duration="3645000" />
     </task>
     <task id="LOCAL-00001" summary="Debut test">
       <created>1512564431133</created>
@@ -692,25 +746,32 @@
       <option name="project" value="LOCAL" />
       <updated>1519419657884</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Amélioration recherche joueur + modif BDD">
+      <created>1519420009067</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1519420009067</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178673000" />
+    <option name="totallyTimeSpent" value="181947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19427083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20032224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256579" sideWeight="0.50527906" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32616082" sideWeight="0.49472097" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10645527" sideWeight="0.49472097" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3183315" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -999,13 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8126">
-          <caret line="478" column="19" lean-forward="false" selection-start-line="478" selection-start-column="19" selection-end-line="478" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/recapFeuilleDeMatch.php" />
     <entry file="file://$PROJECT_DIR$/pages/pageJoueur.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1056,20 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="33" column="101" lean-forward="false" selection-start-line="33" selection-start-column="101" selection-end-line="33" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1946">
-          <caret line="126" column="78" lean-forward="false" selection-start-line="126" selection-start-column="78" selection-end-line="126" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/css/feuilleDeMatch.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1116,6 +1156,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding>
+            <marker date="1519402346362" expanded="true" signature="1640:1661" ph="SELECT * FRO... players" />
+            <marker date="1519402346362" expanded="true" signature="2069:2092" ph="SELECT * FRO... positions" />
+            <marker date="1519402346362" expanded="true" signature="2714:2735" ph="SELECT * FRO... nations" />
+            <marker date="1519402346362" expanded="true" signature="3337:3364" ph="SELECT * FRO... championships" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1137,13 +1183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bdd.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="250" column="58" lean-forward="false" selection-start-line="250" selection-start-column="58" selection-end-line="250" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/rechercheJoueur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2079">
@@ -1160,8 +1199,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/listeJoueur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="85" column="26" lean-forward="false" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+        <state relative-caret-position="465">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding>
             <marker date="1519419072008" expanded="true" signature="230:369" ph="SELECT Playe... players" />
             <marker date="1519419072008" expanded="true" signature="230:371" ph="SELECT Playe... players" />
@@ -1171,6 +1210,44 @@
             <marker date="1519419072008" expanded="true" signature="2778:2818" ph="SELECT ClubN... clubs" />
             <marker date="1519419072008" expanded="true" signature="2873:2925" ph="SELECT Posit... positions" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdd.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1016">
+          <caret line="130" column="46" lean-forward="true" selection-start-line="130" selection-start-column="46" selection-end-line="130" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <marker date="1519420448956" expanded="true" signature="775:817" ph="SELECT ClubI... clubs" />
+            <marker date="1519420448956" expanded="true" signature="848:890" ph="SELECT ClubI... clubs" />
+            <marker date="1519420448956" expanded="true" signature="923:983" ph="SELECT Tourn... tournaments" />
+            <marker date="1519420448956" expanded="true" signature="6459:6513" ph="SELECT Posit... positions" />
+            <marker date="1519420448956" expanded="true" signature="9396:9450" ph="SELECT Posit... positions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="478" column="19" lean-forward="false" selection-start-line="478" selection-start-column="19" selection-end-line="478" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

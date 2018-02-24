@@ -25,6 +25,7 @@ if (mysqli_query($con, $sql)) {
 
 mysqli_close($con);*/
 
+    // création match
     try {
         $bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
         $bd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -43,4 +44,41 @@ mysqli_close($con);*/
         die('erreur :'.$e->getMessage());
     }
     $req->closeCursor();
+
+    // joueur interressant participant au match
+    $idMatch = $bd->lastInsertId();
+    for($i = 0; $i < $_POST['nbJoueursInterressants1']; $i++) {
+        try {
+            $bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+            $bd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+            $req = $bd->prepare("INSERT INTO players_matchs (PlayerID, MatchID, Player_MatchComment, Player_MatchDecisive, Player_MatchGoals)
+                                           VALUES(:playerID, :matchID, :player_MatchComment, :player_MatchDecisive, :player_MatchGoals)");
+            $req->bindParam(':playerID', $_POST['idEquipe1Joueur' . ($i+1)], PDO::PARAM_STR,255);
+            $req->bindParam(':matchID', $idMatch,PDO::PARAM_STR,255);
+            $req->bindParam(':player_MatchComment', $_POST['commentaireEquipe1Joueur' . ($i+1)], PDO::PARAM_STR,255);
+            $req->bindParam(':player_MatchDecisive', $_POST['passeJoueur' . ($i+1) . 'Equipe1'], PDO::PARAM_STR,255);
+            $req->bindParam(':player_MatchGoals', $_POST['butJoueur' . ($i+1) . 'Equipe1'], PDO::PARAM_STR,255);
+            $req->execute();
+        } catch (Exception $e) {
+            die('erreur :'.$e->getMessage());
+        }
+        $req->closeCursor();
+    }
+    for($i = 0; $i < $_POST['nbJoueursInterressants2']; $i++) {
+        try {
+            $bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+            $bd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+            $req = $bd->prepare("INSERT INTO players_matchs (PlayerID, MatchID, Player_MatchComment, Player_MatchDecisive, Player_MatchGoals)
+                                               VALUES(:playerID, :matchID, :player_MatchComment, :player_MatchDecisive, :player_MatchGoals)");
+            $req->bindParam(':playerID', $_POST['idEquipe2Joueur' . ($i+1)], PDO::PARAM_STR,255);
+            $req->bindParam(':matchID', $idMatch,PDO::PARAM_STR,255);
+            $req->bindParam(':player_MatchComment', $_POST['commentaireEquipe2Joueur' . ($i+1)], PDO::PARAM_STR,255);
+            $req->bindParam(':player_MatchDecisive', $_POST['passeJoueur' . ($i+1) . 'Equipe2'], PDO::PARAM_STR,255);
+            $req->bindParam(':player_MatchGoals', $_POST['butJoueur' . ($i+1) . 'Equipe2'], PDO::PARAM_STR,255);
+            $req->execute();
+        } catch (Exception $e) {
+            die('erreur :'.$e->getMessage());
+        }
+        $req->closeCursor();
+    }
 ?>

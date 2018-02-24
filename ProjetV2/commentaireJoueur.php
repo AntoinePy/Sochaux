@@ -91,6 +91,8 @@ include 'php/connectionJoueurs.php';
                 <input type="hidden" name="tournamentID" value="<?php echo $idTournoi?>">
                 <input type="hidden" name="club1ID" value="<?php echo $idClub1?>">
                 <input type="hidden" name="club2ID" value="<?php echo $idClub2?>">
+                <input type="hidden" name="nbJoueursInterressants1" value="<?php echo sizeof($joueursInterressantsEquipe1)?>">
+                <input type="hidden" name="nbJoueursInterressants2" value="<?php echo sizeof($joueursInterressantsEquipe2)?>">
 
                 <div class="row"><h1>Informations du match</h1></div>
 
@@ -117,30 +119,55 @@ include 'php/connectionJoueurs.php';
 
                         <table class="table" style="width: 95%;">
                             <thead>
-                            <tr><th>#</th><th>Joueur</th><th>Commentaire</th><th>Temps de jeu</th><th>Pied</th><th>Note</th><th>Poste</th></tr>
+                                <tr><th>#</th><th>Joueur</th><th>Commentaire</th><th>Temps de jeu</th><th>Pied et note</th><th>But et passe</th><th>Poste</th></tr>
                             </thead>
                             <tbody>
                             <?php
                             $i = 0;
                             foreach($joueursInterressantsEquipe1 as $joueur) {
-                                $i++ ?>
+                                $i++ ;
+                                list($prenom, $nom) = explode(' ',  $joueur);
+                                $reponse = $bd->query('SELECT * FROM players WHERE PlayerFirstName = \'' . $prenom . '\' AND PlayerFamilyName = \'' . $nom . '\'');
+                                while ($donnees = $reponse->fetch()) { ?>
+                                     <input type="hidden" name="idEquipe1Joueur<?php echo $i ?>" value="<?php echo $donnees['PlayerID']?>">
+                                <?php }
+                                $reponse->closeCursor();
+                                ?>
                                 <tr>
                                     <td><?php echo $i ?></td>
                                     <td><?php echo $joueur ?></td>
                                     <td><textarea class="form-control" name="commentaireEquipe1Joueur<?php echo $i ?>"></textarea></td>
                                     <td><textarea class="form-control" name="tempsJeuEquipe1Joueur<?php echo $i ?>"></textarea></td>
                                     <td>
-                                        <select class="form-control">
-                                            <option>Droitier</option>
-                                            <option>Gaucher</option>
-                                        </select>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item liste">
+                                                <select class="form-control">
+                                                    <option>Droitier</option>
+                                                    <option>Gaucher</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item liste">
+                                                <select class="form-control">
+                                                    <option>1 (ne pas suivre)</option>
+                                                    <option>2 (à suivre)</option>
+                                                    <option>3 (à recruter)</option>
+                                                </select>
+                                            </li>
+                                        </ul>
                                     </td>
                                     <td>
-                                        <select class="form-control">
-                                            <option>1 (ne pas suivre)</option>
-                                            <option>2 (à suivre)</option>
-                                            <option>3 (à recruter)</option>
-                                        </select>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item liste">
+                                                <label> But :
+                                                    <input class="form-control" name="butJoueur<?php echo $i ?>Equipe1">
+                                                </label>
+                                            </li>
+                                            <li class="list-group-item liste">
+                                                <label> Passe :
+                                                    <input class="form-control" name="passeJoueur<?php echo $i ?>Equipe1">
+                                                </label>
+                                            </li>
+                                        </ul>
                                     </td>
                                     <td>
                                         <select class="form-control" name="posteEquipe1Joueur<?php echo $i?>">
@@ -168,30 +195,55 @@ include 'php/connectionJoueurs.php';
 
                         <table class="table" style="width: 95%;">
                             <thead>
-                            <tr><th>#</th><th>Joueur</th><th>Commentaire</th><th>Temps de jeu</th><th>Pied</th><th>Note</th><th>Poste</th></tr>
+                                <tr><th>#</th><th>Joueur</th><th>Commentaire</th><th>Temps de jeu</th><th>Pied et note</th><th>But et passe</th><th>Poste</th></tr>
                             </thead>
                             <tbody>
                             <?php
                             $i = 0;
                             foreach($joueursInterressantsEquipe2 as $joueur) {
-                                $i++ ?>
+                                $i++;
+                                list($prenom, $nom) = explode(' ',  $joueur);
+                                $reponse = $bd->query('SELECT * FROM players WHERE PlayerFirstName = \'' . $prenom . '\' AND PlayerFamilyName = \'' . $nom . '\'');
+                                while ($donnees = $reponse->fetch()) { ?>
+                                    <input type="hidden" name="idEquipe2Joueur<?php echo $i ?>" value="<?php echo $donnees['PlayerID']?>">
+                                <?php }
+                                $reponse->closeCursor();
+                                ?>
                                 <tr>
                                     <td><?php echo $i ?></td>
                                     <td><?php echo $joueur ?></td>
                                     <td><textarea class="form-control" name="commentaireEquipe2Joueur<?php echo $i ?>"></textarea></td>
                                     <td><textarea class="form-control" name="tempsJeuEquipe2Joueur<?php echo $i ?>"></textarea></td>
                                     <td>
-                                        <select class="form-control">
-                                            <option>Droitier</option>
-                                            <option>Gaucher</option>
-                                        </select>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item liste">
+                                                <select class="form-control">
+                                                    <option>Droitier</option>
+                                                    <option>Gaucher</option>
+                                                </select>
+                                            </li>
+                                            <li class="list-group-item liste">
+                                                <select class="form-control">
+                                                    <option>1 (ne pas suivre)</option>
+                                                    <option>2 (à suivre)</option>
+                                                    <option>3 (à recruter)</option>
+                                                </select>
+                                            </li>
+                                        </ul>
                                     </td>
                                     <td>
-                                        <select class="form-control">
-                                            <option>1 (ne pas suivre)</option>
-                                            <option>2 (suivre)</option>
-                                            <option>3 (à recruter)</option>
-                                        </select>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item liste">
+                                                <label> But :
+                                                    <input class="form-control" name="butJoueur<?php echo $i ?>Equipe2">
+                                                </label>
+                                            </li>
+                                            <li class="list-group-item liste">
+                                                <label> Passe :
+                                                    <input class="form-control" name="passeJoueur<?php echo $i ?>Equipe2">
+                                                </label>
+                                            </li>
+                                        </ul>
                                     </td>
                                     <td>
                                         <select class="form-control" name="posteEquipe1Joueur<?php echo $i?>">

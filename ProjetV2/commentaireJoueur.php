@@ -84,15 +84,13 @@ include 'php/connectionJoueurs.php';
             <form class="col-sm-10" method="post" action="php/soumissionFeuilleDeMatchCommentaire.php">
 
                 <input type="hidden" name="matchPlace" value="<?php echo $lieuMatch?>">
-                <input type="hidden" name="matchDate" value="<?php $posts['dateMatch'] ?>">
+                <input type="hidden" name="matchDate" value="<?php echo $posts['dateMatch'] ?>">
                 <input type="hidden" name="matchCondition" value="<?php echo $conditionMatch ?>">
                 <input type="hidden" name="matchComment" value="<?php echo $commentaireMatch?>">
                 <input type="hidden" name="matchAuthor" value="<?php echo $auteurMatch?>">
                 <input type="hidden" name="tournamentID" value="<?php echo $idTournoi?>">
                 <input type="hidden" name="club1ID" value="<?php echo $idClub1?>">
                 <input type="hidden" name="club2ID" value="<?php echo $idClub2?>">
-
-                <?php var_dump($idTournoi . " " . $idClub1 . " " . $idClub2) ?>
 
                 <div class="row"><h1>Informations du match</h1></div>
 

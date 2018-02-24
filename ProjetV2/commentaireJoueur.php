@@ -1,5 +1,7 @@
 <?php
 include 'php/checkSession.php';
+include 'php/connectionJoueurs.php';
+
  /*  cacher les erreurs php pour affichage correct
  ini_set("display_errors",0);error_reporting(0);*/
     $con = mysqli_connect('localhost','root','','fcsochaux');
@@ -17,12 +19,21 @@ include 'php/checkSession.php';
     $joueursInterressantsEquipe2 = array();
 
     //récuperation ID des 2 clubs et du tournoi
-    $sqlClubId1 = "SELECT ClubID FROM clubs WHERE ClubName = " . $club1;
-    $sqlClubId2 = "SELECT ClubID FROM clubs WHERE ClubName = " . $club2;
-    $sqlTournoiId = "SELECT TournamentID FROM tournaments WHERE TournamentName = " . $tournoiMatch;
-    $idClub1 = mysqli_query($con,$sqlClubId1);
-    $idClub2 = mysqli_query($con,$sqlClubId2);
-    $idTournoi = mysqli_query($con,$sqlTournoiId);
+    $reponse1 = $bd->query('SELECT * FROM clubs WHERE ClubName = \'' . $club1 . '\'');
+    while ($donnees = $reponse1->fetch()) {
+        $idClub1 = $donnees['ClubID'];
+    }
+    $reponse1->closeCursor();
+    $reponse2 = $bd->query('SELECT * FROM clubs WHERE ClubName = \'' . $club2 . '\'');
+    while ($donnees = $reponse2->fetch()) {
+        $idClub2 = $donnees['ClubID'];
+    }
+    $reponse2->closeCursor();
+    $reponse3 = $bd->query('SELECT * FROM tournaments WHERE TournamentName = \'' . $tournoiMatch . '\'');
+    while ($donnees = $reponse3->fetch()) {
+        $idTournoi = $donnees['TournamentID'];
+    }
+    $reponse2->closeCursor();
 
     $values = array_values($posts);
 

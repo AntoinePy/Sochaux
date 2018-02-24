@@ -5,7 +5,7 @@
  * Date: 16/12/2017
  * Time: 14:12
  */
-$bd = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
+$bds = new PDO('mysql:host=localhost;dbname=apy6;charset=utf8', 'root', '');
 $retour = "";
 $pays = $_POST['pays'];
 $donneesValides = true;

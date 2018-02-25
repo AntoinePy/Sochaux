@@ -4,4 +4,5 @@
 	<a href="feuilleMatch.php">Feuille de Match</a>
 	<a href="rechercheClub.php">Clubs</a>
 	<a href="rechercheJoueur.php">Joueurs</a>
+    <a href="listeMatch.php">Matchs</a>
 </div>

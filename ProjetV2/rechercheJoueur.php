@@ -116,6 +116,5 @@ include_once('php/connectionJoueurs.php'); // connection base de données
 	</div>
 </div>
 
-
 </body>
 </html>

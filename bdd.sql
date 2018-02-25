@@ -146,6 +146,9 @@ CREATE TABLE `compositions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+INSERT INTO `compositions` (`CompositionID`, `ClubID`, `FormationID`, `PlayerID1`, `PlayerID2`, `PlayerID3`, `PlayerID4`, `PlayerID5`, `PlayerID6`, `PlayerID7`, `PlayerID8`, `PlayerID9`, `PlayerID10`, `PlayerID11`, `PlayerReplecementID1`, `PlayerReplecementID2`, `PlayerReplecementID3`) VALUES
+(1, 1, 4,1,2,3,4,5,6,7,8,9,10,11,12,13,14 ),
+(2, 2, 4,12,13,14,15,16,17,18,19,20,21,22,1,2,3);
 --
 -- Table structure for table `formations`
 --
@@ -192,12 +195,16 @@ CREATE TABLE `matchs` (
   `MatchCondition` char(50) DEFAULT NULL,
   `MatchComment` char(255) DEFAULT NULL,
   `MatchAuthor` char(50) DEFAULT NULL,
+  `MatchScore` char(50) DEFAULT NULL,
   `TournamentID` smallint(4) UNSIGNED DEFAULT NULL,
   `ClubID1` smallint(3) UNSIGNED DEFAULT NULL,
   `ClubID2` smallint(3) UNSIGNED DEFAULT NULL,
   `CompositionID1` smallint(3) UNSIGNED DEFAULT NULL,
   `CompositionID2` smallint(3) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `matchs` (`MatchID`, `MatchPlace`, `MatchDate`, `MatchCondition`, `MatchComment`, `MatchAuthor`, `MatchScore`, `TournamentID`, `ClubID1`, `ClubID2`, `CompositionID1`, `CompositionID2`) VALUES
+(1, 'Stade Bonal', '2018-02-24', 'Beaucoup de pluie', 'bonne equipe de Sochaux', 'Bastien', '3 - 0',1,1,2,1,2);
 
 -- --------------------------------------------------------
 
@@ -237,6 +244,7 @@ CREATE TABLE `players` (
   `PlayerFamilyName` char(50) NOT NULL,
   `PlayerWeight` smallint(3) UNSIGNED DEFAULT NULL,
   `PlayerHeight` smallint(3) UNSIGNED DEFAULT NULL,
+  `PlayerNumber` char(255) DEFAULT NULL,
   `PlayerFoot` char(10) DEFAULT NULL,
   `PlayerComment` char(255) DEFAULT NULL,
   `PlayerVideoFilePath` char(255) DEFAULT NULL,
@@ -254,29 +262,29 @@ CREATE TABLE `players` (
 -- Dumping data for table `players`
 --
 
-INSERT INTO `players` (`PlayerID`, `PlayerFirstName`, `PlayerFamilyName`, `PlayerWeight`, `PlayerHeight`, `PlayerFoot`, `PlayerComment`, `PlayerVideoFilePath`, `PlayerNote`, `ClubID`, `PositionID1`, `PlayerImageFilePath`, `NationID`, `PositionID2`, `PositionID3`, `PlayerNoteID`) VALUES
-(1, 'Zinedine', 'Zidane', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 20, 'zidane.jpg', 6, NULL, NULL,3),
-(2, 'Léo', 'Messi', 70, 170, 'Gauche', 'Tres bon', '#', 10, 1, 2, 'messi.jpg', 12, NULL, NULL,1),
-(3, 'Cristiano', 'Ronaldo', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 3, 'ronaldo.jpg', 13, NULL, NULL,3),
-(4, 'Gianluigi', 'Buffon', 80, 180, 'Droit', 'Tres bon', '#', 10, 11, 1, 'buffon.jpg', 8, NULL, NULL,3),
-(5, 'Dani', 'Alves', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 4, 'alves.jpg', 10, NULL, NULL,2),
-(6, 'Gerard', 'Piqué', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 5, 'defaut.png', 7, NULL, NULL,2),
-(7, 'Sergio', 'Ramos', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 6, 'defaut.png', 7, NULL, NULL,2),
-(8, 'Layvin', 'Kurzawa', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 7, 'defaut.png', 6, NULL, NULL,2),
-(9, 'Ngolo', 'Kanté', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 8, 'defaut.png', 6, NULL, NULL,2),
-(10, 'Kevin', 'De Bruyne', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 9, 'defaut.png', 14, NULL, NULL,2),
-(11, 'Luka', 'Modric', 80, 180, 'Droit', 'Tres bon', '#', 10, 1, 10, 'defaut.png', 11, NULL, NULL,2),
-(12, 'Samuel', 'Umtiti', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 20, 'defaut.png', 6, NULL, NULL,2),
-(13, 'Ousmane', 'Dembele', 70, 170, 'Gauche', 'Tres bon', '#', 10, 2, 2, 'defaut.png', 6, NULL, NULL,2),
-(14, 'Andres', 'Iniesta', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 3, 'defaut.png', 7, NULL, NULL,2),
-(15, 'Marc Andre', 'Ter Stegen', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 1, 'defaut.png', 9, NULL, NULL,2),
-(16, 'Jordi', 'Alba', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 4, 'defaut.png', 7, NULL, NULL,2),
-(17, 'Nelson', 'Semedo', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 5, 'defaut.png', 13, NULL, NULL,2),
-(18, 'Sergio', 'Busquets', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 6, 'defaut.png', 7, NULL, NULL,2),
-(19, 'Denis', 'Suarez', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 7, 'defaut.png', 7, NULL, NULL,2),
-(20, 'Ivan', 'Rakitic', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 8, 'defaut.png', 11, NULL, NULL,2),
-(21, 'Paco', 'Alcacer', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 9, 'defaut.png', 7, NULL, NULL,2),
-(22, 'Philippe', 'Coutinho', 80, 180, 'Droit', 'Tres bon', '#', 10, 2, 10, 'defaut.png', 10, NULL, NULL,2);
+INSERT INTO `players` (`PlayerID`, `PlayerFirstName`, `PlayerFamilyName`, `PlayerWeight`, `PlayerHeight`, `PlayerNumber`, `PlayerFoot`, `PlayerComment`, `PlayerVideoFilePath`, `PlayerNote`, `ClubID`, `PositionID1`, `PlayerImageFilePath`, `NationID`, `PositionID2`, `PositionID3`, `PlayerNoteID`) VALUES
+(1, 'Zinedine', 'Zidane', 80, 180, '01', 'Droit', 'Tres bon', '#', 10, 1, 20, 'zidane.jpg', 6, NULL, NULL,3),
+(2, 'Leo', 'Messi', 70, 170, '02', 'Gauche', 'Tres bon', '#', 10, 1, 2, 'messi.jpg', 12, NULL, NULL,1),
+(3, 'Cristiano', 'Ronaldo', 80, 180, '03', 'Droit', 'Tres bon', '#', 10, 1, 3, 'ronaldo.jpg', 13, NULL, NULL,3),
+(4, 'Gianluigi', 'Buffon', 80, 180, '04', 'Droit', 'Tres bon', '#', 10, 11, 1, 'buffon.jpg', 8, NULL, NULL,3),
+(5, 'Dani', 'Alves', 80, 180, '05', 'Droit', 'Tres bon', '#', 10, 1, 4, 'alves.jpg', 10, NULL, NULL,2),
+(6, 'Gerard', 'Pique', 80, 180, '06', 'Droit', 'Tres bon', '#', 10, 1, 5, 'defaut.png', 7, NULL, NULL,2),
+(7, 'Sergio', 'Ramos', 80, 180, '07', 'Droit', 'Tres bon', '#', 10, 1, 6, 'defaut.png', 7, NULL, NULL,2),
+(8, 'Layvin', 'Kurzawa', 80, 180, '08', 'Droit', 'Tres bon', '#', 10, 1, 7, 'defaut.png', 6, NULL, NULL,2),
+(9, 'Ngolo', 'Kante', 80, 180, '09', 'Droit', 'Tres bon', '#', 10, 1, 8, 'defaut.png', 6, NULL, NULL,2),
+(10, 'Kevin', 'DeBruyne', 80, 180, '10', 'Droit', 'Tres bon', '#', 10, 1, 9, 'defaut.png', 14, NULL, NULL,2),
+(11, 'Luka', 'Modric', 80, 180, '11', 'Droit', 'Tres bon', '#', 10, 1, 10, 'defaut.png', 11, NULL, NULL,2),
+(12, 'Samuel', 'Umtiti', 80, 180, '12', 'Droit', 'Tres bon', '#', 10, 2, 20, 'defaut.png', 6, NULL, NULL,2),
+(13, 'Ousmane', 'Dembele', 70, 170, '13', 'Gauche', 'Tres bon', '#', 10, 2, 2, 'defaut.png', 6, NULL, NULL,2),
+(14, 'Andres', 'Iniesta', 80, 180, '14', 'Droit', 'Tres bon', '#', 10, 2, 3, 'defaut.png', 7, NULL, NULL,2),
+(15, 'MarcAndre', 'TerStegen', 80, 180, '15', 'Droit', 'Tres bon', '#', 10, 2, 1, 'defaut.png', 9, NULL, NULL,2),
+(16, 'Jordi', 'Alba', 80, 180, '16', 'Droit', 'Tres bon', '#', 10, 2, 4, 'defaut.png', 7, NULL, NULL,2),
+(17, 'Nelson', 'Semedo', 80, 180, '17', 'Droit', 'Tres bon', '#', 10, 2, 5, 'defaut.png', 13, NULL, NULL,2),
+(18, 'Sergio', 'Busquets', 80, 180, '18', 'Droit', 'Tres bon', '#', 10, 2, 6, 'defaut.png', 7, NULL, NULL,2),
+(19, 'Denis', 'Suarez', 80, 180, '19', 'Droit', 'Tres bon', '#', 10, 2, 7, 'defaut.png', 7, NULL, NULL,2),
+(20, 'Ivan', 'Rakitic', 80, 180, '20', 'Droit', 'Tres bon', '#', 10, 2, 8, 'defaut.png', 11, NULL, NULL,2),
+(21, 'Paco', 'Alcacer', 80, 180, '21', 'Droit', 'Tres bon', '#', 10, 2, 9, 'defaut.png', 7, NULL, NULL,2),
+(22, 'Philippe', 'Coutinho', 80, 180, '22', 'Droit', 'Tres bon', '#', 10, 2, 10, 'defaut.png', 10, NULL, NULL,2);
 
 -- --------------------------------------------------------
 

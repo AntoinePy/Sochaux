@@ -211,7 +211,7 @@ function addTournoi(e) {
         if (confirm("Ajouter le tournoi "+tournoiMatchValue+"?") === true) {
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function() {
-                console.log("réussi");
+                console.log("réussi " + this.responseText);
             };
             xmlhttp.open("GET","php/addTournoi.php?value="+tournoiMatchValue,true);
             xmlhttp.send();

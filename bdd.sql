@@ -24,12 +24,39 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
+
+--
+-- Table structure for table `nations`
+--
+
+CREATE TABLE `nations` (
+  `NationID` smallint(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `NationName` char(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `nations`
+--
+
+INSERT INTO `nations` (`NationID`, `NationName`) VALUES
+(1, 'Allemagne'),
+(2, 'Argentine'),
+(3, 'Belgique'),
+(4, 'Bresil'),
+(5, 'Croatie'),
+(6, 'Espagne'),
+(7, 'France'),
+(8, 'Italie'),
+(9, 'Portugal');
+
+-- --------------------------------------------------------
+
 --
 -- Table structure for table `championships`
 --
 
 CREATE TABLE `championships` (
-  `ChampionshipID` smallint(3) UNSIGNED NOT NULL,
+  `ChampionshipID` smallint(3) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `ChampionshipName` char(50) DEFAULT NULL,
   `NationID` smallint(4) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -39,14 +66,14 @@ CREATE TABLE `championships` (
 --
 
 INSERT INTO `championships` (`ChampionshipID`, `ChampionshipName`, `NationID`) VALUES
-(2, 'Ligue 1', 6),
-(3, 'Ligue 2', 6),
-(4, 'LaLiga', 7),
-(5, 'LaLiga 2', 7),
-(6, 'Bundesliga', 9),
-(7, 'Bundesliga 2', 9),
-(8, 'Serie A', 8),
-(9, 'Serie B', 8);
+(1, 'Ligue 1', 7),
+(2, 'Ligue 2', 7),
+(3, 'LaLiga', 6),
+(4, 'LaLiga 2', 6),
+(5, 'Bundesliga', 1),
+(6, 'Bundesliga 2', 1),
+(7, 'Serie A', 8),
+(8, 'Serie B', 8);
 
 -- --------------------------------------------------------
 
@@ -55,7 +82,7 @@ INSERT INTO `championships` (`ChampionshipID`, `ChampionshipName`, `NationID`) V
 --
 
 CREATE TABLE `clubs` (
-  `ClubID` smallint(3) UNSIGNED NOT NULL,
+  `ClubID` smallint(3) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `ClubName` char(50) DEFAULT NULL,
   `ClubVille` char(50) DEFAULT NULL,
   `ClubAdress` char(100) DEFAULT NULL,
@@ -67,20 +94,20 @@ CREATE TABLE `clubs` (
 --
 
 INSERT INTO `clubs` (`ClubID`, `ClubName`, `ClubVille`, `ClubAdress`, `ChampionshipID`) VALUES
-(1, 'FCSM', 'Sochaux', NULL, 3),
-(2, 'OM', 'marseille', NULL, 2),
-(3, 'PSG', 'paris saint germain', NULL, 2),
-(4, 'DFCO', 'Dijon', NULL, 2),
-(5, 'Barcelone', NULL, NULL, 4),
-(6, 'Real Madrid', NULL, NULL, 4),
-(7, 'Osasuna', NULL, NULL, 5),
-(8, 'Cadix', NULL, NULL, 5),
-(9, 'Bayern Munich', NULL, NULL, 6),
-(10, 'Dortmund', NULL, NULL, 6),
-(11, 'Juventus turin', NULL, NULL, 8),
-(12, 'Inter Milan', NULL, NULL, 8),
-(13, 'Palerme', NULL, NULL, 9),
-(14, 'Parme', NULL, NULL, 9);
+(1, 'FCSM', 'Sochaux', NULL, 2),
+(2, 'OM', 'marseille', NULL, 1),
+(3, 'PSG', 'paris saint germain', NULL, 1),
+(4, 'DFCO', 'Dijon', NULL, 1),
+(5, 'Barcelone', NULL, NULL, 3),
+(6, 'Real Madrid', NULL, NULL, 3),
+(7, 'Osasuna', NULL, NULL, 4),
+(8, 'Cadix', NULL, NULL, 4),
+(9, 'Bayern Munich', NULL, NULL, 5),
+(10, 'Dortmund', NULL, NULL, 5),
+(11, 'Juventus turin', NULL, NULL, 7),
+(12, 'Inter Milan', NULL, NULL, 7),
+(13, 'Palerme', NULL, NULL, 7),
+(14, 'Parme', NULL, NULL, 7);
 
 -- --------------------------------------------------------
 
@@ -102,7 +129,7 @@ CREATE TABLE `clubs_matchs` (
 --
 
 CREATE TABLE `comments` (
-  `CommentID` int(20) UNSIGNED NOT NULL,
+  `CommentID` int(20) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `CommentText` char(255) DEFAULT NULL,
   `CommentMinute` smallint(3) UNSIGNED DEFAULT NULL,
   `MatchID` int(20) UNSIGNED DEFAULT NULL
@@ -115,7 +142,7 @@ CREATE TABLE `comments` (
 --
 
 CREATE TABLE `contracts` (
-  `ContractID` int(4) UNSIGNED NOT NULL,
+  `ContractID` int(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `ContractComment` char(255) DEFAULT NULL,
   `ContractDateStart` date DEFAULT NULL,
   `ContractDateEnd` date DEFAULT NULL,
@@ -126,7 +153,7 @@ CREATE TABLE `contracts` (
 
 -- --------------------------------------------------------
 CREATE TABLE `compositions` (
-  `CompositionID` smallint(2) UNSIGNED NOT NULL,
+  `CompositionID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `ClubID` smallint(2) UNSIGNED NOT NULL,
   `FormationID` smallint(2) UNSIGNED NOT NULL,
   `PlayerID1` smallint(2) UNSIGNED DEFAULT NULL,
@@ -154,7 +181,7 @@ INSERT INTO `compositions` (`CompositionID`, `ClubID`, `FormationID`, `PlayerID1
 --
 
 CREATE TABLE `formations` (
-  `FormationID` smallint(2) UNSIGNED NOT NULL,
+  `FormationID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `FormationName` char(15) DEFAULT NULL,
   `Position1` smallint(2) UNSIGNED DEFAULT NULL,
   `Position2` smallint(2) UNSIGNED DEFAULT NULL,
@@ -189,7 +216,7 @@ INSERT INTO `formations` (`FormationID`, `FormationName`, `Position1`, `Position
 --
 
 CREATE TABLE `matchs` (
-  `MatchID` int(20) UNSIGNED NOT NULL,
+  `MatchID` int(20) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `MatchPlace` char(50) DEFAULT NULL,
   `MatchDate` date DEFAULT NULL,
   `MatchCondition` char(50) DEFAULT NULL,
@@ -203,34 +230,8 @@ CREATE TABLE `matchs` (
   `CompositionID2` smallint(3) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `matchs` (`MatchID`, `MatchPlace`, `MatchDate`, `MatchCondition`, `MatchComment`, `MatchAuthor`, `TournamentID`, `ClubID1`, `ClubID2`, `CompositionID1`, `CompositionID2`) VALUES
-(1, 'Stade Bonal', '2018-02-24', 'Beaucoup de pluie', 'bonne equipe de Sochaux', 'Bastien',1,1,2,1,2);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `nations`
---
-
-CREATE TABLE `nations` (
-  `NationID` smallint(4) UNSIGNED NOT NULL,
-  `NationName` char(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `nations`
---
-
-INSERT INTO `nations` (`NationID`, `NationName`) VALUES
-(9, 'Allemagne'),
-(12, 'Argentine'),
-(14, 'Belgique'),
-(10, 'Bresil'),
-(11, 'Croatie'),
-(7, 'Espagne'),
-(6, 'France'),
-(8, 'Italie'),
-(13, 'Portugal');
+--INSERT INTO `matchs` (`MatchID`, `MatchPlace`, `MatchDate`, `MatchCondition`, `MatchComment`, `MatchAuthor`, `TournamentID`, `ClubID1`, `ClubID2`, `CompositionID1`, `CompositionID2`) VALUES
+--(1, 'Stade Bonal', '2018-02-24', 'Beaucoup de pluie', 'bonne equipe de Sochaux', 'Bastien',1,1,2,1,2);
 
 -- --------------------------------------------------------
 
@@ -239,7 +240,7 @@ INSERT INTO `nations` (`NationID`, `NationName`) VALUES
 --
 
 CREATE TABLE `players` (
-  `PlayerID` int(20) UNSIGNED NOT NULL,
+  `PlayerID` int(20) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `PlayerFirstName` char(50) NOT NULL,
   `PlayerFamilyName` char(50) NOT NULL,
   `PlayerWeight` smallint(3) UNSIGNED DEFAULT NULL,
@@ -297,13 +298,14 @@ CREATE TABLE `players_matchs` (
   `MatchID` int(20) UNSIGNED NOT NULL,
   `Player_MatchComment` char(255) DEFAULT NULL,
   `Player_MatchDecisive` smallint(2) UNSIGNED DEFAULT NULL,
-  `Player_MatchGoals` smallint(2) UNSIGNED DEFAULT NULL
+  `Player_MatchGoals` smallint(2) UNSIGNED DEFAULT NULL,
+  `Player_MatchTimeGame` smallint(2) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 CREATE TABLE `notes` (
-  `NoteID` smallint(2) UNSIGNED NOT NULL,
+  `NoteID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `NoteName` char(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -317,7 +319,7 @@ INSERT INTO `notes` (`NoteID`, `NoteName`) VALUES
 --
 
 CREATE TABLE `positions` (
-  `PositionID` smallint(2) UNSIGNED NOT NULL,
+  `PositionID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `PositionName` char(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -350,7 +352,7 @@ INSERT INTO `positions` (`PositionID`, `PositionName`) VALUES
 --
 
 CREATE TABLE `tournaments` (
-  `TournamentID` smallint(4) UNSIGNED NOT NULL,
+  `TournamentID` smallint(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `TournamentName` char(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -361,7 +363,7 @@ CREATE TABLE `tournaments` (
 --
 
 CREATE TABLE `users` (
-  `ID` smallint(2) UNSIGNED NOT NULL,
+  `ID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `UserName` char(30) NOT NULL,
   `UserPassword` char(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

@@ -270,7 +270,7 @@ include 'php/connectionJoueurs.php';
                 </div>
 
                 <input class="btn btn-dark homebutton" type="button" value="Retour" id="btnRetourCommentaire" onclick="document.location.href='feuilleMatch.php'"/>
-                <input class="btn btn-primary homebutton" type="submit" value="Valider" id="btnValiderCommentaire" onclick=""/>
+                <input class="btn btn-primary homebutton" type="submit" value="Valider" id="btnValiderCommentaire" onclick="document.location.href='index.php'"/>
                 <a href="javascript:window.print()"><input type="text" value="imprimer" class="btn btn-default"></a>
             </form>
         </div>

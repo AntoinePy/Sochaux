@@ -4,14 +4,9 @@ $con = mysqli_connect('localhost','root','','fcsochaux');
 
 $id = $_GET['IDMatch'];
 
-$req = "SELECT * FROM matchs WHERE MatchID=$id";
+$reqMatch = "SELECT * FROM matchs WHERE MatchID=$id";
 
-$result = mysqli_query($con,$req);
-
-
-
-
-
+$resultMatch = mysqli_query($con,$reqMatch);
 
 //                    $reqEquipe2Player = "SELECT PlayerFamilyName FROM players WHERE playerID=".$rowCompo1['PlayerID2'];
 
@@ -40,23 +35,26 @@ $result = mysqli_query($con,$req);
 
         <div class="feuilleDeMatch col-sm-10">
 <?php
-while($row = mysqli_fetch_array($result)) {
+while($row = mysqli_fetch_array($resultMatch)) {
     $lieuMatch = $row['MatchPlace'];
-    $dateMatch = $row['MatchDate'];
+    list($year, $month, $day) = explode('-', $row['MatchDate']);
+    $dateMatch = $day."/".$month."/".$year;
     $auteurMatch = $row['MatchAuthor'];
     $conditionMatch = $row['MatchCondition'];
     $commentaireMatch = $row['MatchComment'];
-    $resultatMatch = $row['MatchScore'];
 
-$reqClub1 = "SELECT ClubName FROM clubs WHERE ClubID=".$row['ClubID1'];
-$reqClub2 = "SELECT ClubName FROM clubs WHERE ClubID=".$row['ClubID2'];
-$resultClub1 = mysqli_query($con,$reqClub1);
-$resultClub2 = mysqli_query($con,$reqClub2);
-while($rowClub1 = mysqli_fetch_array($resultClub1)) {
-while($rowClub2 = mysqli_fetch_array($resultClub2)) {
-    $equipe1 = $rowClub1[0];
-$equipe2 = $rowClub2[0];
+    $reqClub1 = "SELECT ClubName FROM clubs WHERE ClubID=".$row['ClubID1'];
+    $reqClub2 = "SELECT ClubName FROM clubs WHERE ClubID=".$row['ClubID2'];
+    $reqScore = "SELECT * FROM clubs_matchs WHERE MatchID=".$row['MatchID']." AND ClubID=".$row['ClubID1'];
+    $resultClub1 = mysqli_query($con,$reqClub1);
+    $resultClub2 = mysqli_query($con,$reqClub2);
+    $resultScore = mysqli_query($con,$reqScore);
 
+    while($rowClub1 = mysqli_fetch_array($resultClub1)) {
+        while($rowClub2 = mysqli_fetch_array($resultClub2)) {
+            $equipe1 = $rowClub1[0];
+            $equipe2 = $rowClub2[0];
+            $rowScore = mysqli_fetch_array($resultScore);
 ?>
             <div id="InfoMatch">
                 <div class="row">
@@ -65,7 +63,7 @@ $equipe2 = $rowClub2[0];
                 <div class="inputSelection">
                     <table class="table">
                         <tr><td>Confrontation</td><td><?php echo $equipe1 ?> - <?php echo $equipe2 ?></td></tr>
-                        <tr><td>Score du match</td><td><?php echo $resultatMatch ?></td></tr>
+                        <tr><td>Score du match</td><td><?php echo " Score: ", $rowScore['Club_MatchScore'], " - ", $rowScore['Club_MatchHalfScore'] ; ?></td></tr>
                         <tr><td id="lieuM">Lieu du match</td><td><?php echo $lieuMatch ?></td></tr>
                         <tr><td>Date du match</td><td><?php echo $dateMatch ?></td></tr>
                         <tr><td>Auteur</td><td><?php echo $auteurMatch ?></td></tr>

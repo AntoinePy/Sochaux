@@ -10,8 +10,6 @@ include 'php/checkSession.php';
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/feuillematchstyle.css">
 	<link rel="stylesheet" type="text/css" href="css/navbarstyle.css">
-    <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.1.js"></script>
-    <script language="JavaScript" type="text/javascript" src="js/jquery-ui.js"></script>
 </head>
 <body>
 <form action="commentaireJoueur.php" method="post">

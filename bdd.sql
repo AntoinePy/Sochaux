@@ -203,8 +203,8 @@ CREATE TABLE `matchs` (
   `CompositionID2` smallint(3) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `matchs` (`MatchID`, `MatchPlace`, `MatchDate`, `MatchCondition`, `MatchComment`, `MatchAuthor`, `MatchScore`, `TournamentID`, `ClubID1`, `ClubID2`, `CompositionID1`, `CompositionID2`) VALUES
-(1, 'Stade Bonal', '2018-02-24', 'Beaucoup de pluie', 'bonne equipe de Sochaux', 'Bastien', '3 - 0',1,1,2,1,2);
+INSERT INTO `matchs` (`MatchID`, `MatchPlace`, `MatchDate`, `MatchCondition`, `MatchComment`, `MatchAuthor`, `TournamentID`, `ClubID1`, `ClubID2`, `CompositionID1`, `CompositionID2`) VALUES
+(1, 'Stade Bonal', '2018-02-24', 'Beaucoup de pluie', 'bonne equipe de Sochaux', 'Bastien',1,1,2,1,2);
 
 -- --------------------------------------------------------
 

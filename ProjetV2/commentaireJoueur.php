@@ -93,6 +93,8 @@ include 'php/connectionJoueurs.php';
                 <input type="hidden" name="club2ID" value="<?php echo $idClub2?>">
                 <input type="hidden" name="nbJoueursInterressants1" value="<?php echo sizeof($joueursInterressantsEquipe1)?>">
                 <input type="hidden" name="nbJoueursInterressants2" value="<?php echo sizeof($joueursInterressantsEquipe2)?>">
+                <input type="hidden" name="scoreEquipe1" value="<?php echo $posts['scoreEquipe1'] ?>">
+                <input type="hidden" name="scoreEquipe2" value="<?php echo $posts['scoreEquipe2'] ?>">
 
                 <div class="row"><h1>Informations du match</h1></div>
 

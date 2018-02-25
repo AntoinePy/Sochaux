@@ -45,8 +45,41 @@ mysqli_close($con);*/
     }
     $req->closeCursor();
 
-    // joueur interressant participant au match
     $idMatch = $bd->lastInsertId();
+
+    // enregistrement score equipe 1
+    try {
+        $bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+        $bd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+        $req = $bd->prepare("INSERT INTO clubs_matchs (ClubID, MatchID, Club_MatchScore, Club_MatchHalfScore)
+                                           VALUES(:clubID, :matchID, :club_matchScore, :club_matchHalfScore)");
+        $req->bindParam(':clubID', $_POST['club1ID'], PDO::PARAM_STR,255);
+        $req->bindParam(':matchID', $idMatch,PDO::PARAM_STR,255);
+        $req->bindParam(':club_matchScore', $_POST['scoreEquipe1'], PDO::PARAM_STR,255);
+        $req->bindParam(':club_matchHalfScore', $_POST['scoreEquipe2'], PDO::PARAM_STR,255);
+        $req->execute();
+    } catch (Exception $e) {
+        die('erreur :'.$e->getMessage());
+    }
+    $req->closeCursor();
+
+    // enregistrement score equipe 2
+    try {
+        $bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+        $bd->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+        $req = $bd->prepare("INSERT INTO clubs_matchs (ClubID, MatchID, Club_MatchScore, Club_MatchHalfScore)
+                                               VALUES(:clubID, :matchID, :club_matchScore, :club_matchHalfScore)");
+        $req->bindParam(':clubID', $_POST['club2ID'], PDO::PARAM_STR,255);
+        $req->bindParam(':matchID', $idMatch,PDO::PARAM_STR,255);
+        $req->bindParam(':club_matchScore', $_POST['scoreEquipe2'], PDO::PARAM_STR,255);
+        $req->bindParam(':club_matchHalfScore', $_POST['scoreEquipe1'], PDO::PARAM_STR,255);
+        $req->execute();
+    } catch (Exception $e) {
+        die('erreur :'.$e->getMessage());
+    }
+    $req->closeCursor();
+
+    // joueur interressant participant au match
     for($i = 0; $i < $_POST['nbJoueursInterressants1']; $i++) {
         try {
             $bd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );

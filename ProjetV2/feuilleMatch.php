@@ -30,10 +30,26 @@ include 'php/checkSession.php';
                     <div class="row inputSelection">
                         <div class="col-sm-6">
                             <table>
-                                <tr><td>Lieu: </td><td><input type="text" name="lieuMatch" id="inputLieuMatch"></td></tr>
-                                <tr><td>Date du match: </td><td><input type="date" name="dateMatch" id="inputDateMatch"></td></tr>
-                                <tr><td>Auteur du rapport: </td><td><input type="text" name="auteurMatch" id="inputAuteurMatch"></td></tr>
-                                <tr><td>Tournoi: </td><td><input type="text" name="tournoiMatch" id="inputTournoiMatch" list="tournoiList" oninput="updateTournoi()" onkeypress="return addTournoi(event)"></td></tr>
+                                <tr><td>Lieu: </td><td><input type="text" name="lieuMatch" id="inputLieuMatch"  style="width: 100%"></td></tr>
+                                <tr><td>Date du match: </td><td><input type="date" name="dateMatch" id="inputDateMatch"  style="width: 100%"></td></tr>
+                                <tr><td>Auteur du rapport: </td><td><input type="text" name="auteurMatch" id="inputAuteurMatch"  style="width: 100%"></td></tr>
+                                <tr><td>Tournoi: </td><td><input type="text" name="tournoiMatch" id="inputTournoiMatch"  style="width: 100%" list="tournoiList" oninput="updateTournoi()" onkeypress="return addTournoi(event)"></td></tr>
+                                <tr>
+                                    <td>Score</td>
+                                    <td>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <input type="text" name="scoreEquipe1" style="width: 100%">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                :
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <input type="text" name="scoreEquipe2" style="width: 100%">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
                             </table>
                         </div>
                         <div class="col-sm-6">

@@ -116,4 +116,6 @@ mysqli_close($con);*/
         }
         $req->closeCursor();
     }
+
+    header('Location:../index.php');
 ?>

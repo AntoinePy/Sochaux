@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2107d85-da32-40a5-92a5-731c99d7faf6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" afterPath="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" />
       <change beforePath="$PROJECT_DIR$/ProjetV2/php/soumissionFeuilleDeMatchCommentaire.php" afterPath="$PROJECT_DIR$/ProjetV2/php/soumissionFeuilleDeMatchCommentaire.php" />
     </list>
     <ignored path="Sochaux.iws" />
@@ -37,31 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bdd.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bdd.sql">
+      <file leaf-file-name="pageMatch.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetV2/pageMatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1219">
-              <caret line="103" column="26" lean-forward="false" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feuilleMatch.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="105" column="7" lean-forward="false" selection-start-line="105" selection-start-column="7" selection-end-line="105" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listesDeroulantes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="213" column="57" lean-forward="false" selection-start-line="213" selection-start-column="57" selection-end-line="213" selection-end-column="57" />
+            <state relative-caret-position="1938">
+              <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,59 +51,29 @@
       <file leaf-file-name="commentaireJoueur.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="141" column="77" lean-forward="false" selection-start-line="141" selection-start-column="77" selection-end-line="141" selection-end-column="98" />
+            <state relative-caret-position="329">
+              <caret line="272" column="114" lean-forward="false" selection-start-line="272" selection-start-column="114" selection-end-line="272" selection-end-column="114" />
               <folding>
-                <marker date="1519580032694" expanded="true" signature="822:858" ph="SELECT * FRO... clubs" />
-                <marker date="1519580032694" expanded="true" signature="822:859" ph="SELECT * FRO... clubs" />
-                <marker date="1519580032694" expanded="true" signature="822:861" ph="SELECT * FRO... clubs" />
-                <marker date="1519580032694" expanded="true" signature="822:877" ph="SELECT * FRO... clubs" />
-                <marker date="1519580032694" expanded="true" signature="822:878" ph="SELECT * FRO... clubs" />
-                <marker date="1519580032694" expanded="true" signature="822:879" ph="SELECT ClubI... clubs" />
-                <marker date="1519580032694" expanded="true" signature="822:881" ph="SELECT * FRO... clubs" />
-                <marker date="1519580032694" expanded="true" signature="823:858" ph="SELECT ClubI... clubs" />
-                <marker date="1519580032694" expanded="true" signature="1028:1064" ph="SELECT * FRO... clubs" />
-                <marker date="1519580032694" expanded="true" signature="1028:1067" ph="SELECT * FRO... clubs" />
-                <marker date="1519580032694" expanded="true" signature="1028:1083" ph="SELECT * FRO... clubs" />
-                <marker date="1519580032694" expanded="true" signature="1234:1283" ph="SELECT * FRO... tournaments" />
-                <marker date="1519580032694" expanded="true" signature="1234:1285" ph="SELECT * FRO... tournaments" />
-                <marker date="1519580032694" expanded="true" signature="1234:1308" ph="SELECT * FRO... tournaments" />
-                <marker date="1519580032694" expanded="true" signature="1234:1309" ph="SELECT * FRO... tournaments" />
-                <marker date="1519580032694" expanded="true" signature="1234:1310" ph="SELECT * FRO... tournaments" />
-                <marker date="1519580032694" expanded="true" signature="5685:5790" ph="SELECT * FRO... players" />
-                <marker date="1519580032694" expanded="true" signature="9068:9122" ph="SELECT Posit... positions" />
-                <marker date="1519580032694" expanded="true" signature="10556:10661" ph="SELECT * FRO... players" />
-                <marker date="1519580032694" expanded="true" signature="13938:13992" ph="SELECT Posit... positions" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addTournoi.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/php/addTournoi.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-              <folding>
-                <marker date="1519577570779" expanded="true" signature="278:368" ph="INSERT INTO tournaments... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listeMatch.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/listeMatch.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="55" column="70" lean-forward="false" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
-              <folding>
-                <element signature="e#6#89#0#PHP" expanded="true" />
-                <marker date="1519580032735" expanded="true" signature="230:250" ph="SELECT * FRO... matchs" />
-                <marker date="1519580032735" expanded="true" signature="1630:1670" ph="SELECT ClubN... clubs" />
-                <marker date="1519580032735" expanded="true" signature="1730:1770" ph="SELECT ClubN... clubs" />
-                <marker date="1519580032735" expanded="true" signature="1835:1876" ph="SELECT * FRO... clubs_matchs" />
-                <marker date="1519580032735" expanded="true" signature="1835:1907" ph="SELECT * FRO... clubs_matchs" />
-                <marker date="1519580032735" expanded="true" signature="1835:1908" ph="SELECT * FRO... clubs_matchs" />
+                <marker date="1519580634788" expanded="true" signature="822:858" ph="SELECT * FRO... clubs" />
+                <marker date="1519580634788" expanded="true" signature="822:859" ph="SELECT * FRO... clubs" />
+                <marker date="1519580634788" expanded="true" signature="822:861" ph="SELECT * FRO... clubs" />
+                <marker date="1519580634788" expanded="true" signature="822:877" ph="SELECT * FRO... clubs" />
+                <marker date="1519580634788" expanded="true" signature="822:878" ph="SELECT * FRO... clubs" />
+                <marker date="1519580634788" expanded="true" signature="822:879" ph="SELECT ClubI... clubs" />
+                <marker date="1519580634788" expanded="true" signature="822:881" ph="SELECT * FRO... clubs" />
+                <marker date="1519580634788" expanded="true" signature="823:858" ph="SELECT ClubI... clubs" />
+                <marker date="1519580634788" expanded="true" signature="1028:1064" ph="SELECT * FRO... clubs" />
+                <marker date="1519580634788" expanded="true" signature="1028:1067" ph="SELECT * FRO... clubs" />
+                <marker date="1519580634788" expanded="true" signature="1028:1083" ph="SELECT * FRO... clubs" />
+                <marker date="1519580634788" expanded="true" signature="1234:1283" ph="SELECT * FRO... tournaments" />
+                <marker date="1519580634788" expanded="true" signature="1234:1285" ph="SELECT * FRO... tournaments" />
+                <marker date="1519580634788" expanded="true" signature="1234:1308" ph="SELECT * FRO... tournaments" />
+                <marker date="1519580634788" expanded="true" signature="1234:1309" ph="SELECT * FRO... tournaments" />
+                <marker date="1519580634788" expanded="true" signature="1234:1310" ph="SELECT * FRO... tournaments" />
+                <marker date="1519580634788" expanded="true" signature="5685:5790" ph="SELECT * FRO... players" />
+                <marker date="1519580634788" expanded="true" signature="9068:9122" ph="SELECT Posit... positions" />
+                <marker date="1519580634788" expanded="true" signature="10556:10661" ph="SELECT * FRO... players" />
+                <marker date="1519580634788" expanded="true" signature="13938:13992" ph="SELECT Posit... positions" />
               </folding>
             </state>
           </provider>
@@ -131,15 +82,15 @@
       <file leaf-file-name="soumissionFeuilleDeMatchCommentaire.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjetV2/php/soumissionFeuilleDeMatchCommentaire.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="461">
+              <caret line="119" column="21" lean-forward="false" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
               <folding>
-                <marker date="1519580170834" expanded="true" signature="323:440" ph="INSERT INTO championships... " />
-                <marker date="1519580170834" expanded="true" signature="819:1088" ph="INSERT INTO matchs... " />
-                <marker date="1519580170834" expanded="true" signature="2137:2326" ph="INSERT INTO matchs... " />
-                <marker date="1519580170834" expanded="true" signature="3003:3196" ph="INSERT INTO clubs_matchs... " />
-                <marker date="1519580170834" expanded="true" signature="3964:4253" ph="INSERT INTO players_matchs... " />
-                <marker date="1519580170834" expanded="true" signature="5308:5597" ph="INSERT INTO players_matchs... " />
+                <marker date="1519580728257" expanded="true" signature="323:440" ph="INSERT INTO championships... " />
+                <marker date="1519580728257" expanded="true" signature="819:1088" ph="INSERT INTO matchs... " />
+                <marker date="1519580728257" expanded="true" signature="2137:2326" ph="INSERT INTO matchs... " />
+                <marker date="1519580728257" expanded="true" signature="3003:3196" ph="INSERT INTO clubs_matchs... " />
+                <marker date="1519580728257" expanded="true" signature="3964:4253" ph="INSERT INTO players_matchs... " />
+                <marker date="1519580728257" expanded="true" signature="5308:5597" ph="INSERT INTO players_matchs... " />
               </folding>
             </state>
           </provider>
@@ -222,12 +173,12 @@
         <option value="$PROJECT_DIR$/ProjetV2/pageMatch.php" />
         <option value="$PROJECT_DIR$/ProjetV2/pageMatch2.php" />
         <option value="$PROJECT_DIR$/ProjetV2/feuilleMatch.php" />
-        <option value="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" />
         <option value="$PROJECT_DIR$/bdd.sql" />
         <option value="$PROJECT_DIR$/ProjetV2/listeMatch.php" />
         <option value="$PROJECT_DIR$/ProjetV2/listeJoueur.php" />
         <option value="$PROJECT_DIR$/pages/pageJoueur.php" />
         <option value="$PROJECT_DIR$/ProjetV2/pageJoueur.php" />
+        <option value="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" />
         <option value="$PROJECT_DIR$/ProjetV2/php/soumissionFeuilleDeMatchCommentaire.php" />
       </list>
     </option>
@@ -5306,13 +5257,6 @@
       <workItem from="1519475794921" duration="97000" />
       <workItem from="1519561497435" duration="7000" />
     </task>
-    <task id="LOCAL-00004" summary="Bootstrap">
-      <created>1512566983866</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1512566983866</updated>
-    </task>
     <task id="LOCAL-00005" summary="Début feuille de match + menu de navigation + rangement">
       <created>1512590170654</created>
       <option name="number" value="00005" />
@@ -5649,11 +5593,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519580115993</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Modification BDD + ajout temps de jeu dans base de données">
+      <created>1519580185782</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1519580185782</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212426000" />
+    <option name="totallyTimeSpent" value="213011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -5848,16 +5799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/php/addTournoi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-          <folding>
-            <marker date="1519577570779" expanded="true" signature="278:368" ph="INSERT INTO tournaments... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/php/getJoueurs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -6034,14 +5975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="213" column="57" lean-forward="false" selection-start-line="213" selection-start-column="57" selection-end-line="213" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/rechercheJoueur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2457">
@@ -6064,58 +5997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/pageMatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2394">
-          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="116" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="141" column="77" lean-forward="false" selection-start-line="141" selection-start-column="77" selection-end-line="141" selection-end-column="98" />
-          <folding>
-            <marker date="1519580032694" expanded="true" signature="822:858" ph="SELECT * FRO... clubs" />
-            <marker date="1519580032694" expanded="true" signature="822:859" ph="SELECT * FRO... clubs" />
-            <marker date="1519580032694" expanded="true" signature="822:861" ph="SELECT * FRO... clubs" />
-            <marker date="1519580032694" expanded="true" signature="822:877" ph="SELECT * FRO... clubs" />
-            <marker date="1519580032694" expanded="true" signature="822:878" ph="SELECT * FRO... clubs" />
-            <marker date="1519580032694" expanded="true" signature="822:879" ph="SELECT ClubI... clubs" />
-            <marker date="1519580032694" expanded="true" signature="822:881" ph="SELECT * FRO... clubs" />
-            <marker date="1519580032694" expanded="true" signature="823:858" ph="SELECT ClubI... clubs" />
-            <marker date="1519580032694" expanded="true" signature="1028:1064" ph="SELECT * FRO... clubs" />
-            <marker date="1519580032694" expanded="true" signature="1028:1067" ph="SELECT * FRO... clubs" />
-            <marker date="1519580032694" expanded="true" signature="1028:1083" ph="SELECT * FRO... clubs" />
-            <marker date="1519580032694" expanded="true" signature="1234:1283" ph="SELECT * FRO... tournaments" />
-            <marker date="1519580032694" expanded="true" signature="1234:1285" ph="SELECT * FRO... tournaments" />
-            <marker date="1519580032694" expanded="true" signature="1234:1308" ph="SELECT * FRO... tournaments" />
-            <marker date="1519580032694" expanded="true" signature="1234:1309" ph="SELECT * FRO... tournaments" />
-            <marker date="1519580032694" expanded="true" signature="1234:1310" ph="SELECT * FRO... tournaments" />
-            <marker date="1519580032694" expanded="true" signature="5685:5790" ph="SELECT * FRO... players" />
-            <marker date="1519580032694" expanded="true" signature="9068:9122" ph="SELECT Posit... positions" />
-            <marker date="1519580032694" expanded="true" signature="10556:10661" ph="SELECT * FRO... players" />
-            <marker date="1519580032694" expanded="true" signature="13938:13992" ph="SELECT Posit... positions" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/php/soumissionFeuilleDeMatchCommentaire.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <marker date="1519580170834" expanded="true" signature="323:440" ph="INSERT INTO championships... " />
-            <marker date="1519580170834" expanded="true" signature="819:1088" ph="INSERT INTO matchs... " />
-            <marker date="1519580170834" expanded="true" signature="2137:2326" ph="INSERT INTO matchs... " />
-            <marker date="1519580170834" expanded="true" signature="3003:3196" ph="INSERT INTO clubs_matchs... " />
-            <marker date="1519580170834" expanded="true" signature="3964:4253" ph="INSERT INTO players_matchs... " />
-            <marker date="1519580170834" expanded="true" signature="5308:5597" ph="INSERT INTO players_matchs... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
@@ -6129,22 +6010,6 @@
         <state relative-caret-position="1219">
           <caret line="103" column="26" lean-forward="false" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/listeMatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="55" column="70" lean-forward="false" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1519580032735" expanded="true" signature="230:250" ph="SELECT * FRO... matchs" />
-            <marker date="1519580032735" expanded="true" signature="1630:1670" ph="SELECT ClubN... clubs" />
-            <marker date="1519580032735" expanded="true" signature="1730:1770" ph="SELECT ClubN... clubs" />
-            <marker date="1519580032735" expanded="true" signature="1835:1876" ph="SELECT * FRO... clubs_matchs" />
-            <marker date="1519580032735" expanded="true" signature="1835:1907" ph="SELECT * FRO... clubs_matchs" />
-            <marker date="1519580032735" expanded="true" signature="1835:1908" ph="SELECT * FRO... clubs_matchs" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -6166,6 +6031,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-572">
           <caret line="73" column="34" lean-forward="true" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/js/listesDeroulantes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="213" column="57" lean-forward="false" selection-start-line="213" selection-start-column="57" selection-end-line="213" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/php/addTournoi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <folding>
+            <marker date="1519577570779" expanded="true" signature="278:368" ph="INSERT INTO tournaments... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/listeMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="55" column="70" lean-forward="false" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+            <marker date="1519580032735" expanded="true" signature="230:250" ph="SELECT * FRO... matchs" />
+            <marker date="1519580032735" expanded="true" signature="1630:1670" ph="SELECT ClubN... clubs" />
+            <marker date="1519580032735" expanded="true" signature="1730:1770" ph="SELECT ClubN... clubs" />
+            <marker date="1519580032735" expanded="true" signature="1835:1876" ph="SELECT * FRO... clubs_matchs" />
+            <marker date="1519580032735" expanded="true" signature="1835:1907" ph="SELECT * FRO... clubs_matchs" />
+            <marker date="1519580032735" expanded="true" signature="1835:1908" ph="SELECT * FRO... clubs_matchs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="272" column="114" lean-forward="false" selection-start-line="272" selection-start-column="114" selection-end-line="272" selection-end-column="114" />
+          <folding>
+            <marker date="1519580634788" expanded="true" signature="822:858" ph="SELECT * FRO... clubs" />
+            <marker date="1519580634788" expanded="true" signature="822:859" ph="SELECT * FRO... clubs" />
+            <marker date="1519580634788" expanded="true" signature="822:861" ph="SELECT * FRO... clubs" />
+            <marker date="1519580634788" expanded="true" signature="822:877" ph="SELECT * FRO... clubs" />
+            <marker date="1519580634788" expanded="true" signature="822:878" ph="SELECT * FRO... clubs" />
+            <marker date="1519580634788" expanded="true" signature="822:879" ph="SELECT ClubI... clubs" />
+            <marker date="1519580634788" expanded="true" signature="822:881" ph="SELECT * FRO... clubs" />
+            <marker date="1519580634788" expanded="true" signature="823:858" ph="SELECT ClubI... clubs" />
+            <marker date="1519580634788" expanded="true" signature="1028:1064" ph="SELECT * FRO... clubs" />
+            <marker date="1519580634788" expanded="true" signature="1028:1067" ph="SELECT * FRO... clubs" />
+            <marker date="1519580634788" expanded="true" signature="1028:1083" ph="SELECT * FRO... clubs" />
+            <marker date="1519580634788" expanded="true" signature="1234:1283" ph="SELECT * FRO... tournaments" />
+            <marker date="1519580634788" expanded="true" signature="1234:1285" ph="SELECT * FRO... tournaments" />
+            <marker date="1519580634788" expanded="true" signature="1234:1308" ph="SELECT * FRO... tournaments" />
+            <marker date="1519580634788" expanded="true" signature="1234:1309" ph="SELECT * FRO... tournaments" />
+            <marker date="1519580634788" expanded="true" signature="1234:1310" ph="SELECT * FRO... tournaments" />
+            <marker date="1519580634788" expanded="true" signature="5685:5790" ph="SELECT * FRO... players" />
+            <marker date="1519580634788" expanded="true" signature="9068:9122" ph="SELECT Posit... positions" />
+            <marker date="1519580634788" expanded="true" signature="10556:10661" ph="SELECT * FRO... players" />
+            <marker date="1519580634788" expanded="true" signature="13938:13992" ph="SELECT Posit... positions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/pageMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/php/soumissionFeuilleDeMatchCommentaire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="119" column="21" lean-forward="false" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+          <folding>
+            <marker date="1519580728257" expanded="true" signature="323:440" ph="INSERT INTO championships... " />
+            <marker date="1519580728257" expanded="true" signature="819:1088" ph="INSERT INTO matchs... " />
+            <marker date="1519580728257" expanded="true" signature="2137:2326" ph="INSERT INTO matchs... " />
+            <marker date="1519580728257" expanded="true" signature="3003:3196" ph="INSERT INTO clubs_matchs... " />
+            <marker date="1519580728257" expanded="true" signature="3964:4253" ph="INSERT INTO players_matchs... " />
+            <marker date="1519580728257" expanded="true" signature="5308:5597" ph="INSERT INTO players_matchs... " />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -47,6 +47,37 @@ $result = mysqli_query($con,$req);
                 $resultNation = mysqli_query($con,$reqNation);
                 $resultClub = mysqli_query($con,$reqClub);
                 $resultPosition = mysqli_query($con,$reqPosition);
+
+            if (isset ($row['PlayerImageFilePath'])) {
+                $srcImage = $row['PlayerImageFilePath'];
+            } else {
+                $srcImage = "defaut.png";
+            }
+            if (isset ($row['PlayerFoot'])) {
+                $playerFoot = $row['PlayerFoot'];
+            } else {
+                $playerFoot = "?";
+            }
+            if (isset ($row['PlayerHeight'])) {
+                $playerHeight = $row['PlayerHeight'];
+            } else {
+                $playerHeight = "?";
+            }
+            if (isset ($row['PlayerWeight'])) {
+                $playerWeight = $row['PlayerWeight'];
+            } else {
+                $playerWeight = "?";
+            }
+            if (isset ($row['PlayerNote'])) {
+                $playerNote = $row['PlayerNote'];
+            } else {
+                $playerNote = "?";
+            }
+            if (isset ($row['PlayerComment'])) {
+                $playerComment = $row['PlayerComment'];
+            } else {
+                $playerComment = "?";
+            }
             ?>
             <div class="barreTitre">
                 <h1>  <?php  echo $row['PlayerFirstName']; echo " ".$row['PlayerFamilyName'] ?></h1>
@@ -57,26 +88,34 @@ $result = mysqli_query($con,$req);
                 <div class="row">
                     <div class="col-sm-11">
                         <div class="col-lg-4">
-                            <img src="../images/<?php echo $row['PlayerImageFilePath']; ?> " width="220" height="300"/>
+                            <img src="../images/<?php echo $srcImage; ?> " width="220" height="300"/>
                         </div>
                         <div class="infoJoueur col-lg-8">
                             <?php
-                            while($rowNation = mysqli_fetch_array($resultNation)) {
-                                while($rowClub = mysqli_fetch_array($resultClub)) {
-                                    while ($rowPosition = mysqli_fetch_array($resultPosition)) {?>
-                                        <p>  Nationalité: <?php  echo $rowNation[0] ?></p></br>
-                                        <p>  Club actuel: <?php  echo $rowClub[0] ?></p></br>
-                                        <p>  Poste : <?php  echo $rowPosition[0] ?></p></br>
-                                        <?php
+                            if ($resultNation && $resultClub&& $resultPosition) {
+                                while ($rowNation = mysqli_fetch_array($resultNation)) {
+                                    while ($rowClub = mysqli_fetch_array($resultClub)) {
+                                        while ($rowPosition = mysqli_fetch_array($resultPosition)) { ?>
+                                            <h2> Nationalité: <?php echo $rowNation[0] ?></h2></br>
+                                            <h2> Club actuel: <?php echo $rowClub[0] ?></h2></br>
+                                            <h2> Poste : <?php echo $rowPosition[0] ?></h2></br>
+                                            <?php
+                                        }
                                     }
                                 }
+                            }else{
+                                ?>
+                                <h2> Nationalité: ?</h2></br>
+                                <h2> Club actuel: ?</h2></br>
+                                <h2> Poste : ?</h2></br>
+                                <?php
                             }
                             ?>
-                            <p>  Pied : <?php  echo $row['PlayerFoot'] ?></p></br>
-                            <p> Taille : <?php  echo $row['PlayerHeight'] ?></p></br>
-                            <p> Poids : <?php  echo $row['PlayerWeight'] ?></p></br>
-                            <p>  Note : <?php  echo $row['PlayerNote'] ?></p></br>
-                            <p> Commentaire : <?php  echo $row['PlayerComment'] ?></p></br>
+                            <h2>  Pied : <?php  echo  $playerFoot ?></h2></br>
+                            <h2> Taille : <?php  echo  $playerHeight ?></h2></br>
+                            <h2> Poids : <?php  echo $playerWeight ?></h2></br>
+                            <h2>  Note : <?php  echo $playerNote ?></h2></br>
+                            <h2> Commentaire : <?php  echo $playerComment ?></h2></br>
                         </div>
                         <?php } ?>
                         </div>

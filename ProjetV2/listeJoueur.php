@@ -8,7 +8,7 @@
 
 include_once('php/connectionJoueurs.php'); // connection base de données
 $con = mysqli_connect('localhost','root','','fcsochaux');
-$req = "SELECT PlayerFirstName,PlayerFamilyName,PlayerImageFilePath, NationID, ClubID, PositionID1, playerID  
+$req = "SELECT *  
         FROM players 
         WHERE 0=0";
 
@@ -80,25 +80,106 @@ $result = mysqli_query($con,$req);
                             while($row = mysqli_fetch_array($result)) {?>
                     <div class="colone col-sm-6">
                         <?php
-                            $reqNation = "SELECT NationName FROM nations WHERE NationID=".$row[3];
-                            $reqClub = "SELECT ClubName FROM clubs WHERE ClubID=".$row[4];
-                            $reqPosition = "SELECT PositionName FROM positions WHERE positionID=".$row[5];
+                            $reqNation = "SELECT NationName FROM nations WHERE NationID=".$row['NationID'];
+                            $reqClub = "SELECT ClubName FROM clubs WHERE ClubID=".$row['ClubID'];
+                            $reqPosition = "SELECT PositionName FROM positions WHERE positionID=".$row['PositionID1'];
                             $resultNation = mysqli_query($con,$reqNation);
                             $resultClub = mysqli_query($con,$reqClub);
                             $resultPosition = mysqli_query($con,$reqPosition);
-                            while($rowNation = mysqli_fetch_array($resultNation)) {
-                                while($rowClub = mysqli_fetch_array($resultClub)) {
-                                    while ($rowPosition = mysqli_fetch_array($resultPosition)) {
-                                        ?>
-                                        <div class="listeJoueur" style="margin-bottom: 100px">
-                                            <img src="../images/<?php echo $row[2]; ?> " width="70" height="70"/>
-                                            <?php echo '<a href="pageJoueur.php?IDJoueur='.$row[6].'"> '.$row[0].' '." ".' '.$row[1].'</a>'; ?>
-                                            <?php echo " - ", $rowNation[0], " - ", $rowClub[0], " - ", $rowPosition[0]; ?>
-                                        </div>
-                                    <?php
+                            if ($resultNation && $resultClub && $resultPosition) {
+                                while ($rowNation = mysqli_fetch_array($resultNation)) {
+                                    while ($rowClub = mysqli_fetch_array($resultClub)) {
+                                        while ($rowPosition = mysqli_fetch_array($resultPosition)) {
+
+
+                                            if (isset ($row['PlayerImageFilePath'])) {
+                                                $srcImage = $row['PlayerImageFilePath'];
+                                            } else {
+                                                $srcImage = "defaut.png";
+                                            }
+                                            if (isset ($row['PlayerID'])) {
+                                                $idPlayer = $row['PlayerID'];
+                                            } else {
+                                                $idPlayer = "";
+                                            }
+                                            if (isset ($row['PlayerFirstName'])) {
+                                                $playerFirstName = $row['PlayerFirstName'];
+                                            } else {
+                                                $playerFirstName = "";
+                                            }
+                                            if (isset ($row['PlayerFamilyName'])) {
+                                                $playerFamilyName = $row['PlayerFamilyName'];
+                                            } else {
+                                                $playerFamilyName = "";
+                                            }
+                                            if (isset ($rowNation['NationName'])) {
+                                                $playerNation = $rowNation['NationName'];
+                                            } else {
+                                                $playerNation = "";
+                                            }
+                                            if (isset ($rowClub['ClubName'])) {
+                                                $playerClub = $rowClub['ClubName'];
+                                            } else {
+                                                $playerClub = "";
+                                            }
+                                            if (isset ($rowPosition['PositionName'])) {
+                                                $playerPosition = $rowPosition['PositionName'];
+                                            } else {
+                                                $playerPosition = "";
+                                            }
+                                            ?>
+                                            <div class="listeJoueur" style="margin-bottom: 100px">
+                                                <img src="../images/<?php echo $srcImage; ?> " width="70" height="70"/>
+                                                <?php echo '<a href="pageJoueur.php?IDJoueur=' . $idPlayer . '"> ' . $playerFirstName . ' ' . " " . ' ' . $playerFamilyName . '</a>'; ?>
+                                                <?php echo " - ", $playerNation, " - ", $playerClub, " - ", $playerPosition; ?>
+                                            </div>
+                                            <?php
+                                        }
                                     }
                                 }
-                             }
+                            }else{
+                                if (isset ($row['PlayerImageFilePath'])) {
+                                    $srcImage = $row['PlayerImageFilePath'];
+                                } else {
+                                    $srcImage = "defaut.png";
+                                }
+                                if (isset ($row['PlayerID'])) {
+                                    $idPlayer = $row['PlayerID'];
+                                } else {
+                                    $idPlayer = "";
+                                }
+                                if (isset ($row['PlayerFirstName'])) {
+                                    $playerFirstName = $row['PlayerFirstName'];
+                                } else {
+                                    $playerFirstName = "";
+                                }
+                                if (isset ($row['PlayerFamilyName'])) {
+                                    $playerFamilyName = $row['PlayerFamilyName'];
+                                } else {
+                                    $playerFamilyName = "";
+                                }
+                                if (isset ($rowNation['NationName'])) {
+                                    $playerNation = $rowNation['NationName'];
+                                } else {
+                                    $playerNation = "";
+                                }
+                                if (isset ($rowClub['ClubName'])) {
+                                    $playerClub = $rowClub['ClubName'];
+                                } else {
+                                    $playerClub = "";
+                                }
+                                if (isset ($rowPosition['PositionName'])) {
+                                    $playerPosition = $rowPosition['PositionName'];
+                                } else {
+                                    $playerPosition = "";
+                                }
+                                ?>
+                                <div class="listeJoueur" style="margin-bottom: 100px">
+                                    <img src="../images/<?php echo $srcImage; ?> " width="70" height="70"/>
+                                    <?php echo '<a href="pageJoueur.php?IDJoueur=' . $idPlayer . '"> ' . $playerFirstName . ' ' . " " . ' ' . $playerFamilyName . '</a>'; ?>
+                                </div>
+                                <?php
+                            }
                              ?>
                     </div>
                     <?php } ?>

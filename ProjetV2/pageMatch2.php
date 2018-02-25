@@ -86,8 +86,7 @@ $result = mysqli_query($con,$req);
                                     }
                                     $resultPlayerEquipe1 = mysqli_query($con,$reqEquipe1Player);
                                     while($test = mysqli_fetch_array($resultPlayerEquipe1)) {
-                                        ?>
-                                        <?php echo $test[0]." ".$test[1]." ".$test[2]  ?> <br>
+                                        echo $test[0]." ".$test[1]." ".$test[2]  ?> <br>
                                         <?php
                                     }
                                     ?>
@@ -97,23 +96,20 @@ $result = mysqli_query($con,$req);
                     </div>
 
                     <div class="col">
-                        <div class="inputSelection">
                             <?php
                             $reqCompo2 = "SELECT * FROM compositions WHERE CompositionID=".$row['CompositionID2'];
                             $resultCompo2 = mysqli_query($con,$reqCompo2);
                             while($rowCompo2 = mysqli_fetch_array($resultCompo2)) {
                             ?>
-
                             <div class="inputSelection">
                                 <?php
                                 $reqEquipe2Player = "SELECT PlayerNumber,PlayerFirstName,PlayerFamilyName FROM players WHERE PlayerID=".$rowCompo2[3];
-                                for ($i = 4;$i <=16;$i++){
-                                    $reqEquipe2Player .= " OR PlayerID=".$rowCompo2[$i];
+                                for ($j = 4;$j <=16;$j++){
+                                    $reqEquipe2Player .= " OR PlayerID=".$rowCompo2[$j];
                                 }
                                 $resultPlayerEquipe2 = mysqli_query($con,$reqEquipe2Player);
                                 while($test2 = mysqli_fetch_array($resultPlayerEquipe2)) {
-                                    ?>
-                                    <?php echo $test2[0]." ".$test2[1]." ".$test2[2]  ?> <br>
+                                    echo $test2[0]." ".$test2[1]." ".$test2[2]  ?> <br>
                                     <?php
                                 }
                                 ?>
@@ -121,7 +117,6 @@ $result = mysqli_query($con,$req);
                             <?php }
                             ?>
                         </div>
-                    </div>
                 </div>
                 <a href="javascript:window.print()"><button class="btn btn-info">Imprimer</button></a>
                         <?php }}}

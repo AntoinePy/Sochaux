@@ -148,7 +148,7 @@ CREATE TABLE `compositions` (
 
 INSERT INTO `compositions` (`CompositionID`, `ClubID`, `FormationID`, `PlayerID1`, `PlayerID2`, `PlayerID3`, `PlayerID4`, `PlayerID5`, `PlayerID6`, `PlayerID7`, `PlayerID8`, `PlayerID9`, `PlayerID10`, `PlayerID11`, `PlayerReplecementID1`, `PlayerReplecementID2`, `PlayerReplecementID3`) VALUES
 (1, 1, 4,1,2,3,4,5,6,7,8,9,10,11,12,13,14 ),
-(2, 2, 4,12,13,14,15,16,17,18,19,20,21,22,1,2,3);
+(2, 2, 4,9,10,11,12,13,14,15,16,17,18,19,20,21,22);
 --
 -- Table structure for table `formations`
 --

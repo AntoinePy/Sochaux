@@ -8,7 +8,7 @@
 
     include 'connectionJoueurs.php';
 
-    var_dump($_POST);
+    //var_dump($_POST);
 
 /*$con = mysqli_connect('localhost','root','','fcsochaux');
 if (!$con) {

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2107d85-da32-40a5-92a5-731c99d7faf6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ProjetV2/pageMatch2.php" afterPath="$PROJECT_DIR$/ProjetV2/pageMatch2.php" />
-      <change beforePath="$PROJECT_DIR$/bdd.sql" afterPath="$PROJECT_DIR$/bdd.sql" />
+      <change beforePath="$PROJECT_DIR$/ProjetV2/listeMatch.php" afterPath="$PROJECT_DIR$/ProjetV2/listeMatch.php" />
     </list>
     <ignored path="Sochaux.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,110 +37,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rechercheJoueur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/rechercheJoueur.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2457">
-              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/navbar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bdd.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bdd.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4326">
-              <caret line="206" column="77" lean-forward="true" selection-start-line="206" selection-start-column="77" selection-end-line="206" selection-end-column="77" />
+            <state relative-caret-position="273">
+              <caret line="93" column="3" lean-forward="true" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listeJoueur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/listeJoueur.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-              <folding>
-                <marker date="1519476058523" expanded="true" signature="230:372" ph="SELECT Playe... players" />
-                <marker date="1519476058523" expanded="true" signature="2681:2727" ph="SELECT Natio... nations" />
-                <marker date="1519476058523" expanded="true" signature="2778:2818" ph="SELECT ClubN... clubs" />
-                <marker date="1519476058523" expanded="true" signature="2873:2925" ph="SELECT Posit... positions" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commentaireJoueur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1491">
-              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listeMatch.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="listeMatch.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProjetV2/listeMatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1029">
-              <caret line="54" column="75" lean-forward="false" selection-start-line="54" selection-start-column="75" selection-end-line="54" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pageJoueur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/pageJoueur.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="54" column="109" lean-forward="false" selection-start-line="54" selection-start-column="109" selection-end-line="54" selection-end-column="109" />
               <folding>
-                <marker date="1519476058533" expanded="true" signature="263:300" ph="SELECT * FRO... players" />
-                <marker date="1519476058533" expanded="true" signature="1373:1419" ph="SELECT Natio... nations" />
-                <marker date="1519476058533" expanded="true" signature="1467:1507" ph="SELECT ClubN... clubs" />
-                <marker date="1519476058533" expanded="true" signature="1557:1609" ph="SELECT Posit... positions" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1519566741719" expanded="true" signature="230:250" ph="SELECT * FRO... matchs" />
+                <marker date="1519566741719" expanded="true" signature="1630:1670" ph="SELECT ClubN... clubs" />
+                <marker date="1519566741719" expanded="true" signature="1730:1770" ph="SELECT ClubN... clubs" />
+                <marker date="1519566741719" expanded="true" signature="1835:1876" ph="SELECT * FRO... clubs_matchs" />
+                <marker date="1519566741719" expanded="true" signature="1835:1907" ph="SELECT * FRO... clubs_matchs" />
+                <marker date="1519566741719" expanded="true" signature="1835:1908" ph="SELECT * FRO... clubs_matchs" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pageMatch.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/pageMatch.php">
+      <file leaf-file-name="soumissionFeuilleDeMatchCommentaire.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetV2/php/soumissionFeuilleDeMatchCommentaire.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2394">
-              <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="116" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="410">
+              <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+              <folding>
+                <marker date="1519565320602" expanded="true" signature="321:438" ph="INSERT INTO championships... " />
+                <marker date="1519565320602" expanded="true" signature="817:1086" ph="INSERT INTO matchs... " />
+                <marker date="1519565320602" expanded="true" signature="2135:2324" ph="INSERT INTO matchs... " />
+                <marker date="1519565320602" expanded="true" signature="3001:3194" ph="INSERT INTO clubs_matchs... " />
+                <marker date="1519565320602" expanded="true" signature="3962:4206" ph="INSERT INTO players_matchs... " />
+                <marker date="1519565320602" expanded="true" signature="5145:5393" ph="INSERT INTO players_matchs... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pageMatch2.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ProjetV2/pageMatch2.php">
+      <file leaf-file-name="feuilleMatch.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="110" column="88" lean-forward="false" selection-start-line="110" selection-start-column="88" selection-end-line="110" selection-end-column="88" />
-              <folding>
-                <marker date="1519561423668" expanded="true" signature="130:165" ph="SELECT * FRO... matchs" />
-                <marker date="1519561423668" expanded="true" signature="1460:1500" ph="SELECT ClubN... clubs" />
-                <marker date="1519561423668" expanded="true" signature="1556:1596" ph="SELECT ClubN... clubs" />
-                <marker date="1519561423668" expanded="true" signature="3636:3683" ph="SELECT * FRO... compositions" />
-                <marker date="1519561423668" expanded="true" signature="4056:4137" ph="SELECT Playe... players" />
-                <marker date="1519561423668" expanded="true" signature="4995:5042" ph="SELECT * FRO... compositions" />
-                <marker date="1519561423668" expanded="true" signature="5406:5487" ph="SELECT Playe... players" />
-              </folding>
+            <state relative-caret-position="320">
+              <caret line="41" column="85" lean-forward="false" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="85" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -179,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FCSMajax/listesDeroulantes.js" />
         <option value="$PROJECT_DIR$/pages/ficheJoueur.php" />
         <option value="$PROJECT_DIR$/css/rechercheJoueur.php.css" />
         <option value="$PROJECT_DIR$/js/rechercheJoueur.js" />
@@ -207,7 +152,6 @@
         <option value="$PROJECT_DIR$/ProjetV2/css/commentairejoueurstyle.css" />
         <option value="$PROJECT_DIR$/ProjetV2/css/navbarstyle.css" />
         <option value="$PROJECT_DIR$/ProjetV2/php/ajoutTournoi.php" />
-        <option value="$PROJECT_DIR$/ProjetV2/feuilleMatch.php" />
         <option value="$PROJECT_DIR$/ProjetV2/php/getTournois.php" />
         <option value="$PROJECT_DIR$/ProjetV2/php/addClub.php" />
         <option value="$PROJECT_DIR$/ProjetV2/php/addTournoi.php" />
@@ -225,11 +169,13 @@
         <option value="$PROJECT_DIR$/ProjetV2/listeJoueur.php" />
         <option value="$PROJECT_DIR$/ProjetV2/rechercheJoueur.php" />
         <option value="$PROJECT_DIR$/ProjetV2/navbar.php" />
-        <option value="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" />
         <option value="$PROJECT_DIR$/ProjetV2/pageMatch.php" />
-        <option value="$PROJECT_DIR$/ProjetV2/listeMatch.php" />
         <option value="$PROJECT_DIR$/ProjetV2/pageMatch2.php" />
+        <option value="$PROJECT_DIR$/ProjetV2/feuilleMatch.php" />
+        <option value="$PROJECT_DIR$/ProjetV2/commentaireJoueur.php" />
         <option value="$PROJECT_DIR$/bdd.sql" />
+        <option value="$PROJECT_DIR$/ProjetV2/php/soumissionFeuilleDeMatchCommentaire.php" />
+        <option value="$PROJECT_DIR$/ProjetV2/listeMatch.php" />
       </list>
     </option>
   </component>
@@ -241,10 +187,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="519" />
-    <option name="y" value="-28" />
-    <option name="width" value="976" />
-    <option name="height" value="788" />
+    <option name="x" value="677" />
+    <option name="y" value="14" />
+    <option name="width" value="677" />
+    <option name="height" value="724" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -261,6 +207,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,24 +218,7 @@
             <path>
               <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ProjetV2" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ProjetV2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ProjetV2" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
@@ -296,17 +226,11 @@
               <item name="ProjetV2" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="Sochaux" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sochaux" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="traitementPHP" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,6 +252,122 @@
       <recent name="C:\wamp64\www\Sochaux\includes" />
       <recent name="C:\wamp64\www\Sochaux\stylesheets" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/navbar.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/rechercheJoueur.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/bdd.sql</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/listeMatch.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/pageMatch.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ProjetV2/pageMatch2.php</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -453,13 +493,6 @@
       <workItem from="1519425636943" duration="1875000" />
       <workItem from="1519475794921" duration="97000" />
       <workItem from="1519561497435" duration="7000" />
-    </task>
-    <task id="LOCAL-00001" summary="Debut test">
-      <created>1512564431133</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1512564431133</updated>
     </task>
     <task id="LOCAL-00002" summary="Debut test">
       <created>1512564516367</created>
@@ -797,36 +830,75 @@
       <option name="project" value="LOCAL" />
       <updated>1519477501663</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Modification BDD + enregistrement du score dans la table clubs_matchs">
+      <created>1519565430291</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1519565430291</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204380000" />
+    <option name="totallyTimeSpent" value="209221000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20837809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256579" sideWeight="0.50527906" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256579" sideWeight="0.50527906" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10419026" sideWeight="0.49472097" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28947368" sideWeight="0.49472097" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256579" sideWeight="0.50527906" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10419026" sideWeight="0.49472097" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20837809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272933" sideWeight="0.50527906" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.49472097" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18689582" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -853,7 +925,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bootstrap" />
     <MESSAGE value="Début feuille de match + menu de navigation + rangement" />
     <MESSAGE value="-Correction des doublons" />
     <MESSAGE value="Insert de joueurs dans la BDD ( bdd.sql)" />
@@ -878,7 +949,8 @@
     <MESSAGE value="Page Joueur" />
     <MESSAGE value="Amélioration recherche joueur + modif BDD (ajout d'une note à un joueur et d'une table note)" />
     <MESSAGE value="Amélioration recherche joueur + modif BDD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Amélioration recherche joueur + modif BDD" />
+    <MESSAGE value="Modification BDD + enregistrement du score dans la table clubs_matchs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification BDD + enregistrement du score dans la table clubs_matchs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -926,9 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <marker date="1515334323349" expanded="true" signature="192:309" ph="INSERT INTO championships... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1112,9 +1181,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <marker date="1519476058566" expanded="true" signature="336:513" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,10 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <marker date="1519476058591" expanded="true" signature="3440:3751" ph="..." />
-            <marker date="1519476058591" expanded="true" signature="3440:3771" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1140,10 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
-          <folding>
-            <marker date="1519476058597" expanded="true" signature="2483:2516" ph="..." />
-            <marker date="1519476058597" expanded="true" signature="2483:2600" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1161,13 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/php/soumissionFeuilleDeMatchCommentaire.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/php/getTournois.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1182,26 +1234,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProjetV2/rechercheJoueur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2457">
           <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1491">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1209,12 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <marker date="1519476058523" expanded="true" signature="230:372" ph="SELECT Playe... players" />
-            <marker date="1519476058523" expanded="true" signature="2681:2727" ph="SELECT Natio... nations" />
-            <marker date="1519476058523" expanded="true" signature="2778:2818" ph="SELECT ClubN... clubs" />
-            <marker date="1519476058523" expanded="true" signature="2873:2925" ph="SELECT Posit... positions" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1222,12 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <marker date="1519476058533" expanded="true" signature="263:300" ph="SELECT * FRO... players" />
-            <marker date="1519476058533" expanded="true" signature="1373:1419" ph="SELECT Natio... nations" />
-            <marker date="1519476058533" expanded="true" signature="1467:1507" ph="SELECT ClubN... clubs" />
-            <marker date="1519476058533" expanded="true" signature="1557:1609" ph="SELECT Posit... positions" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1235,31 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/listeMatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="54" column="75" lean-forward="false" selection-start-line="54" selection-start-column="75" selection-end-line="54" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjetV2/pageMatch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2394">
-          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="116" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bdd.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4326">
-          <caret line="206" column="77" lean-forward="true" selection-start-line="206" selection-start-column="77" selection-end-line="206" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,14 +1266,91 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="110" column="88" lean-forward="false" selection-start-line="110" selection-start-column="88" selection-end-line="110" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/pageMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="116" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/commentaireJoueur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="95" column="43" lean-forward="false" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="55" />
           <folding>
-            <marker date="1519561423668" expanded="true" signature="130:165" ph="SELECT * FRO... matchs" />
-            <marker date="1519561423668" expanded="true" signature="1460:1500" ph="SELECT ClubN... clubs" />
-            <marker date="1519561423668" expanded="true" signature="1556:1596" ph="SELECT ClubN... clubs" />
-            <marker date="1519561423668" expanded="true" signature="3636:3683" ph="SELECT * FRO... compositions" />
-            <marker date="1519561423668" expanded="true" signature="4056:4137" ph="SELECT Playe... players" />
-            <marker date="1519561423668" expanded="true" signature="4995:5042" ph="SELECT * FRO... compositions" />
-            <marker date="1519561423668" expanded="true" signature="5406:5487" ph="SELECT Playe... players" />
+            <marker date="1519564238419" expanded="true" signature="822:858" ph="SELECT * FRO... clubs" />
+            <marker date="1519564238419" expanded="true" signature="822:859" ph="SELECT * FRO... clubs" />
+            <marker date="1519564238419" expanded="true" signature="822:861" ph="SELECT * FRO... clubs" />
+            <marker date="1519564238419" expanded="true" signature="822:877" ph="SELECT * FRO... clubs" />
+            <marker date="1519564238419" expanded="true" signature="822:878" ph="SELECT * FRO... clubs" />
+            <marker date="1519564238419" expanded="true" signature="822:879" ph="SELECT ClubI... clubs" />
+            <marker date="1519564238419" expanded="true" signature="822:881" ph="SELECT * FRO... clubs" />
+            <marker date="1519564238419" expanded="true" signature="823:858" ph="SELECT ClubI... clubs" />
+            <marker date="1519564238419" expanded="true" signature="1028:1064" ph="SELECT * FRO... clubs" />
+            <marker date="1519564238419" expanded="true" signature="1028:1067" ph="SELECT * FRO... clubs" />
+            <marker date="1519564238419" expanded="true" signature="1028:1083" ph="SELECT * FRO... clubs" />
+            <marker date="1519564238419" expanded="true" signature="1234:1283" ph="SELECT * FRO... tournaments" />
+            <marker date="1519564238419" expanded="true" signature="1234:1285" ph="SELECT * FRO... tournaments" />
+            <marker date="1519564238419" expanded="true" signature="1234:1308" ph="SELECT * FRO... tournaments" />
+            <marker date="1519564238419" expanded="true" signature="1234:1309" ph="SELECT * FRO... tournaments" />
+            <marker date="1519564238419" expanded="true" signature="1234:1310" ph="SELECT * FRO... tournaments" />
+            <marker date="1519564238419" expanded="true" signature="5125:5326" ph="..." />
+            <marker date="1519564238419" expanded="true" signature="5362:5916" ph="..." />
+            <marker date="1519564238419" expanded="true" signature="5685:5790" ph="SELECT * FRO... players" />
+            <marker date="1519564238419" expanded="true" signature="9068:9122" ph="SELECT Posit... positions" />
+            <marker date="1519564238419" expanded="true" signature="10556:10661" ph="SELECT * FRO... players" />
+            <marker date="1519564238419" expanded="true" signature="13938:13992" ph="SELECT Posit... positions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/php/soumissionFeuilleDeMatchCommentaire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding>
+            <marker date="1519565320602" expanded="true" signature="321:438" ph="INSERT INTO championships... " />
+            <marker date="1519565320602" expanded="true" signature="817:1086" ph="INSERT INTO matchs... " />
+            <marker date="1519565320602" expanded="true" signature="2135:2324" ph="INSERT INTO matchs... " />
+            <marker date="1519565320602" expanded="true" signature="3001:3194" ph="INSERT INTO clubs_matchs... " />
+            <marker date="1519565320602" expanded="true" signature="3962:4206" ph="INSERT INTO players_matchs... " />
+            <marker date="1519565320602" expanded="true" signature="5145:5393" ph="INSERT INTO players_matchs... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/feuilleMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="41" column="85" lean-forward="false" selection-start-line="41" selection-start-column="73" selection-end-line="41" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdd.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="93" column="3" lean-forward="true" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjetV2/listeMatch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="54" column="109" lean-forward="false" selection-start-line="54" selection-start-column="109" selection-end-line="54" selection-end-column="109" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1519566741719" expanded="true" signature="230:250" ph="SELECT * FRO... matchs" />
+            <marker date="1519566741719" expanded="true" signature="1630:1670" ph="SELECT ClubN... clubs" />
+            <marker date="1519566741719" expanded="true" signature="1730:1770" ph="SELECT ClubN... clubs" />
+            <marker date="1519566741719" expanded="true" signature="1835:1876" ph="SELECT * FRO... clubs_matchs" />
+            <marker date="1519566741719" expanded="true" signature="1835:1907" ph="SELECT * FRO... clubs_matchs" />
+            <marker date="1519566741719" expanded="true" signature="1835:1908" ph="SELECT * FRO... clubs_matchs" />
           </folding>
         </state>
       </provider>

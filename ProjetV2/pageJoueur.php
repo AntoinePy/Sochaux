@@ -86,11 +86,14 @@ $result = mysqli_query($con,$req);
             <div class="starter-template">
 
                 <div class="row">
-                    <div class="col-sm-11">
+                    <div class="col-sm-12">
                         <div class="col-lg-4">
                             <img src="../images/<?php echo $srcImage; ?> " width="220" height="300"/>
+
                         </div>
                         <div class="infoJoueur col-lg-8">
+                            <?php echo '<a class="btn btn-info" href=editInfoJoueur.php?IDJoueur='.$id.'>Editer</a>'; ?>
+                            <a href="javascript:window.print()"><button class="btn btn-info">Imprimer</button></a>
                             <?php
                             if ($resultNation && $resultClub&& $resultPosition) {
                                 while ($rowNation = mysqli_fetch_array($resultNation)) {
@@ -116,6 +119,7 @@ $result = mysqli_query($con,$req);
                             <h2> Poids : <?php  echo $playerWeight ?></h2></br>
                             <h2>  Note : <?php  echo $playerNote ?></h2></br>
                             <h2> Commentaire : <?php  echo $playerComment ?></h2></br>
+
                         </div>
                         <?php } ?>
                         </div>

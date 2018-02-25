@@ -53,7 +53,7 @@ $result = mysqli_query($con,$req);
                                     $rowScore = mysqli_fetch_array($resultScoreMatch)
                                     ?>
                                     <div class="colone listeJoueur" style="margin-bottom: 20px; padding: 10px">
-                                        <?php echo '<a href="pageMatch.php?IDMatch=' . $row['MatchID'] . '"> ' . $rowClub1[0] . ' ' . " - " . ' ' . $rowClub2[0] . '</a>'; ?>
+                                        <?php echo '<a href="pageMatch2.php?IDMatch=' . $row['MatchID'] . '"> ' . $rowClub1[0] . ' ' . " - " . ' ' . $rowClub2[0] . '</a>'; ?>
                                         <br><?php echo " Score: ", $rowScore['Club_MatchScore'], " - ", $rowScore['Club_MatchHalfScore'] ; ?>
                                         <br><?php echo " Auteur: ", $row['MatchAuthor']; ?>
                                         <br><?php echo " Condition du match: ", $row['MatchCondition']; ?>

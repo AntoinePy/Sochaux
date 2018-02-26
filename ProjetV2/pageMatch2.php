@@ -65,7 +65,6 @@ $result = mysqli_query($con,$req);
                                                     <h1>Informations du match</h1>
                                                 </div>
                                                 <a href="javascript:window.print()"><button class="btn btn-info">Imprimer</button></a>
-
                                                 <div class="inputSelection">
                                                     <table class="table">
                                                         <tr><td>Confrontation</td><td><?php echo $equipe1 ?> - <?php echo $equipe2 ?></td></tr>

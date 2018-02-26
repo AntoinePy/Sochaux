@@ -28,7 +28,7 @@ $result = mysqli_query($con,$req);
 
 <head>
     <meta charset="UTF-8">
-    <title>Fiche Joueur</title>
+    <title>Fiche Club</title>
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
     <link href="../css/feuilleDeMatch.css" type="text/css" rel="stylesheet" />
     <link href="../css/rechercheJoueur.css" type="text/css" rel="stylesheet" />
@@ -48,7 +48,7 @@ $result = mysqli_query($con,$req);
         <div class="feuilleDeMatch col-lg-10">
 
             <div class="barreTitre">
-                <h1>Liste des joueurs </h1>
+                <h1>Liste des clubs </h1>
             </div>
 
             <div class="starter-template">

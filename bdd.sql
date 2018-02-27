@@ -152,30 +152,7 @@ CREATE TABLE `contracts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
-CREATE TABLE `compositions` (
-  `CompositionID` smallint(2) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `ClubID` smallint(2) UNSIGNED NOT NULL,
-  `FormationID` smallint(2) UNSIGNED NOT NULL,
-  `PlayerID1` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerID2` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerID3` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerID4` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerID5` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerID6` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerID7` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerID8` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerID9` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerID10` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerID11` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerReplecementID1` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerReplecementID2` smallint(2) UNSIGNED DEFAULT NULL,
-  `PlayerReplecementID3` smallint(2) UNSIGNED DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-
-INSERT INTO `compositions` (`CompositionID`, `ClubID`, `FormationID`, `PlayerID1`, `PlayerID2`, `PlayerID3`, `PlayerID4`, `PlayerID5`, `PlayerID6`, `PlayerID7`, `PlayerID8`, `PlayerID9`, `PlayerID10`, `PlayerID11`, `PlayerReplecementID1`, `PlayerReplecementID2`, `PlayerReplecementID3`) VALUES
-(1, 1, 4,1,2,3,4,5,6,7,8,9,10,11,12,13,14 ),
-(2, 2, 4,9,10,11,12,13,14,15,16,17,18,19,20,21,22);
 --
 -- Table structure for table `formations`
 --
@@ -201,13 +178,10 @@ CREATE TABLE `formations` (
 --
 
 INSERT INTO `formations` (`FormationID`, `FormationName`, `Position1`, `Position2`, `Position3`, `Position4`, `Position5`, `Position6`, `Position7`, `Position8`, `Position9`, `Position10`, `Position11`) VALUES
-(4, '4-4-2 losange', 1, 15, 13, 13, 7, 5, 6, 11, 12, 15, 16),
-(5, '4-4-2 carré', 1, 15, 13, 13, 16, 7, 20, 20, 8, 4, 4),
-(6, '4-3-3', 1, 15, 13, 13, 16, 6, 20, 20, 2, 3, 4),
-(7, '4-5-1', 1, 4, 9, 10, 7, 8, 5, 12, 11, 16, 15),
-(8, '5-3-2', 1, 3, 2, 8, 7, 20, 12, 11, 13, 16, 15),
-(9, '3-5-2', 1, 3, 2, 10, 9, 8, 7, 6, 13, 15, 16),
-(10, '5-4-1', 1, 4, 8, 7, 9, 10, 12, 11, 13, 16, 15);
+(4, '4-4-2 losange', 1, 2, 3, 4,5, 6, 7, 11, 12, 14,16),
+(5, '4-4-2 carré', 1, 2, 3, 4, 5, 7, 8, 10, 11, 14,16),
+(6, '4-3-3', 1, 2, 3, 4, 5, 6, 8, 10, 13, 15,17),
+(7, '4-5-1', 1, 2, 3, 4, 5,6, 7, 8, 10, 11,15);
 
 -- --------------------------------------------------------
 
@@ -229,9 +203,6 @@ CREATE TABLE `matchs` (
   `CompositionID1` smallint(3) UNSIGNED DEFAULT NULL,
   `CompositionID2` smallint(3) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---INSERT INTO `matchs` (`MatchID`, `MatchPlace`, `MatchDate`, `MatchCondition`, `MatchComment`, `MatchAuthor`, `TournamentID`, `ClubID1`, `ClubID2`, `CompositionID1`, `CompositionID2`) VALUES
---(1, 'Stade Bonal', '2018-02-24', 'Beaucoup de pluie', 'bonne equipe de Sochaux', 'Bastien',1,1,2,1,2);
 
 -- --------------------------------------------------------
 
@@ -328,23 +299,23 @@ CREATE TABLE `positions` (
 --
 
 INSERT INTO `positions` (`PositionID`, `PositionName`) VALUES
-(1, 'Gardien'),
-(2, 'Défenseur Gauche'),
-(3, 'Défenseur Central Gauche'),
-(4, 'Défenseur Central Droit'),
-(5, 'Défenseur Droit'),
-(6, 'Milieu Defensif Central'),
-(7, 'Milieu Gauche'),
-(8, 'Milieu Central Gauche'),
-(9, 'Milieu Central'),
-(10, 'Milieu Central Droit'),
-(11, 'Milieu Droit'),
-(12, 'Milieu Offensif'),
-(13, 'Ailier Gauche'),
-(14, 'Attaquant Gauche'),
-(15, 'Attaquant Central'),
-(16, 'Attaquant Droit'),
-(17, 'Ailier Droit');
+(1, 'Gardien '),
+(2, 'Défenseur Gauche '),
+(3, 'Défenseur Central G. '),
+(4, 'Défenseur Central D. '),
+(5, 'Défenseur Droit '),
+(6, 'Milieu Defensif C. '),
+(7, 'Milieu Gauche '),
+(8, 'Milieu Central G. '),
+(9, 'Milieu Central '),
+(10, 'Milieu Central D. '),
+(11, 'Milieu Droit '),
+(12, 'Milieu Offensif '),
+(13, 'Ailier Gauche '),
+(14, 'Attaquant Gauche '),
+(15, 'Attaquant Central '),
+(16, 'Attaquant Droit '),
+(17, 'Ailier Droit ');
 
 -- --------------------------------------------------------
 

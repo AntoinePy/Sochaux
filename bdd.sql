@@ -329,21 +329,22 @@ CREATE TABLE `positions` (
 
 INSERT INTO `positions` (`PositionID`, `PositionName`) VALUES
 (1, 'Gardien'),
-(2, 'Avant Gauche'),
-(3, 'Avant Droit'),
-(4, 'Avant Centre'),
-(5, 'Milieu Offensif'),
-(6, 'Milieu Défensif'),
+(2, 'Défenseur Gauche'),
+(3, 'Défenseur Central Gauche'),
+(4, 'Défenseur Central Droit'),
+(5, 'Défenseur Droit'),
+(6, 'Milieu Defensif Central'),
 (7, 'Milieu Gauche'),
-(8, 'Milieu Droit'),
-(9, 'Ailier Gauche'),
-(10, 'Ailier Droit'),
-(11, 'Arrière Gauche'),
-(12, 'Arrière Droit'),
-(13, 'Défenseur Central'),
-(15, 'Défenseur Gauche'),
-(16, 'Défenseur Droit'),
-(20, 'Milieu Central');
+(8, 'Milieu Central Gauche'),
+(9, 'Milieu Central'),
+(10, 'Milieu Central Droit'),
+(11, 'Milieu Droit'),
+(12, 'Milieu Offensif'),
+(13, 'Ailier Gauche'),
+(14, 'Attaquant Gauche'),
+(15, 'Attaquant Central'),
+(16, 'Attaquant Droit'),
+(17, 'Ailier Droit');
 
 -- --------------------------------------------------------
 
